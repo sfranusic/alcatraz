@@ -17,6 +17,8 @@
 		B24E033726C495FC00AC488C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B24E030B26C495FC00AC488C /* Assets.xcassets */; };
 		B24E034B26C4966A00AC488C /* ColoredSquareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24E034A26C4966A00AC488C /* ColoredSquareView.swift */; };
 		B24E034C26C4966A00AC488C /* ColoredSquareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24E034A26C4966A00AC488C /* ColoredSquareView.swift */; };
+		B24E035226C4CD2100AC488C /* SquareGalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24E035126C4CD2100AC488C /* SquareGalleryView.swift */; };
+		B24E035326C4CD2100AC488C /* SquareGalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24E035126C4CD2100AC488C /* SquareGalleryView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +54,7 @@
 		B24E032F26C495FC00AC488C /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		B24E033126C495FC00AC488C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B24E034A26C4966A00AC488C /* ColoredSquareView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColoredSquareView.swift; sourceTree = "<group>"; };
+		B24E035126C4CD2100AC488C /* SquareGalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareGalleryView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +108,7 @@
 				B24E030A26C495FA00AC488C /* ContentView.swift */,
 				B24E030B26C495FC00AC488C /* Assets.xcassets */,
 				B24E034A26C4966A00AC488C /* ColoredSquareView.swift */,
+				B24E035126C4CD2100AC488C /* SquareGalleryView.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -314,6 +318,7 @@
 			files = (
 				B24E034B26C4966A00AC488C /* ColoredSquareView.swift in Sources */,
 				B24E033426C495FC00AC488C /* ContentView.swift in Sources */,
+				B24E035226C4CD2100AC488C /* SquareGalleryView.swift in Sources */,
 				B24E033226C495FC00AC488C /* MesmerizeApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -324,6 +329,7 @@
 			files = (
 				B24E034C26C4966A00AC488C /* ColoredSquareView.swift in Sources */,
 				B24E033526C495FC00AC488C /* ContentView.swift in Sources */,
+				B24E035326C4CD2100AC488C /* SquareGalleryView.swift in Sources */,
 				B24E033326C495FC00AC488C /* MesmerizeApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -19,11 +19,20 @@ struct ColoredSquareView: View {
     func generateRandomColor() -> Color {
         Color(.sRGB, red: randomRGBValue, green: randomRGBValue, blue: randomRGBValue, opacity: randomOpacity)
     }
-
+    func changeSquareColorAtRandom() {
+        squareColor = generateRandomColor()
+        let randomDelay = DispatchTimeInterval.seconds(Int.random(in: 1...3))
+        DispatchQueue.main.asyncAfter(deadline: .now() + randomDelay) {
+            changeSquareColorAtRandom()
+        }
+    }
     var body: some View {
         Rectangle()
             .foregroundColor(squareColor)
             .frame(width: 150, height: 150, alignment: .center)
+            .onAppear() {
+                changeSquareColorAtRandom()
+            }
     }
 }
 

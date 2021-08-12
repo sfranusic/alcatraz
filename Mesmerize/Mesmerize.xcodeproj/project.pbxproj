@@ -25,6 +25,8 @@
 		B27312DD26C5D837001F7B93 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B27312DC26C5D837001F7B93 /* Preview Assets.xcassets */; };
 		B27312E826C5D838001F7B93 /* MesmerizeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27312E726C5D838001F7B93 /* MesmerizeTests.swift */; };
 		B27312F326C5D838001F7B93 /* MesmerizeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27312F226C5D838001F7B93 /* MesmerizeUITests.swift */; };
+		B273132326C5D9FD001F7B93 /* ColoredSquareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24E034A26C4966A00AC488C /* ColoredSquareView.swift */; };
+		B273132B26C5DA02001F7B93 /* SquareGalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24E035126C4CD2100AC488C /* SquareGalleryView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -541,7 +543,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B273132326C5D9FD001F7B93 /* ColoredSquareView.swift in Sources */,
 				B27312D826C5D835001F7B93 /* ContentView.swift in Sources */,
+				B273132B26C5DA02001F7B93 /* SquareGalleryView.swift in Sources */,
 				B27312D626C5D835001F7B93 /* MesmerizeApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

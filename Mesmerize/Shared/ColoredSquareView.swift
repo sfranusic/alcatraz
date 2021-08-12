@@ -34,6 +34,7 @@ struct ColoredSquareView: View {
             .onAppear() {
                 changeSquareColorAtRandom()
             }
+            .animation(.easeIn)
     }
 }
 

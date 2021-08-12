@@ -19,6 +19,12 @@
 		B24E034C26C4966A00AC488C /* ColoredSquareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24E034A26C4966A00AC488C /* ColoredSquareView.swift */; };
 		B24E035226C4CD2100AC488C /* SquareGalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24E035126C4CD2100AC488C /* SquareGalleryView.swift */; };
 		B24E035326C4CD2100AC488C /* SquareGalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24E035126C4CD2100AC488C /* SquareGalleryView.swift */; };
+		B27312D626C5D835001F7B93 /* MesmerizeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27312D526C5D835001F7B93 /* MesmerizeApp.swift */; };
+		B27312D826C5D835001F7B93 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27312D726C5D835001F7B93 /* ContentView.swift */; };
+		B27312DA26C5D837001F7B93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B27312D926C5D837001F7B93 /* Assets.xcassets */; };
+		B27312DD26C5D837001F7B93 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B27312DC26C5D837001F7B93 /* Preview Assets.xcassets */; };
+		B27312E826C5D838001F7B93 /* MesmerizeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27312E726C5D838001F7B93 /* MesmerizeTests.swift */; };
+		B27312F326C5D838001F7B93 /* MesmerizeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27312F226C5D838001F7B93 /* MesmerizeUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +41,20 @@
 			proxyType = 1;
 			remoteGlobalIDString = B24E031726C495FC00AC488C;
 			remoteInfo = "Mesmerize (macOS)";
+		};
+		B27312E426C5D838001F7B93 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B24E030426C495FA00AC488C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B27312D226C5D835001F7B93;
+			remoteInfo = Mesmerize;
+		};
+		B27312EF26C5D838001F7B93 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B24E030426C495FA00AC488C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B27312D226C5D835001F7B93;
+			remoteInfo = Mesmerize;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -55,6 +75,18 @@
 		B24E033126C495FC00AC488C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B24E034A26C4966A00AC488C /* ColoredSquareView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColoredSquareView.swift; sourceTree = "<group>"; };
 		B24E035126C4CD2100AC488C /* SquareGalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareGalleryView.swift; sourceTree = "<group>"; };
+		B27312D326C5D835001F7B93 /* Mesmerize.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mesmerize.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B27312D526C5D835001F7B93 /* MesmerizeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MesmerizeApp.swift; sourceTree = "<group>"; };
+		B27312D726C5D835001F7B93 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B27312D926C5D837001F7B93 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B27312DC26C5D837001F7B93 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B27312DE26C5D837001F7B93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B27312E326C5D838001F7B93 /* MesmerizeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MesmerizeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B27312E726C5D838001F7B93 /* MesmerizeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MesmerizeTests.swift; sourceTree = "<group>"; };
+		B27312E926C5D838001F7B93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B27312EE26C5D838001F7B93 /* MesmerizeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MesmerizeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B27312F226C5D838001F7B93 /* MesmerizeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MesmerizeUITests.swift; sourceTree = "<group>"; };
+		B27312F426C5D838001F7B93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +118,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B27312D026C5D835001F7B93 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B27312E026C5D838001F7B93 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B27312EB26C5D838001F7B93 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -97,6 +150,9 @@
 				B24E031926C495FC00AC488C /* macOS */,
 				B24E032326C495FC00AC488C /* Tests iOS */,
 				B24E032E26C495FC00AC488C /* Tests macOS */,
+				B27312D426C5D835001F7B93 /* Mesmerize */,
+				B27312E626C5D838001F7B93 /* MesmerizeTests */,
+				B27312F126C5D838001F7B93 /* MesmerizeUITests */,
 				B24E031126C495FC00AC488C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -120,6 +176,9 @@
 				B24E031826C495FC00AC488C /* Mesmerize.app */,
 				B24E032026C495FC00AC488C /* Tests iOS.xctest */,
 				B24E032B26C495FC00AC488C /* Tests macOS.xctest */,
+				B27312D326C5D835001F7B93 /* Mesmerize.app */,
+				B27312E326C5D838001F7B93 /* MesmerizeTests.xctest */,
+				B27312EE26C5D838001F7B93 /* MesmerizeUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -157,6 +216,44 @@
 				B24E033126C495FC00AC488C /* Info.plist */,
 			);
 			path = "Tests macOS";
+			sourceTree = "<group>";
+		};
+		B27312D426C5D835001F7B93 /* Mesmerize */ = {
+			isa = PBXGroup;
+			children = (
+				B27312D526C5D835001F7B93 /* MesmerizeApp.swift */,
+				B27312D726C5D835001F7B93 /* ContentView.swift */,
+				B27312D926C5D837001F7B93 /* Assets.xcassets */,
+				B27312DE26C5D837001F7B93 /* Info.plist */,
+				B27312DB26C5D837001F7B93 /* Preview Content */,
+			);
+			path = Mesmerize;
+			sourceTree = "<group>";
+		};
+		B27312DB26C5D837001F7B93 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				B27312DC26C5D837001F7B93 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B27312E626C5D838001F7B93 /* MesmerizeTests */ = {
+			isa = PBXGroup;
+			children = (
+				B27312E726C5D838001F7B93 /* MesmerizeTests.swift */,
+				B27312E926C5D838001F7B93 /* Info.plist */,
+			);
+			path = MesmerizeTests;
+			sourceTree = "<group>";
+		};
+		B27312F126C5D838001F7B93 /* MesmerizeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B27312F226C5D838001F7B93 /* MesmerizeUITests.swift */,
+				B27312F426C5D838001F7B93 /* Info.plist */,
+			);
+			path = MesmerizeUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,6 +329,59 @@
 			productReference = B24E032B26C495FC00AC488C /* Tests macOS.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		B27312D226C5D835001F7B93 /* Mesmerize */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B27312FB26C5D838001F7B93 /* Build configuration list for PBXNativeTarget "Mesmerize" */;
+			buildPhases = (
+				B27312CF26C5D835001F7B93 /* Sources */,
+				B27312D026C5D835001F7B93 /* Frameworks */,
+				B27312D126C5D835001F7B93 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Mesmerize;
+			productName = Mesmerize;
+			productReference = B27312D326C5D835001F7B93 /* Mesmerize.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B27312E226C5D838001F7B93 /* MesmerizeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B27312FC26C5D838001F7B93 /* Build configuration list for PBXNativeTarget "MesmerizeTests" */;
+			buildPhases = (
+				B27312DF26C5D838001F7B93 /* Sources */,
+				B27312E026C5D838001F7B93 /* Frameworks */,
+				B27312E126C5D838001F7B93 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B27312E526C5D838001F7B93 /* PBXTargetDependency */,
+			);
+			name = MesmerizeTests;
+			productName = MesmerizeTests;
+			productReference = B27312E326C5D838001F7B93 /* MesmerizeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B27312ED26C5D838001F7B93 /* MesmerizeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B27312FD26C5D838001F7B93 /* Build configuration list for PBXNativeTarget "MesmerizeUITests" */;
+			buildPhases = (
+				B27312EA26C5D838001F7B93 /* Sources */,
+				B27312EB26C5D838001F7B93 /* Frameworks */,
+				B27312EC26C5D838001F7B93 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B27312F026C5D838001F7B93 /* PBXTargetDependency */,
+			);
+			name = MesmerizeUITests;
+			productName = MesmerizeUITests;
+			productReference = B27312EE26C5D838001F7B93 /* MesmerizeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -255,6 +405,17 @@
 						CreatedOnToolsVersion = 12.4;
 						TestTargetID = B24E031726C495FC00AC488C;
 					};
+					B27312D226C5D835001F7B93 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					B27312E226C5D838001F7B93 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = B27312D226C5D835001F7B93;
+					};
+					B27312ED26C5D838001F7B93 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = B27312D226C5D835001F7B93;
+					};
 				};
 			};
 			buildConfigurationList = B24E030726C495FA00AC488C /* Build configuration list for PBXProject "Mesmerize" */;
@@ -274,6 +435,9 @@
 				B24E031726C495FC00AC488C /* Mesmerize (macOS) */,
 				B24E031F26C495FC00AC488C /* Tests iOS */,
 				B24E032A26C495FC00AC488C /* Tests macOS */,
+				B27312D226C5D835001F7B93 /* Mesmerize */,
+				B27312E226C5D838001F7B93 /* MesmerizeTests */,
+				B27312ED26C5D838001F7B93 /* MesmerizeUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -303,6 +467,29 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		B24E032926C495FC00AC488C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B27312D126C5D835001F7B93 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B27312DD26C5D837001F7B93 /* Preview Assets.xcassets in Resources */,
+				B27312DA26C5D837001F7B93 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B27312E126C5D838001F7B93 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B27312EC26C5D838001F7B93 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -350,6 +537,31 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B27312CF26C5D835001F7B93 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B27312D826C5D835001F7B93 /* ContentView.swift in Sources */,
+				B27312D626C5D835001F7B93 /* MesmerizeApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B27312DF26C5D838001F7B93 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B27312E826C5D838001F7B93 /* MesmerizeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B27312EA26C5D838001F7B93 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B27312F326C5D838001F7B93 /* MesmerizeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -362,6 +574,16 @@
 			isa = PBXTargetDependency;
 			target = B24E031726C495FC00AC488C /* Mesmerize (macOS) */;
 			targetProxy = B24E032C26C495FC00AC488C /* PBXContainerItemProxy */;
+		};
+		B27312E526C5D838001F7B93 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B27312D226C5D835001F7B93 /* Mesmerize */;
+			targetProxy = B27312E426C5D838001F7B93 /* PBXContainerItemProxy */;
+		};
+		B27312F026C5D838001F7B93 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B27312D226C5D835001F7B93 /* Mesmerize */;
+			targetProxy = B27312EF26C5D838001F7B93 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -659,6 +881,145 @@
 			};
 			name = Release;
 		};
+		B27312F526C5D838001F7B93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Mesmerize/Preview Content\"";
+				DEVELOPMENT_TEAM = 94L3XLA8X2;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Mesmerize/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sf.Mesmerize;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 14.3;
+			};
+			name = Debug;
+		};
+		B27312F626C5D838001F7B93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Mesmerize/Preview Content\"";
+				DEVELOPMENT_TEAM = 94L3XLA8X2;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Mesmerize/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sf.Mesmerize;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 14.3;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B27312F726C5D838001F7B93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 94L3XLA8X2;
+				INFOPLIST_FILE = MesmerizeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sf.MesmerizeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mesmerize.app/Mesmerize";
+				TVOS_DEPLOYMENT_TARGET = 14.3;
+			};
+			name = Debug;
+		};
+		B27312F826C5D838001F7B93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 94L3XLA8X2;
+				INFOPLIST_FILE = MesmerizeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sf.MesmerizeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mesmerize.app/Mesmerize";
+				TVOS_DEPLOYMENT_TARGET = 14.3;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B27312F926C5D838001F7B93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 94L3XLA8X2;
+				INFOPLIST_FILE = MesmerizeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sf.MesmerizeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TEST_TARGET_NAME = Mesmerize;
+				TVOS_DEPLOYMENT_TARGET = 14.3;
+			};
+			name = Debug;
+		};
+		B27312FA26C5D838001F7B93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 94L3XLA8X2;
+				INFOPLIST_FILE = MesmerizeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sf.MesmerizeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TEST_TARGET_NAME = Mesmerize;
+				TVOS_DEPLOYMENT_TARGET = 14.3;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -703,6 +1064,33 @@
 			buildConfigurations = (
 				B24E034426C495FC00AC488C /* Debug */,
 				B24E034526C495FC00AC488C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B27312FB26C5D838001F7B93 /* Build configuration list for PBXNativeTarget "Mesmerize" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B27312F526C5D838001F7B93 /* Debug */,
+				B27312F626C5D838001F7B93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B27312FC26C5D838001F7B93 /* Build configuration list for PBXNativeTarget "MesmerizeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B27312F726C5D838001F7B93 /* Debug */,
+				B27312F826C5D838001F7B93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B27312FD26C5D838001F7B93 /* Build configuration list for PBXNativeTarget "MesmerizeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B27312F926C5D838001F7B93 /* Debug */,
+				B27312FA26C5D838001F7B93 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

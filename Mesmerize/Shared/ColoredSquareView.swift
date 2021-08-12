@@ -29,8 +29,8 @@ struct ColoredSquareView: View {
     var body: some View {
         Rectangle()
             .foregroundColor(squareColor)
-            .frame(maxWidth: 150, maxHeight: 150, alignment: .center)
-            .aspectRatio(1, contentMode: .fit)
+            .frame(minWidth: 100, maxWidth: 150, alignment: .center)
+            .aspectRatio(1, contentMode: .fill)
             .onAppear() {
                 changeSquareColorAtRandom()
             }

@@ -10,24 +10,10 @@ import SwiftUI
 struct SquareGalleryView: View {
     var body: some View {
         VStack {
-            HStack {
-                ColoredSquareView()
-                ColoredSquareView()
-                ColoredSquareView()
+            ForEach(0..<7) { _ in
+                ColoredSquareRow()
             }
-            HStack {
-                ColoredSquareView()
-                ColoredSquareView()
-                ColoredSquareView()
-            }
-            HStack {
-                ColoredSquareView()
-                ColoredSquareView()
-                ColoredSquareView()
-            }
-
         }
-        .aspectRatio(contentMode: .fit)
     }
 }
 

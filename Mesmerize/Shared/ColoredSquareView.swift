@@ -10,12 +10,6 @@ import SwiftUI
 struct ColoredSquareView: View {
 
     @State private var squareColor: Color = .black
-    var randomOpacity: Double {
-        Double.random(in: 0.5...1)
-    }
-    var randomRGBValue: Double {
-        Double.random(in: 0...255)/255
-    }
 
     func changeSquareColorAtRandom() {
         squareColor = .random

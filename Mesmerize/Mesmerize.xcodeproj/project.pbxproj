@@ -21,6 +21,8 @@
 		B24E035326C4CD2100AC488C /* SquareGalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24E035126C4CD2100AC488C /* SquareGalleryView.swift */; };
 		B273133826C81FE7001F7B93 /* ColoredSquareRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B273133726C81FE7001F7B93 /* ColoredSquareRow.swift */; };
 		B273133926C81FE7001F7B93 /* ColoredSquareRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B273133726C81FE7001F7B93 /* ColoredSquareRow.swift */; };
+		B2B8C95E26CF651100A99334 /* Color+Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B8C95D26CF651100A99334 /* Color+Random.swift */; };
+		B2B8C95F26CF651100A99334 /* Color+Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B8C95D26CF651100A99334 /* Color+Random.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +60,7 @@
 		B24E034A26C4966A00AC488C /* ColoredSquareView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColoredSquareView.swift; sourceTree = "<group>"; };
 		B24E035126C4CD2100AC488C /* SquareGalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareGalleryView.swift; sourceTree = "<group>"; };
 		B273133726C81FE7001F7B93 /* ColoredSquareRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColoredSquareRow.swift; sourceTree = "<group>"; };
+		B2B8C95D26CF651100A99334 /* Color+Random.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color+Random.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +98,7 @@
 		B24E030326C495FA00AC488C = {
 			isa = PBXGroup;
 			children = (
+				B2B8C96426CF652800A99334 /* Extensions */,
 				B24E030826C495FA00AC488C /* Shared */,
 				B24E031226C495FC00AC488C /* iOS */,
 				B24E031926C495FC00AC488C /* macOS */,
@@ -161,6 +165,14 @@
 				B24E033126C495FC00AC488C /* Info.plist */,
 			);
 			path = "Tests macOS";
+			sourceTree = "<group>";
+		};
+		B2B8C96426CF652800A99334 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B2B8C95D26CF651100A99334 /* Color+Random.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -320,6 +332,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2B8C95E26CF651100A99334 /* Color+Random.swift in Sources */,
 				B24E034B26C4966A00AC488C /* ColoredSquareView.swift in Sources */,
 				B24E033426C495FC00AC488C /* ContentView.swift in Sources */,
 				B273133826C81FE7001F7B93 /* ColoredSquareRow.swift in Sources */,
@@ -332,6 +345,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2B8C95F26CF651100A99334 /* Color+Random.swift in Sources */,
 				B24E034C26C4966A00AC488C /* ColoredSquareView.swift in Sources */,
 				B24E033526C495FC00AC488C /* ContentView.swift in Sources */,
 				B273133926C81FE7001F7B93 /* ColoredSquareRow.swift in Sources */,

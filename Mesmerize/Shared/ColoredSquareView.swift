@@ -29,7 +29,7 @@ struct ColoredSquareView: View {
             .foregroundColor(squareColor)
             .frame(minWidth: 10, maxWidth: 200, alignment: .center)
             .aspectRatio(1, contentMode: .fit)
-            .onAppear() {
+            .onAppear {
                 changeSquareColorAtRandom()
             }
             .animation(.easeIn)

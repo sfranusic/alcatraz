@@ -10,17 +10,9 @@ import SwiftUI
 struct ColoredSquareView: View {
 
     @State private var squareColor: Color = .black
-    var randomOpacity: Double {
-        Double.random(in: 0.5...1)
-    }
-    var randomRGBValue: Double {
-        Double.random(in: 0...255)/255
-    }
-    func generateRandomColor() -> Color {
-        Color(.sRGB, red: randomRGBValue, green: randomRGBValue, blue: randomRGBValue, opacity: randomOpacity)
-    }
+
     func changeSquareColorAtRandom() {
-        squareColor = generateRandomColor()
+        squareColor = .random
         let randomDelay = DispatchTimeInterval.seconds(Int.random(in: 1...3))
         DispatchQueue.main.asyncAfter(deadline: .now() + randomDelay) {
             changeSquareColorAtRandom()
@@ -31,7 +23,7 @@ struct ColoredSquareView: View {
             .foregroundColor(squareColor)
             .frame(minWidth: 10, maxWidth: 200, alignment: .center)
             .aspectRatio(1, contentMode: .fit)
-            .onAppear() {
+            .onAppear {
                 changeSquareColorAtRandom()
             }
             .animation(.easeIn)

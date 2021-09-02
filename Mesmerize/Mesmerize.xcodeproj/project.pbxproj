@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B22B955126E07909005CA857 /* RevealSquare.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22B955026E07909005CA857 /* RevealSquare.swift */; };
+		B22B955226E07909005CA857 /* RevealSquare.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22B955026E07909005CA857 /* RevealSquare.swift */; };
 		B24E032526C495FC00AC488C /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24E032426C495FC00AC488C /* Tests_iOS.swift */; };
 		B24E033026C495FC00AC488C /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24E032F26C495FC00AC488C /* Tests_macOS.swift */; };
 		B24E033226C495FC00AC488C /* MesmerizeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24E030926C495FA00AC488C /* MesmerizeApp.swift */; };
@@ -43,6 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B22B955026E07909005CA857 /* RevealSquare.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RevealSquare.swift; sourceTree = "<group>"; };
 		B24E030926C495FA00AC488C /* MesmerizeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MesmerizeApp.swift; sourceTree = "<group>"; };
 		B24E030A26C495FA00AC488C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B24E030B26C495FC00AC488C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -117,6 +120,7 @@
 				B24E034A26C4966A00AC488C /* ColoredSquareView.swift */,
 				B273133726C81FE7001F7B93 /* ColoredSquareRow.swift */,
 				B24E035126C4CD2100AC488C /* SquareGalleryView.swift */,
+				B22B955026E07909005CA857 /* RevealSquare.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -338,6 +342,7 @@
 				B273133826C81FE7001F7B93 /* ColoredSquareRow.swift in Sources */,
 				B24E035226C4CD2100AC488C /* SquareGalleryView.swift in Sources */,
 				B24E033226C495FC00AC488C /* MesmerizeApp.swift in Sources */,
+				B22B955126E07909005CA857 /* RevealSquare.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,6 +356,7 @@
 				B273133926C81FE7001F7B93 /* ColoredSquareRow.swift in Sources */,
 				B24E035326C4CD2100AC488C /* SquareGalleryView.swift in Sources */,
 				B24E033326C495FC00AC488C /* MesmerizeApp.swift in Sources */,
+				B22B955226E07909005CA857 /* RevealSquare.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

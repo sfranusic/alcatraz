@@ -14,7 +14,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: AI Code Reviewer
-        uses: sfranusic/alcatraz@main
+        uses: sfranusic/ai-code-reviewer@main@main
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}

@@ -33,6 +33,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B26D97122ABE06560066F00C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		B2DF00D92AA1A63400438700 /* lab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lab.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2DF00DC2AA1A63400438700 /* labApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = labApp.swift; sourceTree = "<group>"; };
 		B2DF00E02AA1A63700438700 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -92,6 +93,7 @@
 		B2DF00DB2AA1A63400438700 /* lab */ = {
 			isa = PBXGroup;
 			children = (
+				B26D97122ABE06560066F00C /* Info.plist */,
 				B2DF00DC2AA1A63400438700 /* labApp.swift */,
 				B2DF00E02AA1A63700438700 /* Assets.xcassets */,
 				B2DF00E22AA1A63700438700 /* Preview Content */,
@@ -418,6 +420,7 @@
 				DEVELOPMENT_TEAM = 94L3XLA8X2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = lab/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -447,6 +450,7 @@
 				DEVELOPMENT_TEAM = 94L3XLA8X2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = lab/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

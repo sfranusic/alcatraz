@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B2C6D1F22B664B9B00965467 /* UIPickerView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C6D1ED2B664B9B00965467 /* UIPickerView+Extensions.swift */; };
+		B2C6D1F32B664B9B00965467 /* EmojigmaMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C6D1EE2B664B9B00965467 /* EmojigmaMainView.swift */; };
+		B2C6D1F42B664B9B00965467 /* EmojigmaTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C6D1EF2B664B9B00965467 /* EmojigmaTextView.swift */; };
+		B2C6D1F52B664B9B00965467 /* EmojigmaPIckerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C6D1F02B664B9B00965467 /* EmojigmaPIckerModel.swift */; };
+		B2C6D1F62B664B9B00965467 /* EmojigmaPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C6D1F12B664B9B00965467 /* EmojigmaPickerView.swift */; };
 		B2DF00DD2AA1A63400438700 /* labApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2DF00DC2AA1A63400438700 /* labApp.swift */; };
 		B2DF00E12AA1A63700438700 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2DF00E02AA1A63700438700 /* Assets.xcassets */; };
 		B2DF00E42AA1A63700438700 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2DF00E32AA1A63700438700 /* Preview Assets.xcassets */; };
@@ -33,6 +38,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B2C6D1ED2B664B9B00965467 /* UIPickerView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIPickerView+Extensions.swift"; sourceTree = "<group>"; };
+		B2C6D1EE2B664B9B00965467 /* EmojigmaMainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmojigmaMainView.swift; sourceTree = "<group>"; };
+		B2C6D1EF2B664B9B00965467 /* EmojigmaTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmojigmaTextView.swift; sourceTree = "<group>"; };
+		B2C6D1F02B664B9B00965467 /* EmojigmaPIckerModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmojigmaPIckerModel.swift; sourceTree = "<group>"; };
+		B2C6D1F12B664B9B00965467 /* EmojigmaPickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmojigmaPickerView.swift; sourceTree = "<group>"; };
 		B2DF00D92AA1A63400438700 /* lab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lab.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2DF00DC2AA1A63400438700 /* labApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = labApp.swift; sourceTree = "<group>"; };
 		B2DF00E02AA1A63700438700 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -69,6 +79,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B2C6D1EC2B664AEB00965467 /* EmojigmaV2 */ = {
+			isa = PBXGroup;
+			children = (
+				B2C6D1EE2B664B9B00965467 /* EmojigmaMainView.swift */,
+				B2C6D1F02B664B9B00965467 /* EmojigmaPIckerModel.swift */,
+				B2C6D1F12B664B9B00965467 /* EmojigmaPickerView.swift */,
+				B2C6D1EF2B664B9B00965467 /* EmojigmaTextView.swift */,
+				B2C6D1ED2B664B9B00965467 /* UIPickerView+Extensions.swift */,
+			);
+			path = EmojigmaV2;
+			sourceTree = "<group>";
+		};
 		B2DF00D02AA1A63400438700 = {
 			isa = PBXGroup;
 			children = (
@@ -92,6 +114,7 @@
 		B2DF00DB2AA1A63400438700 /* lab */ = {
 			isa = PBXGroup;
 			children = (
+				B2C6D1EC2B664AEB00965467 /* EmojigmaV2 */,
 				B2DF00DC2AA1A63400438700 /* labApp.swift */,
 				B2DF00E02AA1A63700438700 /* Assets.xcassets */,
 				B2DF00E22AA1A63700438700 /* Preview Content */,
@@ -254,7 +277,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2C6D1F32B664B9B00965467 /* EmojigmaMainView.swift in Sources */,
+				B2C6D1F22B664B9B00965467 /* UIPickerView+Extensions.swift in Sources */,
+				B2C6D1F52B664B9B00965467 /* EmojigmaPIckerModel.swift in Sources */,
+				B2C6D1F42B664B9B00965467 /* EmojigmaTextView.swift in Sources */,
 				B2DF00DD2AA1A63400438700 /* labApp.swift in Sources */,
+				B2C6D1F62B664B9B00965467 /* EmojigmaPickerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

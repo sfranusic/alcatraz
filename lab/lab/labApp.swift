@@ -6,7 +6,15 @@ import SwiftUI
 struct labApp: App {
     var body: some Scene {
         WindowGroup {
-            EmptyView()
+            NavigationView {
+                List {
+                    NavigationLink("Emojigma") {
+                        EmojigmaMainView()
+                    }
+                }
+                .font(.system(size: 24))
+            }
+            .navigationViewStyle(.stack)
         }
     }
 }

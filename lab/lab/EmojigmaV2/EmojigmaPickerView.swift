@@ -7,7 +7,7 @@ struct EmojigmaPickerView: View {
 
     var body: some View {
         HStack {
-            ForEach($model.pickerSet, id: \.self) { selection in
+            ForEach($model.pickerSelectionSet, id: \.self) { selection in
                 Picker("", selection: selection) {
                     wheelContent
                 }
@@ -38,7 +38,7 @@ private struct MockEmojigmaPickerView: View {
         VStack {
             EmojigmaPickerView(model: model)
             HStack {
-                ForEach(model.pickerSet, id: \.self) { item in
+                ForEach(model.pickerSelectionSet, id: \.self) { item in
                     Text(item)
                 }
             }

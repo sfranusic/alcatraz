@@ -7,7 +7,7 @@ struct EmojigmaMainView: View {
     var body: some View {
         VStack(spacing: 0) {
             HStack {
-                EmojigmaPickerView(model: model.picker)
+                EmojigmaPickerView(model: model.pickerModel)
             }
             EmojigmaTextView(model: model.textView)
                 .onSubmit {
@@ -23,7 +23,7 @@ struct EmojigmaMainView: View {
 }
 
 class EmojigmaMainViewViewModel: ObservableObject {
-    let picker = EmojigmaPickerModel()
+    let pickerModel = EmojigmaPickerModel()
     let textView = EmojigmaTextViewModel()
     @Published var viewOpacity: CGFloat = 0.0
 
@@ -32,7 +32,7 @@ class EmojigmaMainViewViewModel: ObservableObject {
     }
 
     func runEnigma() {
-        textView.enteredText = "\(textView.enteredText)\(picker.rotorSelections[0])"
+        textView.enteredText = "\(textView.enteredText)\(pickerModel.picker1)"
     }
 }
 

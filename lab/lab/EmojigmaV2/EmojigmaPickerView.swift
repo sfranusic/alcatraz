@@ -7,15 +7,21 @@ struct EmojigmaPickerView: View {
 
     var body: some View {
         HStack {
-            ForEach($model.pickerSelectionSet, id: \.self) { selection in
-                Picker("", selection: selection) {
+            Group {
+                Picker("", selection: $model.picker1) {
                     wheelContent
                 }
-                .pickerStyle(.wheel)
-                .frame(width: 50, height: 100, alignment: .center)
-                .background(Color(.tertiarySystemBackground))
-                .clipped()
+                Picker("", selection: $model.picker2) {
+                    wheelContent
+                }
+                Picker("", selection: $model.picker3) {
+                    wheelContent
+                }
             }
+            .pickerStyle(.wheel)
+            .frame(width: 50, height: 100, alignment: .center)
+            .background(Color(.tertiarySystemBackground))
+            .clipped()
         }
         .padding(10)
         .background {
@@ -38,7 +44,7 @@ private struct MockEmojigmaPickerView: View {
         VStack {
             EmojigmaPickerView(model: model)
             HStack {
-                ForEach(model.pickerSelectionSet, id: \.self) { item in
+                ForEach([model.picker1, model.picker2, model.picker3], id: \.self) { item in
                     Text(item)
                 }
             }

@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		27AFCB1F2B807E18006258FC /* EmojigmaMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AFCB1E2B807E18006258FC /* EmojigmaMainView.swift */; };
+		27AFCB232B807F1F006258FC /* EmojigmaPickerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AFCB222B807F1F006258FC /* EmojigmaPickerModel.swift */; };
+		27AFCB252B807F92006258FC /* EmojigmaPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AFCB242B807F92006258FC /* EmojigmaPickerView.swift */; };
+		27AFCB272B808027006258FC /* UIPickerView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AFCB262B808027006258FC /* UIPickerView+Extensions.swift */; };
+		27AFCB292B80805B006258FC /* EmojigmaTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AFCB282B80805B006258FC /* EmojigmaTextView.swift */; };
 		27CA001D2B75F05100B5B37F /* LabApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CA001C2B75F05100B5B37F /* LabApp.swift */; };
 		27CA001F2B75F05100B5B37F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CA001E2B75F05100B5B37F /* ContentView.swift */; };
 		27CA00212B75F05300B5B37F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27CA00202B75F05300B5B37F /* Assets.xcassets */; };
@@ -34,6 +39,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		27AFCB1E2B807E18006258FC /* EmojigmaMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojigmaMainView.swift; sourceTree = "<group>"; };
+		27AFCB222B807F1F006258FC /* EmojigmaPickerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojigmaPickerModel.swift; sourceTree = "<group>"; };
+		27AFCB242B807F92006258FC /* EmojigmaPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojigmaPickerView.swift; sourceTree = "<group>"; };
+		27AFCB262B808027006258FC /* UIPickerView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIPickerView+Extensions.swift"; sourceTree = "<group>"; };
+		27AFCB282B80805B006258FC /* EmojigmaTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojigmaTextView.swift; sourceTree = "<group>"; };
 		27CA00192B75F05100B5B37F /* Lab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lab.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27CA001C2B75F05100B5B37F /* LabApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabApp.swift; sourceTree = "<group>"; };
 		27CA001E2B75F05100B5B37F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -72,6 +82,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		27AFCB2A2B8081A4006258FC /* EmojigmaV2 */ = {
+			isa = PBXGroup;
+			children = (
+				27AFCB1E2B807E18006258FC /* EmojigmaMainView.swift */,
+				27AFCB222B807F1F006258FC /* EmojigmaPickerModel.swift */,
+				27AFCB242B807F92006258FC /* EmojigmaPickerView.swift */,
+				27AFCB262B808027006258FC /* UIPickerView+Extensions.swift */,
+				27AFCB282B80805B006258FC /* EmojigmaTextView.swift */,
+			);
+			path = EmojigmaV2;
+			sourceTree = "<group>";
+		};
 		27CA00102B75F05100B5B37F = {
 			isa = PBXGroup;
 			children = (
@@ -97,6 +119,7 @@
 			children = (
 				27CA001C2B75F05100B5B37F /* LabApp.swift */,
 				27CA001E2B75F05100B5B37F /* ContentView.swift */,
+				27AFCB2A2B8081A4006258FC /* EmojigmaV2 */,
 				27CA00202B75F05300B5B37F /* Assets.xcassets */,
 				27CA00222B75F05300B5B37F /* Lab.entitlements */,
 				27CA00232B75F05300B5B37F /* Preview Content */,
@@ -259,8 +282,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27AFCB232B807F1F006258FC /* EmojigmaPickerModel.swift in Sources */,
+				27AFCB1F2B807E18006258FC /* EmojigmaMainView.swift in Sources */,
 				27CA001F2B75F05100B5B37F /* ContentView.swift in Sources */,
+				27AFCB252B807F92006258FC /* EmojigmaPickerView.swift in Sources */,
+				27AFCB272B808027006258FC /* UIPickerView+Extensions.swift in Sources */,
 				27CA001D2B75F05100B5B37F /* LabApp.swift in Sources */,
+				27AFCB292B80805B006258FC /* EmojigmaTextView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

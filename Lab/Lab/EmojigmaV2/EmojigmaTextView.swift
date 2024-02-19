@@ -9,7 +9,6 @@ struct EmojigmaTextView: View {
             TextField("", text: $model.enteredText)
                 .textFieldStyle(.emojigma)
         }
-        .padding()
         .background {
             Color(.secondarySystemBackground)
         }

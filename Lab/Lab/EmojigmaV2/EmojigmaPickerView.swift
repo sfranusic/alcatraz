@@ -17,11 +17,7 @@ struct EmojigmaPickerView: View {
             .background(Color(.tertiarySystemBackground))
             .clipped()
         }
-        .padding(10)
-        .background {
-            Color(.secondarySystemBackground)
-                .clipShape(RoundedRectangle(cornerRadius: 8))
-        }
+
     }
 
     private var wheelContent: some View {

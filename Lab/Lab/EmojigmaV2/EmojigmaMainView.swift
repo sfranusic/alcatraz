@@ -8,21 +8,18 @@
 import SwiftUI
 
 struct EmojigmaMainView: View {
-    @StateObject var model = EmojigmaMainViewViewModel()
+    @StateObject var viewModel = EmojigmaMainViewViewModel()
     var body: some View {
         VStack(spacing: 0) {
-            HStack {
-                EmojigmaPickerView(model: model.picker)
-            }
-            EmojigmaTextView(model: model.textView)
+            EmojigmaPickerView(model: viewModel.picker)
+            EmojigmaTextView(model: viewModel.textView)
                 .onSubmit {
-                    model.runEnigma()
-//                    model.picker.saveSelectionState()
+                    viewModel.runEnigma()
                 }
         }
-        .opacity(model.viewOpacity)
+        .opacity(viewModel.viewOpacity)
         .onAppear {
-            model.fadeInView()
+            viewModel.fadeInView()
         }
     }
 }

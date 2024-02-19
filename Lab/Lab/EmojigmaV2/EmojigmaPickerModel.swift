@@ -20,7 +20,7 @@ class EmojigmaPickerModel: ObservableObject {
 
 }
 
-struct Lab {
+extension Lab {
     var emojiSet: [String] {
         [
             "🦝", "👻", "💎", "🦕", "🌊", "🐙", "🐼", "🌳", "🎏", "🍉", "❄️",

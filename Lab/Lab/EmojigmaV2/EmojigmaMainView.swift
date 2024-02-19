@@ -37,7 +37,7 @@ class EmojigmaMainViewViewModel: ObservableObject {
     }
 
     func runEnigma() {
-        textView.enteredText = "\(textView.enteredText)\(picker.rotorSelections[0])"
+        textView.enteredText = "\(textView.enteredText)\(picker.rotor1)"
     }
 }
 

@@ -8,21 +8,24 @@
 import SwiftUI
 
 class EmojigmaPickerModel: ObservableObject {
-    @Published var rotorSelections = [String]()
-    @AppStorage("rotor1") var rotor1: String = ""
-    @AppStorage("rotor2") var rotor2: String = ""
-    @AppStorage("rotor3") var rotor3: String = ""
+    @AppStorage("rotor1") var rotor1: String = Lab().emojiSet.first!
+    @AppStorage("rotor2") var rotor2: String = Lab().emojiSet.first!
+    @AppStorage("rotor3") var rotor3: String = Lab().emojiSet.first!
 
-    init() {
-        rotor1 = emojiSet.first ?? ""
-        rotor2 = emojiSet.first ?? ""
-        rotor3 = emojiSet.first ?? ""
-        rotorSelections = [rotor1, rotor2, rotor3]
+    init() { }
+
+    var emojiSet: [String] {
+        Lab().emojiSet
     }
 
-    let emojiSet: [String] = [
-        "🦝", "👻", "💎", "🦕", "🌊", "🐙", "🐼", "🌳", "🎏", "🍉", "❄️",
-        "🐢", "☔️", "🍕", "🦈", "🚀", "🌱", "🍎", "🐝", "🐔", "🐶", "🐘",
-        "🎃", "🍿", "🔑", "🎲", "🍭", "🌜"
-    ]
+}
+
+struct Lab {
+    var emojiSet: [String] {
+        [
+            "🦝", "👻", "💎", "🦕", "🌊", "🐙", "🐼", "🌳", "🎏", "🍉", "❄️",
+            "🐢", "☔️", "🍕", "🦈", "🚀", "🌱", "🍎", "🐝", "🐔", "🐶", "🐘",
+            "🎃", "🍿", "🔑", "🎲", "🍭", "🌜"
+        ]
+    }
 }

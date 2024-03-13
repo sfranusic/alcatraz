@@ -13,6 +13,9 @@
 		27AFCB272B808027006258FC /* UIPickerView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AFCB262B808027006258FC /* UIPickerView+Extensions.swift */; };
 		27AFCB292B80805B006258FC /* EmojigmaTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AFCB282B80805B006258FC /* EmojigmaTextView.swift */; };
 		27AFCB342B832A6D006258FC /* Lab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AFCB332B832A6D006258FC /* Lab.swift */; };
+		27AFCB362B832C0A006258FC /* EnigmaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AFCB352B832C0A006258FC /* EnigmaModel.swift */; };
+		27AFCB382B846E0C006258FC /* EnigmaModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AFCB372B846E0C006258FC /* EnigmaModelTests.swift */; };
+		27AFCB3A2BA22648006258FC /* EmojigmaPickerModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AFCB392BA22648006258FC /* EmojigmaPickerModelTests.swift */; };
 		27CA001D2B75F05100B5B37F /* LabApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CA001C2B75F05100B5B37F /* LabApp.swift */; };
 		27CA001F2B75F05100B5B37F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CA001E2B75F05100B5B37F /* ContentView.swift */; };
 		27CA00212B75F05300B5B37F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27CA00202B75F05300B5B37F /* Assets.xcassets */; };
@@ -46,6 +49,9 @@
 		27AFCB262B808027006258FC /* UIPickerView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIPickerView+Extensions.swift"; sourceTree = "<group>"; };
 		27AFCB282B80805B006258FC /* EmojigmaTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojigmaTextView.swift; sourceTree = "<group>"; };
 		27AFCB332B832A6D006258FC /* Lab.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lab.swift; sourceTree = "<group>"; };
+		27AFCB352B832C0A006258FC /* EnigmaModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnigmaModel.swift; sourceTree = "<group>"; };
+		27AFCB372B846E0C006258FC /* EnigmaModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnigmaModelTests.swift; sourceTree = "<group>"; };
+		27AFCB392BA22648006258FC /* EmojigmaPickerModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmojigmaPickerModelTests.swift; sourceTree = "<group>"; };
 		27CA00192B75F05100B5B37F /* Lab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lab.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27CA001C2B75F05100B5B37F /* LabApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabApp.swift; sourceTree = "<group>"; };
 		27CA001E2B75F05100B5B37F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -90,10 +96,20 @@
 				27AFCB1E2B807E18006258FC /* EmojigmaMainView.swift */,
 				27AFCB222B807F1F006258FC /* EmojigmaPickerModel.swift */,
 				27AFCB242B807F92006258FC /* EmojigmaPickerView.swift */,
+				27AFCB352B832C0A006258FC /* EnigmaModel.swift */,
 				27AFCB262B808027006258FC /* UIPickerView+Extensions.swift */,
 				27AFCB282B80805B006258FC /* EmojigmaTextView.swift */,
 			);
 			path = EmojigmaV2;
+			sourceTree = "<group>";
+		};
+		27AFCB3B2BA22664006258FC /* EmojigmaV2Tests */ = {
+			isa = PBXGroup;
+			children = (
+				27AFCB372B846E0C006258FC /* EnigmaModelTests.swift */,
+				27AFCB392BA22648006258FC /* EmojigmaPickerModelTests.swift */,
+			);
+			path = EmojigmaV2Tests;
 			sourceTree = "<group>";
 		};
 		27CA00102B75F05100B5B37F = {
@@ -141,6 +157,7 @@
 		27CA002D2B75F05400B5B37F /* LabTests */ = {
 			isa = PBXGroup;
 			children = (
+				27AFCB3B2BA22664006258FC /* EmojigmaV2Tests */,
 				27CA002E2B75F05400B5B37F /* LabTests.swift */,
 			);
 			path = LabTests;
@@ -163,6 +180,7 @@
 			buildConfigurationList = 27CA003E2B75F05400B5B37F /* Build configuration list for PBXNativeTarget "Lab" */;
 			buildPhases = (
 				27CA00152B75F05100B5B37F /* Sources */,
+				27AFCB3C2BA247E9006258FC /* ShellScript */,
 				27CA00162B75F05100B5B37F /* Frameworks */,
 				27CA00172B75F05100B5B37F /* Resources */,
 			);
@@ -280,6 +298,27 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		27AFCB3C2BA247E9006258FC /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif [[ \"$(uname -m)\" == arm64 ]]; then\n    export PATH=\"/opt/homebrew/bin:$PATH\"\nfi\n\nif which swiftlint > /dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		27CA00152B75F05100B5B37F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -288,6 +327,7 @@
 				27AFCB232B807F1F006258FC /* EmojigmaPickerModel.swift in Sources */,
 				27AFCB1F2B807E18006258FC /* EmojigmaMainView.swift in Sources */,
 				27CA001F2B75F05100B5B37F /* ContentView.swift in Sources */,
+				27AFCB362B832C0A006258FC /* EnigmaModel.swift in Sources */,
 				27AFCB342B832A6D006258FC /* Lab.swift in Sources */,
 				27AFCB252B807F92006258FC /* EmojigmaPickerView.swift in Sources */,
 				27AFCB272B808027006258FC /* UIPickerView+Extensions.swift in Sources */,
@@ -300,6 +340,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27AFCB3A2BA22648006258FC /* EmojigmaPickerModelTests.swift in Sources */,
+				27AFCB382B846E0C006258FC /* EnigmaModelTests.swift in Sources */,
 				27CA002F2B75F05400B5B37F /* LabTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -453,6 +495,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Lab/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
@@ -489,6 +532,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Lab/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;

@@ -16,15 +16,12 @@ struct EmojigmaTextView: View {
 }
 
 struct EmojigmaTextFieldStyle: TextFieldStyle {
+    // swiftlint:disable:next identifier_name
     func _body(configuration: TextField<Self._Label>) -> some View {
         configuration
             .padding()
             .background {
                 Color(.tertiarySystemBackground)
-            }
-            .overlay {
-                RoundedRectangle(cornerRadius: 8)
-                    .stroke(Color(UIColor.systemFill), lineWidth: 2)
             }
     }
 }

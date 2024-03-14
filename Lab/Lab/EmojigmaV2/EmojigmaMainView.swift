@@ -10,14 +10,21 @@ import SwiftUI
 struct EmojigmaMainView: View {
     @StateObject var viewModel = EmojigmaMainViewViewModel()
     var body: some View {
-        VStack(spacing: 0) {
-            EmojigmaPickerView(model: viewModel.picker)
-            EmojigmaTextView(model: viewModel.textView)
-                .onSubmit {
-                    viewModel.runEnigma()
-                }
+        VStack(spacing: 5) {
+            Group {
+                EmojigmaPickerView(model: viewModel.picker)
+                EmojigmaTextView(model: viewModel.textView)
+                    .onSubmit {
+                        viewModel.runEnigma()
+                    }
+            }
+            .overlay {
+                RoundedRectangle(cornerRadius: 8)
+                    .stroke(Color(UIColor.systemFill), lineWidth: 2)
+            }
         }
         .opacity(viewModel.viewOpacity)
+        .padding(.horizontal, 5)
         .onAppear {
             viewModel.fadeInView()
         }

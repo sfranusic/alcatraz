@@ -16,6 +16,7 @@
 		27AFCB362B832C0A006258FC /* EnigmaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AFCB352B832C0A006258FC /* EnigmaModel.swift */; };
 		27AFCB382B846E0C006258FC /* EnigmaModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AFCB372B846E0C006258FC /* EnigmaModelTests.swift */; };
 		27AFCB3A2BA22648006258FC /* EmojigmaPickerModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AFCB392BA22648006258FC /* EmojigmaPickerModelTests.swift */; };
+		27AFCB3E2BA2B190006258FC /* Lab+Emojigma.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AFCB3D2BA2B190006258FC /* Lab+Emojigma.swift */; };
 		27CA001D2B75F05100B5B37F /* LabApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CA001C2B75F05100B5B37F /* LabApp.swift */; };
 		27CA001F2B75F05100B5B37F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CA001E2B75F05100B5B37F /* ContentView.swift */; };
 		27CA00212B75F05300B5B37F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27CA00202B75F05300B5B37F /* Assets.xcassets */; };
@@ -52,6 +53,7 @@
 		27AFCB352B832C0A006258FC /* EnigmaModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnigmaModel.swift; sourceTree = "<group>"; };
 		27AFCB372B846E0C006258FC /* EnigmaModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnigmaModelTests.swift; sourceTree = "<group>"; };
 		27AFCB392BA22648006258FC /* EmojigmaPickerModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmojigmaPickerModelTests.swift; sourceTree = "<group>"; };
+		27AFCB3D2BA2B190006258FC /* Lab+Emojigma.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Lab+Emojigma.swift"; sourceTree = "<group>"; };
 		27CA00192B75F05100B5B37F /* Lab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lab.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27CA001C2B75F05100B5B37F /* LabApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabApp.swift; sourceTree = "<group>"; };
 		27CA001E2B75F05100B5B37F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 				27AFCB352B832C0A006258FC /* EnigmaModel.swift */,
 				27AFCB262B808027006258FC /* UIPickerView+Extensions.swift */,
 				27AFCB282B80805B006258FC /* EmojigmaTextView.swift */,
+				27AFCB3D2BA2B190006258FC /* Lab+Emojigma.swift */,
 			);
 			path = EmojigmaV2;
 			sourceTree = "<group>";
@@ -326,6 +329,7 @@
 			files = (
 				27AFCB232B807F1F006258FC /* EmojigmaPickerModel.swift in Sources */,
 				27AFCB1F2B807E18006258FC /* EmojigmaMainView.swift in Sources */,
+				27AFCB3E2BA2B190006258FC /* Lab+Emojigma.swift in Sources */,
 				27CA001F2B75F05100B5B37F /* ContentView.swift in Sources */,
 				27AFCB362B832C0A006258FC /* EnigmaModel.swift in Sources */,
 				27AFCB342B832A6D006258FC /* Lab.swift in Sources */,

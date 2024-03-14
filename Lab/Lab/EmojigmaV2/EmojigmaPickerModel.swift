@@ -19,13 +19,3 @@ class EmojigmaPickerModel: ObservableObject {
     }
 
 }
-
-extension Lab {
-    var emojiSet: [String] {
-        [
-            "🦝", "👻", "💎", "🦕", "🌊", "🐙", "🐼", "🌳", "🎏", "🍉", "❄️",
-            "🐢", "☔️", "🍕", "🦈", "🚀", "🌱", "🍎", "🐝", "🐔", "🐶", "🐘",
-            "🎃", "🍿", "🔑", "🎲", "🍭", "🌜"
-        ]
-    }
-}

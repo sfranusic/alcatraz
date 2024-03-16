@@ -19,19 +19,17 @@ final class EnigmaModelTests: XCTestCase {
     }
 
     func testReflector() throws {
-        let emojiSet = Lab().emojiSet
+        let emojiSet = Lab.emojiSet
         guard
             let reflector = EnigmaModel(emojiSet: emojiSet)?.reflector,
-            let testCase = emojiSet.first
+            let testCase = emojiSet.first,
+            let reflectedCase = reflector[testCase]
         else {
-            XCTFail()
+            XCTFail("Test setup failed")
             return
         }
 
-        let reflectedCase = reflector[testCase]
-
-        // XCTAssertEqual(
-
+        XCTAssertEqual(testCase, reflector[reflectedCase], "Test case should reflect back to its initial value")
     }
 
     func testExample() throws {

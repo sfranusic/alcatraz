@@ -8,14 +8,12 @@
 import SwiftUI
 
 class EmojigmaPickerModel: ObservableObject {
-    @AppStorage("rotor1") var rotor1: String = Lab().emojiSet.first!
-    @AppStorage("rotor2") var rotor2: String = Lab().emojiSet.first!
-    @AppStorage("rotor3") var rotor3: String = Lab().emojiSet.first!
+    @AppStorage("rotor1") var rotor1: String = Lab.emojiSet.first!
+    @AppStorage("rotor2") var rotor2: String = Lab.emojiSet.first!
+    @AppStorage("rotor3") var rotor3: String = Lab.emojiSet.first!
+
+    let emojiSet: [String] = Lab.emojiSet
 
     init() { }
-
-    var emojiSet: [String] {
-        Lab().emojiSet
-    }
 
 }

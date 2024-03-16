@@ -6,7 +6,7 @@
 //
 
 extension Lab {
-    var emojiSet: [String] {
+    static var emojiSet: [String] {
         [
             "🦝", "👻", "💎", "🦕", "🌊", "🐙", "🐼", "🌳", "🎏", "🍉", "❄️",
             "🐢", "☔️", "🍕", "🦈", "🚀", "🌱", "🍎", "🐝", "🐔", "🐶", "🐘",

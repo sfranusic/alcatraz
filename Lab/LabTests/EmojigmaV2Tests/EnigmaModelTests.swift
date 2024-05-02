@@ -20,8 +20,9 @@ final class EnigmaModelTests: XCTestCase {
 
     func testReflector() throws {
         let emojiSet = Lab.emojiSet
+        let reflector = EnigmaModel(emojiSet: emojiSet).reflector
+
         guard
-            let reflector = EnigmaModel(emojiSet: emojiSet)?.reflector,
             let testCase = emojiSet.first,
             let reflectedCase = reflector[testCase]
         else {

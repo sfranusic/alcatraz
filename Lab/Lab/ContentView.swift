@@ -8,17 +8,31 @@
 import SwiftUI
 
 struct ContentView: View {
+    let color1: Color
+    let color2: Color
+    let size = CGFloat(50)
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        ZStack {
+            Circle()
+                .frame(width: size)
+                .foregroundColor(color1)
+                .offset(x: size/4)
+                .opacity(0.8)
+            Circle()
+                .frame(width: size)
+                .foregroundColor(color2)
+                .offset(x: -(size/4))
+                .opacity(0.5)
         }
+        .blendMode(.multiply)
         .padding()
     }
 }
 
 #Preview {
-    ContentView()
+    VStack {
+        ContentView(color1: .yellow, color2: .blue)
+        ContentView(color1: .red, color2: .blue)
+        ContentView(color1: .yellow, color2: .red)
+    }
 }

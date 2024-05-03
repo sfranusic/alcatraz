@@ -183,7 +183,7 @@
 			buildConfigurationList = 27CA003E2B75F05400B5B37F /* Build configuration list for PBXNativeTarget "Lab" */;
 			buildPhases = (
 				27CA00152B75F05100B5B37F /* Sources */,
-				27AFCB3C2BA247E9006258FC /* ShellScript */,
+				27AFCB3C2BA247E9006258FC /* Swiftlint Run Phase Script */,
 				27CA00162B75F05100B5B37F /* Frameworks */,
 				27CA00172B75F05100B5B37F /* Resources */,
 			);
@@ -302,7 +302,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		27AFCB3C2BA247E9006258FC /* ShellScript */ = {
+		27AFCB3C2BA247E9006258FC /* Swiftlint Run Phase Script */ = {
 			isa = PBXShellScriptBuildPhase;
 			alwaysOutOfDate = 1;
 			buildActionMask = 2147483647;
@@ -312,13 +312,14 @@
 			);
 			inputPaths = (
 			);
+			name = "Swiftlint Run Phase Script";
 			outputFileListPaths = (
 			);
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif [[ \"$(uname -m)\" == arm64 ]]; then\n    export PATH=\"/opt/homebrew/bin:$PATH\"\nfi\n\nif which swiftlint > /dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif [[ \"$(uname -m)\" == arm64 ]]; then\n    export PATH=\"/opt/homebrew/bin:$PATH\"\nfi\n\nif which swiftlint > /dev/null; then\n  swiftlint --fix\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 

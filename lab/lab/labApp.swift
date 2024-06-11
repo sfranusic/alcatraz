@@ -6,7 +6,8 @@ import SwiftUI
 struct labApp: App {
     var body: some Scene {
         WindowGroup {
-            EmptyView()
+            StopLightView()
+                .preferredColorScheme(.dark)
         }
     }
 }

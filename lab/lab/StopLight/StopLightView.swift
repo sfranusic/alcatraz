@@ -18,7 +18,6 @@ struct StopLightView: View {
         }
         .background {
             Color.black
-                .ignoresSafeArea()
         }
         .onTapGesture {
             model.toggleLightsRunning()

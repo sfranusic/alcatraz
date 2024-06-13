@@ -13,6 +13,7 @@
 		276859E52C17792C0009B1AB /* Color+StopLight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276859E42C17792C0009B1AB /* Color+StopLight.swift */; };
 		276859E92C177DE40009B1AB /* StopLightViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276859E82C177DE40009B1AB /* StopLightViewModel.swift */; };
 		276859EB2C17844A0009B1AB /* StopLightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276859EA2C17844A0009B1AB /* StopLightView.swift */; };
+		277497C12C1B6E1500B1939A /* MainListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277497C02C1B6E1500B1939A /* MainListView.swift */; };
 		B2DF00DD2AA1A63400438700 /* labApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2DF00DC2AA1A63400438700 /* labApp.swift */; };
 		B2DF00E12AA1A63700438700 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2DF00E02AA1A63700438700 /* Assets.xcassets */; };
 		B2DF00E42AA1A63700438700 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2DF00E32AA1A63700438700 /* Preview Assets.xcassets */; };
@@ -45,6 +46,7 @@
 		276859E42C17792C0009B1AB /* Color+StopLight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+StopLight.swift"; sourceTree = "<group>"; };
 		276859E82C177DE40009B1AB /* StopLightViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopLightViewModel.swift; sourceTree = "<group>"; };
 		276859EA2C17844A0009B1AB /* StopLightView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopLightView.swift; sourceTree = "<group>"; };
+		277497C02C1B6E1500B1939A /* MainListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MainListView.swift; path = Lab/MainListView.swift; sourceTree = SOURCE_ROOT; };
 		B2DF00D92AA1A63400438700 /* lab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lab.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2DF00DC2AA1A63400438700 /* labApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = labApp.swift; sourceTree = "<group>"; };
 		B2DF00E02AA1A63700438700 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				B2DF00DC2AA1A63400438700 /* labApp.swift */,
+				277497C02C1B6E1500B1939A /* MainListView.swift */,
 				276859DD2C1770C70009B1AB /* StopLight */,
 				B2DF00E02AA1A63700438700 /* Assets.xcassets */,
 				B2DF00E22AA1A63700438700 /* Preview Content */,
@@ -285,6 +288,7 @@
 				276859E92C177DE40009B1AB /* StopLightViewModel.swift in Sources */,
 				B2DF00DD2AA1A63400438700 /* labApp.swift in Sources */,
 				276859E12C1775F30009B1AB /* LightView.swift in Sources */,
+				277497C12C1B6E1500B1939A /* MainListView.swift in Sources */,
 				276859DF2C17714C0009B1AB /* LightViewModel.swift in Sources */,
 				276859EB2C17844A0009B1AB /* StopLightView.swift in Sources */,
 			);

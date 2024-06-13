@@ -15,7 +15,7 @@ struct LightView: View {
             .fill(
                 model.isOn ? model.lightColor : .black
             )
-            .animation(/*@START_MENU_TOKEN@*/.easeIn/*@END_MENU_TOKEN@*/(duration: 0.5), value: model.isOn)
+            .animation(.easeIn(duration: 0.5), value: model.isOn)
     }
 }
 

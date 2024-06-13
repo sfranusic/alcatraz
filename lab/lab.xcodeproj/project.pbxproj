@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		276859DF2C17714C0009B1AB /* LightViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276859DE2C17714C0009B1AB /* LightViewModel.swift */; };
+		276859E12C1775F30009B1AB /* LightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276859E02C1775F30009B1AB /* LightView.swift */; };
+		276859E32C1777DA0009B1AB /* StopLightPalette.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 276859E22C1777DA0009B1AB /* StopLightPalette.xcassets */; };
+		276859E52C17792C0009B1AB /* Color+StopLight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276859E42C17792C0009B1AB /* Color+StopLight.swift */; };
+		276859E92C177DE40009B1AB /* StopLightViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276859E82C177DE40009B1AB /* StopLightViewModel.swift */; };
+		276859EB2C17844A0009B1AB /* StopLightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276859EA2C17844A0009B1AB /* StopLightView.swift */; };
 		B2DF00DD2AA1A63400438700 /* labApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2DF00DC2AA1A63400438700 /* labApp.swift */; };
 		B2DF00E12AA1A63700438700 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2DF00E02AA1A63700438700 /* Assets.xcassets */; };
 		B2DF00E42AA1A63700438700 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2DF00E32AA1A63700438700 /* Preview Assets.xcassets */; };
@@ -33,6 +39,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		276859DE2C17714C0009B1AB /* LightViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightViewModel.swift; sourceTree = "<group>"; };
+		276859E02C1775F30009B1AB /* LightView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightView.swift; sourceTree = "<group>"; };
+		276859E22C1777DA0009B1AB /* StopLightPalette.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = StopLightPalette.xcassets; sourceTree = "<group>"; };
+		276859E42C17792C0009B1AB /* Color+StopLight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+StopLight.swift"; sourceTree = "<group>"; };
+		276859E82C177DE40009B1AB /* StopLightViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopLightViewModel.swift; sourceTree = "<group>"; };
+		276859EA2C17844A0009B1AB /* StopLightView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopLightView.swift; sourceTree = "<group>"; };
 		B2DF00D92AA1A63400438700 /* lab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lab.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2DF00DC2AA1A63400438700 /* labApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = labApp.swift; sourceTree = "<group>"; };
 		B2DF00E02AA1A63700438700 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -69,6 +81,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		276859DD2C1770C70009B1AB /* StopLight */ = {
+			isa = PBXGroup;
+			children = (
+				276859DE2C17714C0009B1AB /* LightViewModel.swift */,
+				276859E02C1775F30009B1AB /* LightView.swift */,
+				276859E82C177DE40009B1AB /* StopLightViewModel.swift */,
+				276859EA2C17844A0009B1AB /* StopLightView.swift */,
+				276859E22C1777DA0009B1AB /* StopLightPalette.xcassets */,
+				276859E42C17792C0009B1AB /* Color+StopLight.swift */,
+			);
+			path = StopLight;
+			sourceTree = "<group>";
+		};
 		B2DF00D02AA1A63400438700 = {
 			isa = PBXGroup;
 			children = (
@@ -93,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				B2DF00DC2AA1A63400438700 /* labApp.swift */,
+				276859DD2C1770C70009B1AB /* StopLight */,
 				B2DF00E02AA1A63700438700 /* Assets.xcassets */,
 				B2DF00E22AA1A63700438700 /* Preview Content */,
 			);
@@ -203,7 +229,7 @@
 					};
 				};
 			};
-			buildConfigurationList = B2DF00D42AA1A63400438700 /* Build configuration list for PBXProject "lab" */;
+			buildConfigurationList = B2DF00D42AA1A63400438700 /* Build configuration list for PBXProject "Lab" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -228,6 +254,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				276859E32C1777DA0009B1AB /* StopLightPalette.xcassets in Resources */,
 				B2DF00E42AA1A63700438700 /* Preview Assets.xcassets in Resources */,
 				B2DF00E12AA1A63700438700 /* Assets.xcassets in Resources */,
 			);
@@ -254,7 +281,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				276859E52C17792C0009B1AB /* Color+StopLight.swift in Sources */,
+				276859E92C177DE40009B1AB /* StopLightViewModel.swift in Sources */,
 				B2DF00DD2AA1A63400438700 /* labApp.swift in Sources */,
+				276859E12C1775F30009B1AB /* LightView.swift in Sources */,
+				276859DF2C17714C0009B1AB /* LightViewModel.swift in Sources */,
+				276859EB2C17844A0009B1AB /* StopLightView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -431,6 +463,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.sf.lab;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_STRICT_CONCURRENCY = complete;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -460,6 +493,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.sf.lab;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_STRICT_CONCURRENCY = complete;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -544,7 +578,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B2DF00D42AA1A63400438700 /* Build configuration list for PBXProject "lab" */ = {
+		B2DF00D42AA1A63400438700 /* Build configuration list for PBXProject "Lab" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B2DF00FB2AA1A63700438700 /* Debug */,

@@ -20,6 +20,7 @@ import SwiftUI
     }
 
     private func runLights() {
+        turnLightsOff()
         Task.detached {
             repeat {
                 await self.redLight.run()
@@ -27,6 +28,12 @@ import SwiftUI
                 await self.greenLight.run()
 
             } while await self.shouldKeepRunning
+        }
+    }
+
+    private func turnLightsOff() {
+        [redLight, yellowLight, greenLight].forEach { light in
+            light.isOn = false
         }
     }
 

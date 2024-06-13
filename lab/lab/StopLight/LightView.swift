@@ -20,5 +20,5 @@ struct LightView: View {
 }
 
 #Preview {
-    LightView(model: LightViewModel(.green))
+    LightView(model: LightViewModel(.green, isOn: true))
 }

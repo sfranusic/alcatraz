@@ -14,10 +14,11 @@ class LightViewModel: ObservableObject, @unchecked Sendable {
     }
 
     let type: LightType
-    @Published var isOn = false
+    @Published var isOn: Bool
 
-    init(_ type: LightType) {
+    init(_ type: LightType, isOn: Bool = false) {
         self.type = type
+        self.isOn = isOn
     }
 
     @MainActor func run() async {

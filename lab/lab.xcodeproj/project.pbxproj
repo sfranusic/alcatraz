@@ -14,6 +14,12 @@
 		276859E92C177DE40009B1AB /* StopLightViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276859E82C177DE40009B1AB /* StopLightViewModel.swift */; };
 		276859EB2C17844A0009B1AB /* StopLightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276859EA2C17844A0009B1AB /* StopLightView.swift */; };
 		277497C12C1B6E1500B1939A /* MainListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277497C02C1B6E1500B1939A /* MainListView.swift */; };
+		27B6B5122C227C5700355249 /* EmojigmaPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B6B50C2C227C5700355249 /* EmojigmaPickerView.swift */; };
+		27B6B5132C227C5700355249 /* EmojigmaPickerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B6B50D2C227C5700355249 /* EmojigmaPickerModel.swift */; };
+		27B6B5142C227C5700355249 /* EmojigmaTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B6B50E2C227C5700355249 /* EmojigmaTextView.swift */; };
+		27B6B5152C227C5700355249 /* EnigmaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B6B50F2C227C5700355249 /* EnigmaModel.swift */; };
+		27B6B5162C227C5700355249 /* UIPickerView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B6B5102C227C5700355249 /* UIPickerView+Extensions.swift */; };
+		27B6B5172C227C5700355249 /* EmojigmaMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B6B5112C227C5700355249 /* EmojigmaMainView.swift */; };
 		B2DF00DD2AA1A63400438700 /* labApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2DF00DC2AA1A63400438700 /* labApp.swift */; };
 		B2DF00E12AA1A63700438700 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2DF00E02AA1A63700438700 /* Assets.xcassets */; };
 		B2DF00E42AA1A63700438700 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2DF00E32AA1A63700438700 /* Preview Assets.xcassets */; };
@@ -47,6 +53,12 @@
 		276859E82C177DE40009B1AB /* StopLightViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopLightViewModel.swift; sourceTree = "<group>"; };
 		276859EA2C17844A0009B1AB /* StopLightView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopLightView.swift; sourceTree = "<group>"; };
 		277497C02C1B6E1500B1939A /* MainListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MainListView.swift; path = Lab/MainListView.swift; sourceTree = SOURCE_ROOT; };
+		27B6B50C2C227C5700355249 /* EmojigmaPickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EmojigmaPickerView.swift; path = Lab/Emojigma/EmojigmaPickerView.swift; sourceTree = SOURCE_ROOT; };
+		27B6B50D2C227C5700355249 /* EmojigmaPickerModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EmojigmaPickerModel.swift; path = Lab/Emojigma/EmojigmaPickerModel.swift; sourceTree = SOURCE_ROOT; };
+		27B6B50E2C227C5700355249 /* EmojigmaTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EmojigmaTextView.swift; path = Lab/Emojigma/EmojigmaTextView.swift; sourceTree = SOURCE_ROOT; };
+		27B6B50F2C227C5700355249 /* EnigmaModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EnigmaModel.swift; path = Lab/Emojigma/EnigmaModel.swift; sourceTree = SOURCE_ROOT; };
+		27B6B5102C227C5700355249 /* UIPickerView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIPickerView+Extensions.swift"; path = "Lab/Emojigma/UIPickerView+Extensions.swift"; sourceTree = SOURCE_ROOT; };
+		27B6B5112C227C5700355249 /* EmojigmaMainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EmojigmaMainView.swift; path = Lab/Emojigma/EmojigmaMainView.swift; sourceTree = SOURCE_ROOT; };
 		B2DF00D92AA1A63400438700 /* lab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lab.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2DF00DC2AA1A63400438700 /* labApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = labApp.swift; sourceTree = "<group>"; };
 		B2DF00E02AA1A63700438700 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -96,6 +108,19 @@
 			path = StopLight;
 			sourceTree = "<group>";
 		};
+		27B6B4FD2C226F8500355249 /* Emojigma */ = {
+			isa = PBXGroup;
+			children = (
+				27B6B5112C227C5700355249 /* EmojigmaMainView.swift */,
+				27B6B50D2C227C5700355249 /* EmojigmaPickerModel.swift */,
+				27B6B50C2C227C5700355249 /* EmojigmaPickerView.swift */,
+				27B6B50E2C227C5700355249 /* EmojigmaTextView.swift */,
+				27B6B50F2C227C5700355249 /* EnigmaModel.swift */,
+				27B6B5102C227C5700355249 /* UIPickerView+Extensions.swift */,
+			);
+			path = Emojigma;
+			sourceTree = "<group>";
+		};
 		B2DF00D02AA1A63400438700 = {
 			isa = PBXGroup;
 			children = (
@@ -121,6 +146,7 @@
 			children = (
 				B2DF00DC2AA1A63400438700 /* labApp.swift */,
 				277497C02C1B6E1500B1939A /* MainListView.swift */,
+				27B6B4FD2C226F8500355249 /* Emojigma */,
 				276859DD2C1770C70009B1AB /* StopLight */,
 				B2DF00E02AA1A63700438700 /* Assets.xcassets */,
 				B2DF00E22AA1A63700438700 /* Preview Content */,
@@ -284,13 +310,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27B6B5142C227C5700355249 /* EmojigmaTextView.swift in Sources */,
 				276859E52C17792C0009B1AB /* Color+StopLight.swift in Sources */,
+				27B6B5132C227C5700355249 /* EmojigmaPickerModel.swift in Sources */,
 				276859E92C177DE40009B1AB /* StopLightViewModel.swift in Sources */,
 				B2DF00DD2AA1A63400438700 /* labApp.swift in Sources */,
 				276859E12C1775F30009B1AB /* LightView.swift in Sources */,
+				27B6B5152C227C5700355249 /* EnigmaModel.swift in Sources */,
 				277497C12C1B6E1500B1939A /* MainListView.swift in Sources */,
+				27B6B5122C227C5700355249 /* EmojigmaPickerView.swift in Sources */,
 				276859DF2C17714C0009B1AB /* LightViewModel.swift in Sources */,
+				27B6B5162C227C5700355249 /* UIPickerView+Extensions.swift in Sources */,
 				276859EB2C17844A0009B1AB /* StopLightView.swift in Sources */,
+				27B6B5172C227C5700355249 /* EmojigmaMainView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

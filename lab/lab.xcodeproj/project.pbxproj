@@ -20,6 +20,8 @@
 		27B6B5152C227C5700355249 /* EnigmaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B6B50F2C227C5700355249 /* EnigmaModel.swift */; };
 		27B6B5162C227C5700355249 /* UIPickerView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B6B5102C227C5700355249 /* UIPickerView+Extensions.swift */; };
 		27B6B5172C227C5700355249 /* EmojigmaMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B6B5112C227C5700355249 /* EmojigmaMainView.swift */; };
+		27B6B5192C227E2400355249 /* Rotor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B6B5182C227E2400355249 /* Rotor.swift */; };
+		27B6B51D2C26132800355249 /* EmojigmaRotorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B6B51C2C26132800355249 /* EmojigmaRotorTests.swift */; };
 		B2DF00DD2AA1A63400438700 /* labApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2DF00DC2AA1A63400438700 /* labApp.swift */; };
 		B2DF00E12AA1A63700438700 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2DF00E02AA1A63700438700 /* Assets.xcassets */; };
 		B2DF00E42AA1A63700438700 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2DF00E32AA1A63700438700 /* Preview Assets.xcassets */; };
@@ -59,6 +61,8 @@
 		27B6B50F2C227C5700355249 /* EnigmaModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EnigmaModel.swift; path = Lab/Emojigma/EnigmaModel.swift; sourceTree = SOURCE_ROOT; };
 		27B6B5102C227C5700355249 /* UIPickerView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIPickerView+Extensions.swift"; path = "Lab/Emojigma/UIPickerView+Extensions.swift"; sourceTree = SOURCE_ROOT; };
 		27B6B5112C227C5700355249 /* EmojigmaMainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EmojigmaMainView.swift; path = Lab/Emojigma/EmojigmaMainView.swift; sourceTree = SOURCE_ROOT; };
+		27B6B5182C227E2400355249 /* Rotor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Rotor.swift; path = Lab/Emojigma/Rotor.swift; sourceTree = SOURCE_ROOT; };
+		27B6B51C2C26132800355249 /* EmojigmaRotorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojigmaRotorTests.swift; sourceTree = "<group>"; };
 		B2DF00D92AA1A63400438700 /* lab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lab.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2DF00DC2AA1A63400438700 /* labApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = labApp.swift; sourceTree = "<group>"; };
 		B2DF00E02AA1A63700438700 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -117,6 +121,7 @@
 				27B6B50E2C227C5700355249 /* EmojigmaTextView.swift */,
 				27B6B50F2C227C5700355249 /* EnigmaModel.swift */,
 				27B6B5102C227C5700355249 /* UIPickerView+Extensions.swift */,
+				27B6B5182C227E2400355249 /* Rotor.swift */,
 			);
 			path = Emojigma;
 			sourceTree = "<group>";
@@ -166,6 +171,7 @@
 			isa = PBXGroup;
 			children = (
 				B2DF00ED2AA1A63700438700 /* labTests.swift */,
+				27B6B51C2C26132800355249 /* EmojigmaRotorTests.swift */,
 			);
 			path = labTests;
 			sourceTree = "<group>";
@@ -318,6 +324,7 @@
 				276859E12C1775F30009B1AB /* LightView.swift in Sources */,
 				27B6B5152C227C5700355249 /* EnigmaModel.swift in Sources */,
 				277497C12C1B6E1500B1939A /* MainListView.swift in Sources */,
+				27B6B5192C227E2400355249 /* Rotor.swift in Sources */,
 				27B6B5122C227C5700355249 /* EmojigmaPickerView.swift in Sources */,
 				276859DF2C17714C0009B1AB /* LightViewModel.swift in Sources */,
 				27B6B5162C227C5700355249 /* UIPickerView+Extensions.swift in Sources */,
@@ -331,6 +338,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B2DF00EE2AA1A63700438700 /* labTests.swift in Sources */,
+				27B6B51D2C26132800355249 /* EmojigmaRotorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

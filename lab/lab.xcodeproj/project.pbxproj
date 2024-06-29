@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		27475C7B2C30BACA0019A99C /* MainInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27475C7A2C30BACA0019A99C /* MainInterface.swift */; };
+		27475C7D2C30BAF90019A99C /* VoiceDirectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27475C7C2C30BAF90019A99C /* VoiceDirectionModel.swift */; };
+		27475C852C30BB180019A99C /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27475C7E2C30BB180019A99C /* MainViewModel.swift */; };
+		27475C862C30BB180019A99C /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27475C7F2C30BB180019A99C /* MainView.swift */; };
+		27475C872C30BB180019A99C /* VoiceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27475C802C30BB180019A99C /* VoiceModel.swift */; };
+		27475C882C30BB180019A99C /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27475C812C30BB180019A99C /* CameraView.swift */; };
+		27475C892C30BB180019A99C /* IconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27475C822C30BB180019A99C /* IconView.swift */; };
+		27475C8A2C30BB180019A99C /* CameraModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27475C832C30BB180019A99C /* CameraModel.swift */; };
+		27475C8B2C30BB180019A99C /* ClassifierModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27475C842C30BB180019A99C /* ClassifierModel.swift */; };
+		27475C8D2C30BB590019A99C /* Color+Murcielago.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27475C8C2C30BB590019A99C /* Color+Murcielago.swift */; };
+		27475C8F2C30BCE10019A99C /* MurcielagoColors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27475C8E2C30BCE10019A99C /* MurcielagoColors.xcassets */; };
 		276859DF2C17714C0009B1AB /* LightViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276859DE2C17714C0009B1AB /* LightViewModel.swift */; };
 		276859E12C1775F30009B1AB /* LightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276859E02C1775F30009B1AB /* LightView.swift */; };
 		276859E32C1777DA0009B1AB /* StopLightPalette.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 276859E22C1777DA0009B1AB /* StopLightPalette.xcassets */; };
@@ -39,6 +50,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		27475C7A2C30BACA0019A99C /* MainInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainInterface.swift; sourceTree = "<group>"; };
+		27475C7C2C30BAF90019A99C /* VoiceDirectionModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoiceDirectionModel.swift; sourceTree = "<group>"; };
+		27475C7E2C30BB180019A99C /* MainViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		27475C7F2C30BB180019A99C /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		27475C802C30BB180019A99C /* VoiceModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoiceModel.swift; sourceTree = "<group>"; };
+		27475C812C30BB180019A99C /* CameraView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		27475C822C30BB180019A99C /* IconView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IconView.swift; sourceTree = "<group>"; };
+		27475C832C30BB180019A99C /* CameraModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraModel.swift; sourceTree = "<group>"; };
+		27475C842C30BB180019A99C /* ClassifierModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassifierModel.swift; sourceTree = "<group>"; };
+		27475C8C2C30BB590019A99C /* Color+Murcielago.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color+Murcielago.swift"; sourceTree = "<group>"; };
+		27475C8E2C30BCE10019A99C /* MurcielagoColors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = MurcielagoColors.xcassets; sourceTree = "<group>"; };
 		276859DE2C17714C0009B1AB /* LightViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightViewModel.swift; sourceTree = "<group>"; };
 		276859E02C1775F30009B1AB /* LightView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightView.swift; sourceTree = "<group>"; };
 		276859E22C1777DA0009B1AB /* StopLightPalette.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = StopLightPalette.xcassets; sourceTree = "<group>"; };
@@ -81,6 +103,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		27475C792C30BA8D0019A99C /* Murcielago */ = {
+			isa = PBXGroup;
+			children = (
+				27475C7A2C30BACA0019A99C /* MainInterface.swift */,
+				27475C7C2C30BAF90019A99C /* VoiceDirectionModel.swift */,
+				27475C832C30BB180019A99C /* CameraModel.swift */,
+				27475C8C2C30BB590019A99C /* Color+Murcielago.swift */,
+				27475C8E2C30BCE10019A99C /* MurcielagoColors.xcassets */,
+				27475C812C30BB180019A99C /* CameraView.swift */,
+				27475C842C30BB180019A99C /* ClassifierModel.swift */,
+				27475C822C30BB180019A99C /* IconView.swift */,
+				27475C7F2C30BB180019A99C /* MainView.swift */,
+				27475C7E2C30BB180019A99C /* MainViewModel.swift */,
+				27475C802C30BB180019A99C /* VoiceModel.swift */,
+			);
+			path = Murcielago;
+			sourceTree = "<group>";
+		};
 		276859DD2C1770C70009B1AB /* StopLight */ = {
 			isa = PBXGroup;
 			children = (
@@ -117,9 +157,10 @@
 		B2DF00DB2AA1A63400438700 /* lab */ = {
 			isa = PBXGroup;
 			children = (
-				B2DF00DC2AA1A63400438700 /* labApp.swift */,
-				276859DD2C1770C70009B1AB /* StopLight */,
 				B2DF00E02AA1A63700438700 /* Assets.xcassets */,
+				B2DF00DC2AA1A63400438700 /* labApp.swift */,
+				27475C792C30BA8D0019A99C /* Murcielago */,
+				276859DD2C1770C70009B1AB /* StopLight */,
 				B2DF00E22AA1A63700438700 /* Preview Content */,
 			);
 			path = lab;
@@ -257,6 +298,7 @@
 				276859E32C1777DA0009B1AB /* StopLightPalette.xcassets in Resources */,
 				B2DF00E42AA1A63700438700 /* Preview Assets.xcassets in Resources */,
 				B2DF00E12AA1A63700438700 /* Assets.xcassets in Resources */,
+				27475C8F2C30BCE10019A99C /* MurcielagoColors.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,10 +325,20 @@
 			files = (
 				276859E52C17792C0009B1AB /* Color+StopLight.swift in Sources */,
 				276859E92C177DE40009B1AB /* StopLightViewModel.swift in Sources */,
+				27475C872C30BB180019A99C /* VoiceModel.swift in Sources */,
+				27475C8D2C30BB590019A99C /* Color+Murcielago.swift in Sources */,
+				27475C892C30BB180019A99C /* IconView.swift in Sources */,
+				27475C882C30BB180019A99C /* CameraView.swift in Sources */,
 				B2DF00DD2AA1A63400438700 /* labApp.swift in Sources */,
+				27475C8A2C30BB180019A99C /* CameraModel.swift in Sources */,
+				27475C862C30BB180019A99C /* MainView.swift in Sources */,
 				276859E12C1775F30009B1AB /* LightView.swift in Sources */,
+				27475C7D2C30BAF90019A99C /* VoiceDirectionModel.swift in Sources */,
 				276859DF2C17714C0009B1AB /* LightViewModel.swift in Sources */,
+				27475C7B2C30BACA0019A99C /* MainInterface.swift in Sources */,
+				27475C8B2C30BB180019A99C /* ClassifierModel.swift in Sources */,
 				276859EB2C17844A0009B1AB /* StopLightView.swift in Sources */,
+				27475C852C30BB180019A99C /* MainViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

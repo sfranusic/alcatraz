@@ -6,7 +6,7 @@ import SwiftUI
 struct labApp: App {
     var body: some Scene {
         WindowGroup {
-            StopLightView()
+            MainListView()
                 .preferredColorScheme(.dark)
         }
     }

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		27475C952C5037F70019A99C /* ControllerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27475C942C5037F70019A99C /* ControllerModel.swift */; };
 		27475C972C5039590019A99C /* MockControllerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27475C962C5039590019A99C /* MockControllerView.swift */; };
+		27475C992C5303290019A99C /* MockControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27475C982C5303290019A99C /* MockControllerViewModel.swift */; };
 		276859DF2C17714C0009B1AB /* LightViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276859DE2C17714C0009B1AB /* LightViewModel.swift */; };
 		276859E12C1775F30009B1AB /* LightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276859E02C1775F30009B1AB /* LightView.swift */; };
 		276859E32C1777DA0009B1AB /* StopLightPalette.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 276859E22C1777DA0009B1AB /* StopLightPalette.xcassets */; };
@@ -43,6 +44,7 @@
 /* Begin PBXFileReference section */
 		27475C942C5037F70019A99C /* ControllerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ControllerModel.swift; path = Lab/Controller/ControllerModel.swift; sourceTree = SOURCE_ROOT; };
 		27475C962C5039590019A99C /* MockControllerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MockControllerView.swift; path = Lab/Controller/MockControllerView.swift; sourceTree = SOURCE_ROOT; };
+		27475C982C5303290019A99C /* MockControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MockControllerViewModel.swift; path = Lab/Controller/MockControllerViewModel.swift; sourceTree = SOURCE_ROOT; };
 		276859DE2C17714C0009B1AB /* LightViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightViewModel.swift; sourceTree = "<group>"; };
 		276859E02C1775F30009B1AB /* LightView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightView.swift; sourceTree = "<group>"; };
 		276859E22C1777DA0009B1AB /* StopLightPalette.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = StopLightPalette.xcassets; sourceTree = "<group>"; };
@@ -90,6 +92,7 @@
 			children = (
 				27475C942C5037F70019A99C /* ControllerModel.swift */,
 				27475C962C5039590019A99C /* MockControllerView.swift */,
+				27475C982C5303290019A99C /* MockControllerViewModel.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -325,6 +328,7 @@
 				27475C972C5039590019A99C /* MockControllerView.swift in Sources */,
 				276859E12C1775F30009B1AB /* LightView.swift in Sources */,
 				276859DF2C17714C0009B1AB /* LightViewModel.swift in Sources */,
+				27475C992C5303290019A99C /* MockControllerViewModel.swift in Sources */,
 				276859EB2C17844A0009B1AB /* StopLightView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

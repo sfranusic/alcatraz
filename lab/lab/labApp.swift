@@ -4,9 +4,12 @@ import SwiftUI
 
 @main
 struct labApp: App { //swiftlint:disable:this type_name
+
+    @StateObject var controllerModel = ControllerModel()
     var body: some Scene {
         WindowGroup {
-            StopLightView()
+            MockControllerView()
+                .environmentObject(controllerModel)
                 .preferredColorScheme(.dark)
         }
     }

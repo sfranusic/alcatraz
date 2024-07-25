@@ -8,22 +8,39 @@
 import SwiftUI
 
 struct MockControllerView: View {
-    @StateObject private var viewModel = ControllerModel()
+    private var viewModel = MockControllerViewModel()
+    @EnvironmentObject var controllerModel: ControllerModel
     var body: some View {
         VStack(alignment: .leading) {
             controllerConnectionView
-            Text("O Button: \(viewModel.circleButtonPressed ? "Pressed" : "Not Pressed")")
-            Text("X Button: \(viewModel.exButtonPressed ? "Pressed" : "Not Pressed")")
-            Text("Left Thumbstick: (\(viewModel.leftThumbstickX), \(viewModel.leftThumbstickY))")
-            Text("Right Thumbstick: (\(viewModel.rightThumbstickX), \(viewModel.rightThumbstickY))")
+            Text("O Button: \(controllerModel.circleButtonPressed ? "Pressed" : "Not Pressed")")
+            Text("X Button: \(controllerModel.exButtonPressed ? "Pressed" : "Not Pressed")")
+            Text(leftThumbstickLabel)
+            Text(rightThumbstickLabel)
         }
         .padding()
+    }
+
+    private var leftThumbstickLabel: String {
+        let label = viewModel.generateTrimmedLabel(
+            controllerModel.leftThumbstickX,
+            controllerModel.leftThumbstickY
+        )
+        return "Left Thumbstick: \(label)"
+    }
+
+    private var rightThumbstickLabel: String {
+        let label = viewModel.generateTrimmedLabel(
+            controllerModel.rightThumbstickX,
+            controllerModel.rightThumbstickY
+        )
+        return "Right Thumbstick: \(label)"
     }
 
     private var controllerConnectionView: some View {
         HStack {
             Image(systemName: "gamecontroller")
-            if viewModel.connectedToController {
+            if controllerModel.connectedToController {
                 Image(systemName: "checkmark")
                     .foregroundColor(.green)
             } else {
@@ -36,4 +53,5 @@ struct MockControllerView: View {
 
 #Preview {
     MockControllerView()
+        .environmentObject(ControllerModel())
 }

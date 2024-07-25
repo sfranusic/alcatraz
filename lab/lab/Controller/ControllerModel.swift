@@ -35,7 +35,7 @@ class ControllerModel: ObservableObject {
         GCController.startWirelessControllerDiscovery(completionHandler: nil)
     }
 
-    @objc func controllerConnected(notification: Notification) {
+    @objc private func controllerConnected(notification: Notification) {
         if let controller = notification.object as? GCController {
             self.controller = controller
             setupController(controller: controller)
@@ -43,14 +43,14 @@ class ControllerModel: ObservableObject {
         }
     }
 
-    @objc func controllerDisconnected(notification: Notification) {
+    @objc private func controllerDisconnected(notification: Notification) {
         if let controller = notification.object as? GCController, controller == self.controller {
             self.controller = nil
             connectedToController = false
         }
     }
 
-    func setupController(controller: GCController) {
+    private func setupController(controller: GCController) {
         guard let gamepad = controller.extendedGamepad else {
             print("Extended gamepad not found")
             return

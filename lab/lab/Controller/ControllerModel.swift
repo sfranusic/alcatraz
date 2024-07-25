@@ -32,11 +32,6 @@ class ControllerModel: ObservableObject {
             object: nil
         )
 
-        if let connectedController = GCController.controllers().first {
-            self.controller = connectedController
-            setupController(controller: connectedController)
-        }
-
         GCController.startWirelessControllerDiscovery(completionHandler: nil)
     }
 

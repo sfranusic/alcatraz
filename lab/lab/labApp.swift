@@ -3,7 +3,7 @@
 import SwiftUI
 
 @main
-struct labApp: App {
+struct labApp: App { //swiftlint:disable:this type_name
     var body: some Scene {
         WindowGroup {
             StopLightView()

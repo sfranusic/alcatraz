@@ -1,0 +1,593 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2776EA212CE31AA600011DEA /* MurcielagoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2776EA202CE31AA600011DEA /* MurcielagoApp.swift */; };
+		2776EA232CE31AA600011DEA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2776EA222CE31AA600011DEA /* ContentView.swift */; };
+		2776EA252CE31AAB00011DEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2776EA242CE31AAB00011DEA /* Assets.xcassets */; };
+		2776EA282CE31AAB00011DEA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2776EA272CE31AAB00011DEA /* Preview Assets.xcassets */; };
+		2776EA322CE31AAC00011DEA /* MurcielagoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2776EA312CE31AAC00011DEA /* MurcielagoTests.swift */; };
+		2776EA3C2CE31AAC00011DEA /* MurcielagoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2776EA3B2CE31AAC00011DEA /* MurcielagoUITests.swift */; };
+		2776EA3E2CE31AAC00011DEA /* MurcielagoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2776EA3D2CE31AAC00011DEA /* MurcielagoUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2776EA2E2CE31AAC00011DEA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2776EA152CE31AA500011DEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2776EA1C2CE31AA500011DEA;
+			remoteInfo = Murcielago;
+		};
+		2776EA382CE31AAC00011DEA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2776EA152CE31AA500011DEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2776EA1C2CE31AA500011DEA;
+			remoteInfo = Murcielago;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2776EA1D2CE31AA500011DEA /* Murcielago.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Murcielago.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2776EA202CE31AA600011DEA /* MurcielagoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MurcielagoApp.swift; sourceTree = "<group>"; };
+		2776EA222CE31AA600011DEA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2776EA242CE31AAB00011DEA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2776EA272CE31AAB00011DEA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2776EA2D2CE31AAC00011DEA /* MurcielagoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MurcielagoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2776EA312CE31AAC00011DEA /* MurcielagoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MurcielagoTests.swift; sourceTree = "<group>"; };
+		2776EA372CE31AAC00011DEA /* MurcielagoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MurcielagoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2776EA3B2CE31AAC00011DEA /* MurcielagoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MurcielagoUITests.swift; sourceTree = "<group>"; };
+		2776EA3D2CE31AAC00011DEA /* MurcielagoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MurcielagoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2776EA1A2CE31AA500011DEA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2776EA2A2CE31AAB00011DEA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2776EA342CE31AAC00011DEA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2776EA142CE31AA500011DEA = {
+			isa = PBXGroup;
+			children = (
+				2776EA1F2CE31AA500011DEA /* Murcielago */,
+				2776EA302CE31AAC00011DEA /* MurcielagoTests */,
+				2776EA3A2CE31AAC00011DEA /* MurcielagoUITests */,
+				2776EA1E2CE31AA500011DEA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2776EA1E2CE31AA500011DEA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2776EA1D2CE31AA500011DEA /* Murcielago.app */,
+				2776EA2D2CE31AAC00011DEA /* MurcielagoTests.xctest */,
+				2776EA372CE31AAC00011DEA /* MurcielagoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2776EA1F2CE31AA500011DEA /* Murcielago */ = {
+			isa = PBXGroup;
+			children = (
+				2776EA202CE31AA600011DEA /* MurcielagoApp.swift */,
+				2776EA222CE31AA600011DEA /* ContentView.swift */,
+				2776EA242CE31AAB00011DEA /* Assets.xcassets */,
+				2776EA262CE31AAB00011DEA /* Preview Content */,
+			);
+			path = Murcielago;
+			sourceTree = "<group>";
+		};
+		2776EA262CE31AAB00011DEA /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				2776EA272CE31AAB00011DEA /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2776EA302CE31AAC00011DEA /* MurcielagoTests */ = {
+			isa = PBXGroup;
+			children = (
+				2776EA312CE31AAC00011DEA /* MurcielagoTests.swift */,
+			);
+			path = MurcielagoTests;
+			sourceTree = "<group>";
+		};
+		2776EA3A2CE31AAC00011DEA /* MurcielagoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2776EA3B2CE31AAC00011DEA /* MurcielagoUITests.swift */,
+				2776EA3D2CE31AAC00011DEA /* MurcielagoUITestsLaunchTests.swift */,
+			);
+			path = MurcielagoUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2776EA1C2CE31AA500011DEA /* Murcielago */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2776EA412CE31AAC00011DEA /* Build configuration list for PBXNativeTarget "Murcielago" */;
+			buildPhases = (
+				2776EA192CE31AA500011DEA /* Sources */,
+				2776EA1A2CE31AA500011DEA /* Frameworks */,
+				2776EA1B2CE31AA500011DEA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Murcielago;
+			productName = Murcielago;
+			productReference = 2776EA1D2CE31AA500011DEA /* Murcielago.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2776EA2C2CE31AAB00011DEA /* MurcielagoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2776EA442CE31AAC00011DEA /* Build configuration list for PBXNativeTarget "MurcielagoTests" */;
+			buildPhases = (
+				2776EA292CE31AAB00011DEA /* Sources */,
+				2776EA2A2CE31AAB00011DEA /* Frameworks */,
+				2776EA2B2CE31AAB00011DEA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2776EA2F2CE31AAC00011DEA /* PBXTargetDependency */,
+			);
+			name = MurcielagoTests;
+			productName = MurcielagoTests;
+			productReference = 2776EA2D2CE31AAC00011DEA /* MurcielagoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2776EA362CE31AAC00011DEA /* MurcielagoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2776EA472CE31AAC00011DEA /* Build configuration list for PBXNativeTarget "MurcielagoUITests" */;
+			buildPhases = (
+				2776EA332CE31AAC00011DEA /* Sources */,
+				2776EA342CE31AAC00011DEA /* Frameworks */,
+				2776EA352CE31AAC00011DEA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2776EA392CE31AAC00011DEA /* PBXTargetDependency */,
+			);
+			name = MurcielagoUITests;
+			productName = MurcielagoUITests;
+			productReference = 2776EA372CE31AAC00011DEA /* MurcielagoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2776EA152CE31AA500011DEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					2776EA1C2CE31AA500011DEA = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					2776EA2C2CE31AAB00011DEA = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 2776EA1C2CE31AA500011DEA;
+					};
+					2776EA362CE31AAC00011DEA = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 2776EA1C2CE31AA500011DEA;
+					};
+				};
+			};
+			buildConfigurationList = 2776EA182CE31AA500011DEA /* Build configuration list for PBXProject "Murcielago" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2776EA142CE31AA500011DEA;
+			productRefGroup = 2776EA1E2CE31AA500011DEA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2776EA1C2CE31AA500011DEA /* Murcielago */,
+				2776EA2C2CE31AAB00011DEA /* MurcielagoTests */,
+				2776EA362CE31AAC00011DEA /* MurcielagoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2776EA1B2CE31AA500011DEA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2776EA282CE31AAB00011DEA /* Preview Assets.xcassets in Resources */,
+				2776EA252CE31AAB00011DEA /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2776EA2B2CE31AAB00011DEA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2776EA352CE31AAC00011DEA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2776EA192CE31AA500011DEA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2776EA232CE31AA600011DEA /* ContentView.swift in Sources */,
+				2776EA212CE31AA600011DEA /* MurcielagoApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2776EA292CE31AAB00011DEA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2776EA322CE31AAC00011DEA /* MurcielagoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2776EA332CE31AAC00011DEA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2776EA3E2CE31AAC00011DEA /* MurcielagoUITestsLaunchTests.swift in Sources */,
+				2776EA3C2CE31AAC00011DEA /* MurcielagoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2776EA2F2CE31AAC00011DEA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2776EA1C2CE31AA500011DEA /* Murcielago */;
+			targetProxy = 2776EA2E2CE31AAC00011DEA /* PBXContainerItemProxy */;
+		};
+		2776EA392CE31AAC00011DEA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2776EA1C2CE31AA500011DEA /* Murcielago */;
+			targetProxy = 2776EA382CE31AAC00011DEA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2776EA3F2CE31AAC00011DEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2776EA402CE31AAC00011DEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2776EA422CE31AAC00011DEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Murcielago/Preview Content\"";
+				DEVELOPMENT_TEAM = 94L3XLA8X2;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = SF.Murcielago;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2776EA432CE31AAC00011DEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Murcielago/Preview Content\"";
+				DEVELOPMENT_TEAM = 94L3XLA8X2;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = SF.Murcielago;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2776EA452CE31AAC00011DEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 94L3XLA8X2;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = SF.MurcielagoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Murcielago.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Murcielago";
+			};
+			name = Debug;
+		};
+		2776EA462CE31AAC00011DEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 94L3XLA8X2;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = SF.MurcielagoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Murcielago.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Murcielago";
+			};
+			name = Release;
+		};
+		2776EA482CE31AAC00011DEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 94L3XLA8X2;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = SF.MurcielagoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Murcielago;
+			};
+			name = Debug;
+		};
+		2776EA492CE31AAC00011DEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 94L3XLA8X2;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = SF.MurcielagoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Murcielago;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2776EA182CE31AA500011DEA /* Build configuration list for PBXProject "Murcielago" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2776EA3F2CE31AAC00011DEA /* Debug */,
+				2776EA402CE31AAC00011DEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2776EA412CE31AAC00011DEA /* Build configuration list for PBXNativeTarget "Murcielago" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2776EA422CE31AAC00011DEA /* Debug */,
+				2776EA432CE31AAC00011DEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2776EA442CE31AAC00011DEA /* Build configuration list for PBXNativeTarget "MurcielagoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2776EA452CE31AAC00011DEA /* Debug */,
+				2776EA462CE31AAC00011DEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2776EA472CE31AAC00011DEA /* Build configuration list for PBXNativeTarget "MurcielagoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2776EA482CE31AAC00011DEA /* Debug */,
+				2776EA492CE31AAC00011DEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2776EA152CE31AA500011DEA /* Project object */;
+}

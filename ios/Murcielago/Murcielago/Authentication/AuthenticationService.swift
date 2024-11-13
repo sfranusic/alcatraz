@@ -9,6 +9,8 @@ import Foundation
 import SwiftUI
 
 actor AuthenticationService {
+    private(set) var connectionEstablished: Bool = false
+
     func signIn(username: String, password: String) async -> Bool {
         do {
             try await Task.sleep(nanoseconds: UInt64.random(in: 0...3) * 1_000_000_000)
@@ -16,7 +18,8 @@ actor AuthenticationService {
             assertionFailure("Service failed due to timeout")
             return false
         }
-        return password == "password124"
+        connectionEstablished = password == "password124"
+        return connectionEstablished
     }
 }
 

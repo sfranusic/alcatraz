@@ -25,14 +25,11 @@ struct SignInView: View {
     }
 
     private var logoView: some View {
-        ZStack {
-            Image(systemName: "sparkles")
-                .resizable()
-                .scaledToFit()
-                .frame(width: 100, height: 100)
-                .aspectRatio(1, contentMode: .fit)
-                .foregroundColor(.murcielagoPrimary)
-        }
+        Image(systemName: "globe")
+            .resizable()
+            .scaledToFit()
+            .frame(width: 100)
+            .aspectRatio(1, contentMode: .fit)
     }
 
     private var loginUserInterface: some View {
@@ -45,7 +42,7 @@ struct SignInView: View {
         .opacity(showLoginUserInterface ? 1.0 : 0.0)
         .animation(
             /*@START_MENU_TOKEN@*/.easeIn/*@END_MENU_TOKEN@*/(duration: 1.0),
-                                  value: showLoginUserInterface
+            value: showLoginUserInterface
         )
         .padding()
     }

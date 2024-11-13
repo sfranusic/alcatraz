@@ -74,18 +74,15 @@ struct SignInView: View {
             action: {
                 model.authenticate(
                     username: usernameInput,
-                    password: passwordInput)
+                    password: passwordInput
+                )
             },
             label: {
                 Text("Sign In")
-                    .frame(height: 50)
-                    .padding([.horizontal], 50)
-                    .background(.murcielagoPrimary)
-                    .cornerRadius(8.0)
-                    .foregroundColor(.surface)
             }
         )
         .opacity(model.serviceActivity ? 0.75 : 1.0)
+        .buttonStyle(.murcielago)
         .disabled(model.serviceActivity)
     }
 

@@ -23,6 +23,7 @@
 		2776EA5A2CE460BD00011DEA /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2776EA592CE460BD00011DEA /* MainViewModel.swift */; };
 		2776EA5C2CE464D200011DEA /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2776EA5B2CE464D200011DEA /* SettingsView.swift */; };
 		2776EA602CE4678C00011DEA /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2776EA5F2CE4678C00011DEA /* GameView.swift */; };
+		2776EA642CE5459200011DEA /* MurcielagoButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2776EA632CE5459200011DEA /* MurcielagoButtonStyle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,7 @@
 		2776EA592CE460BD00011DEA /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		2776EA5B2CE464D200011DEA /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		2776EA5F2CE4678C00011DEA /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		2776EA632CE5459200011DEA /* MurcielagoButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MurcielagoButtonStyle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 			children = (
 				2776EA202CE31AA600011DEA /* MurcielagoApp.swift */,
 				2776EA582CE45F7500011DEA /* Authentication */,
+				2776EA612CE5452200011DEA /* UserInterface */,
 				2776EA552CE45EA700011DEA /* MainView */,
 				2776EA4C2CE31CE500011DEA /* SignInView */,
 				2776EA5E2CE4676400011DEA /* GameView */,
@@ -192,6 +195,22 @@
 				2776EA5F2CE4678C00011DEA /* GameView.swift */,
 			);
 			path = GameView;
+			sourceTree = "<group>";
+		};
+		2776EA612CE5452200011DEA /* UserInterface */ = {
+			isa = PBXGroup;
+			children = (
+				2776EA622CE5455200011DEA /* ElementStyle */,
+			);
+			path = UserInterface;
+			sourceTree = "<group>";
+		};
+		2776EA622CE5455200011DEA /* ElementStyle */ = {
+			isa = PBXGroup;
+			children = (
+				2776EA632CE5459200011DEA /* MurcielagoButtonStyle.swift */,
+			);
+			path = ElementStyle;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -333,6 +352,7 @@
 				2776EA232CE31AA600011DEA /* ContentView.swift in Sources */,
 				2776EA212CE31AA600011DEA /* MurcielagoApp.swift in Sources */,
 				2776EA542CE31EF700011DEA /* SignInError.swift in Sources */,
+				2776EA642CE5459200011DEA /* MurcielagoButtonStyle.swift in Sources */,
 				2776EA522CE31D4F00011DEA /* AuthenticationService.swift in Sources */,
 				2776EA5A2CE460BD00011DEA /* MainViewModel.swift in Sources */,
 			);

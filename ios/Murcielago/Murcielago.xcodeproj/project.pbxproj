@@ -21,6 +21,8 @@
 		2776EA542CE31EF700011DEA /* SignInError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2776EA532CE31EF700011DEA /* SignInError.swift */; };
 		2776EA572CE45F5B00011DEA /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2776EA562CE45F5B00011DEA /* MainView.swift */; };
 		2776EA5A2CE460BD00011DEA /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2776EA592CE460BD00011DEA /* MainViewModel.swift */; };
+		2776EA5C2CE464D200011DEA /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2776EA5B2CE464D200011DEA /* SettingsView.swift */; };
+		2776EA602CE4678C00011DEA /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2776EA5F2CE4678C00011DEA /* GameView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +60,8 @@
 		2776EA532CE31EF700011DEA /* SignInError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInError.swift; sourceTree = "<group>"; };
 		2776EA562CE45F5B00011DEA /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		2776EA592CE460BD00011DEA /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		2776EA5B2CE464D200011DEA /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		2776EA5F2CE4678C00011DEA /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +116,8 @@
 				2776EA582CE45F7500011DEA /* Authentication */,
 				2776EA552CE45EA700011DEA /* MainView */,
 				2776EA4C2CE31CE500011DEA /* SignInView */,
+				2776EA5E2CE4676400011DEA /* GameView */,
+				2776EA5D2CE4650000011DEA /* SettingsView */,
 				2776EA222CE31AA600011DEA /* ContentView.swift */,
 				2776EA242CE31AAB00011DEA /* Assets.xcassets */,
 				2776EA4A2CE31C8400011DEA /* MurcielagoPalette.xcassets */,
@@ -170,6 +176,22 @@
 				2776EA4F2CE31D4F00011DEA /* AuthenticationService.swift */,
 			);
 			path = Authentication;
+			sourceTree = "<group>";
+		};
+		2776EA5D2CE4650000011DEA /* SettingsView */ = {
+			isa = PBXGroup;
+			children = (
+				2776EA5B2CE464D200011DEA /* SettingsView.swift */,
+			);
+			path = SettingsView;
+			sourceTree = "<group>";
+		};
+		2776EA5E2CE4676400011DEA /* GameView */ = {
+			isa = PBXGroup;
+			children = (
+				2776EA5F2CE4678C00011DEA /* GameView.swift */,
+			);
+			path = GameView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -306,6 +328,8 @@
 				2776EA512CE31D4F00011DEA /* SignInViewModel.swift in Sources */,
 				2776EA572CE45F5B00011DEA /* MainView.swift in Sources */,
 				2776EA502CE31D4F00011DEA /* SignInView.swift in Sources */,
+				2776EA5C2CE464D200011DEA /* SettingsView.swift in Sources */,
+				2776EA602CE4678C00011DEA /* GameView.swift in Sources */,
 				2776EA232CE31AA600011DEA /* ContentView.swift in Sources */,
 				2776EA212CE31AA600011DEA /* MurcielagoApp.swift in Sources */,
 				2776EA542CE31EF700011DEA /* SignInError.swift in Sources */,

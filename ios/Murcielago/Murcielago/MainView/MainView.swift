@@ -8,6 +8,11 @@
 import SwiftUI
 
 struct MainView: View {
+
+    init() {
+        UITabBar.appearance().backgroundColor = UIColor(named: "TabBar")
+    }
+
     let viewModel = MainViewModel()
     var body: some View {
         if viewModel.isAuthenticated {
@@ -28,7 +33,7 @@ struct MainView: View {
                     Image(systemName: "gear")
                 }
         }
-        .tint(.white)
+        .tint(.primary)
     }
 }
 

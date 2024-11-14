@@ -11,13 +11,15 @@ struct MurcielagoButtonStyle: ButtonStyle {
     private enum Size {
         static let height: CGFloat = 50.0
         static let horizontalPadding: CGFloat = 50.0
+        static let cornerRadius: CGFloat = 8.0
     }
+
     func makeBody(configuration: Configuration) -> some View {
         configuration.label
             .frame(height: Size.height)
             .padding([.horizontal], Size.horizontalPadding)
             .background(.murcielagoPrimary)
-            .cornerRadius(8.0)
+            .cornerRadius(Size.cornerRadius)
             .foregroundColor(.surface)
             .opacity(
                 configuration.isPressed
@@ -43,4 +45,5 @@ extension ButtonStyle where Self == MurcielagoButtonStyle {
         }
         .buttonStyle(.murcielago)
     }
+    .preferredColorScheme(.dark)
 }

@@ -100,5 +100,6 @@ struct SignInView: View {
 
 #Preview {
     SignInView()
+        .environmentObject(MainViewModel())
         .preferredColorScheme(/*@START_MENU_TOKEN@*/.dark/*@END_MENU_TOKEN@*/)
 }

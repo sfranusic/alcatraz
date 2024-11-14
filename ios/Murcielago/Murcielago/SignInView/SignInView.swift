@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct SignInView: View {
-    @StateObject var model = SignInViewModel()
+    @EnvironmentObject var model: MainViewModel
     @State var usernameInput: String = ""
     @State var passwordInput: String = ""
     @State var showLoginUserInterface = false

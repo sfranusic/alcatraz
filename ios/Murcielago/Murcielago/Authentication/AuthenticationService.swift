@@ -10,6 +10,9 @@ import SwiftUI
 
 actor AuthenticationService {
     private(set) var connectionEstablished: Bool = false
+    var unauthenticated: Bool {
+        connectionEstablished == false
+    }
 
     func signIn(username: String, password: String) async -> Bool {
         do {

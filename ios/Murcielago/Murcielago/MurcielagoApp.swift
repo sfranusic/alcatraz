@@ -9,9 +9,15 @@ import SwiftUI
 
 @main
 struct MurcielagoApp: App {
+    @StateObject private var mainModel = MainViewModel()
+
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainView()
+                .fullScreenCover(isPresented: $mainModel.unauthenticated) {
+                    SignInView()
+                        .environmentObject(mainModel)
+                }
         }
     }
 }

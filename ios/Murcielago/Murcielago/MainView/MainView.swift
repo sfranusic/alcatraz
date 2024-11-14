@@ -15,14 +15,6 @@ struct MainView: View {
 
     let viewModel = MainViewModel()
     var body: some View {
-        if viewModel.isAuthenticated {
-            mainView
-        } else {
-            SignInView()
-        }
-    }
-
-    private var mainView: some View {
         TabView {
             GameView()
                 .tabItem {

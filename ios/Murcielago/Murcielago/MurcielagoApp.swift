@@ -18,6 +18,7 @@ struct MurcielagoApp: App {
                     SignInView()
                         .environmentObject(mainModel)
                 }
+                .preferredColorScheme(.dark)
         }
     }
 }

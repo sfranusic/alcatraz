@@ -115,10 +115,6 @@
 				2776EA202CE31AA600011DEA /* MurcielagoApp.swift */,
 				2776EA582CE45F7500011DEA /* Authentication */,
 				2776EA612CE5452200011DEA /* UserInterface */,
-				2776EA552CE45EA700011DEA /* MainView */,
-				2776EA4C2CE31CE500011DEA /* SignInView */,
-				2776EA5E2CE4676400011DEA /* GameView */,
-				2776EA5D2CE4650000011DEA /* SettingsView */,
 				2776EA222CE31AA600011DEA /* ContentView.swift */,
 				2776EA242CE31AAB00011DEA /* Assets.xcassets */,
 				2776EA4A2CE31C8400011DEA /* MurcielagoPalette.xcassets */,
@@ -197,6 +193,7 @@
 		2776EA612CE5452200011DEA /* UserInterface */ = {
 			isa = PBXGroup;
 			children = (
+				2776EA692CE7F40C00011DEA /* Views */,
 				2776EA622CE5455200011DEA /* ElementStyle */,
 			);
 			path = UserInterface;
@@ -208,6 +205,17 @@
 				2776EA632CE5459200011DEA /* MurcielagoButtonStyle.swift */,
 			);
 			path = ElementStyle;
+			sourceTree = "<group>";
+		};
+		2776EA692CE7F40C00011DEA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2776EA5E2CE4676400011DEA /* GameView */,
+				2776EA552CE45EA700011DEA /* MainView */,
+				2776EA5D2CE4650000011DEA /* SettingsView */,
+				2776EA4C2CE31CE500011DEA /* SignInView */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

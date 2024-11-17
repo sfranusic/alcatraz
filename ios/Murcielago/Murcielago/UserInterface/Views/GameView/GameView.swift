@@ -8,13 +8,18 @@
 import SwiftUI
 
 struct GameView: View {
+    @StateObject var controllerModel = ControllerModel()
     @State var rotation: CGFloat = 0.0
     @State var width: CGFloat = 0.0
     @State var showButton = true
     var body: some View {
         ZStack {
-            controllerView
-            startGameView
+            if controllerModel.connectedToController {
+                controllerView
+                startGameView
+            } else {
+                Text("Controller needs to be connected")
+            }
         }
     }
 

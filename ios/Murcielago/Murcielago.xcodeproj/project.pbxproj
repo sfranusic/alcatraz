@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		2776EA212CE31AA600011DEA /* MurcielagoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2776EA202CE31AA600011DEA /* MurcielagoApp.swift */; };
-		2776EA232CE31AA600011DEA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2776EA222CE31AA600011DEA /* ContentView.swift */; };
 		2776EA252CE31AAB00011DEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2776EA242CE31AAB00011DEA /* Assets.xcassets */; };
 		2776EA282CE31AAB00011DEA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2776EA272CE31AAB00011DEA /* Preview Assets.xcassets */; };
 		2776EA322CE31AAC00011DEA /* MurcielagoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2776EA312CE31AAC00011DEA /* MurcielagoTests.swift */; };
@@ -23,6 +22,7 @@
 		2776EA5C2CE464D200011DEA /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2776EA5B2CE464D200011DEA /* SettingsView.swift */; };
 		2776EA602CE4678C00011DEA /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2776EA5F2CE4678C00011DEA /* GameView.swift */; };
 		2776EA642CE5459200011DEA /* MurcielagoButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2776EA632CE5459200011DEA /* MurcielagoButtonStyle.swift */; };
+		2776EA6B2CE8029400011DEA /* GameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2776EA6A2CE8029400011DEA /* GameController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,7 +45,6 @@
 /* Begin PBXFileReference section */
 		2776EA1D2CE31AA500011DEA /* Murcielago.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Murcielago.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2776EA202CE31AA600011DEA /* MurcielagoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MurcielagoApp.swift; sourceTree = "<group>"; };
-		2776EA222CE31AA600011DEA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2776EA242CE31AAB00011DEA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2776EA272CE31AAB00011DEA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2776EA2D2CE31AAC00011DEA /* MurcielagoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MurcielagoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -62,6 +61,7 @@
 		2776EA5B2CE464D200011DEA /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		2776EA5F2CE4678C00011DEA /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 		2776EA632CE5459200011DEA /* MurcielagoButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MurcielagoButtonStyle.swift; sourceTree = "<group>"; };
+		2776EA6A2CE8029400011DEA /* GameController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,11 +113,8 @@
 			isa = PBXGroup;
 			children = (
 				2776EA202CE31AA600011DEA /* MurcielagoApp.swift */,
-				2776EA582CE45F7500011DEA /* Authentication */,
+				2776EA582CE45F7500011DEA /* Models */,
 				2776EA612CE5452200011DEA /* UserInterface */,
-				2776EA222CE31AA600011DEA /* ContentView.swift */,
-				2776EA242CE31AAB00011DEA /* Assets.xcassets */,
-				2776EA4A2CE31C8400011DEA /* MurcielagoPalette.xcassets */,
 				2776EA262CE31AAB00011DEA /* Preview Content */,
 			);
 			path = Murcielago;
@@ -166,12 +163,13 @@
 			path = MainView;
 			sourceTree = "<group>";
 		};
-		2776EA582CE45F7500011DEA /* Authentication */ = {
+		2776EA582CE45F7500011DEA /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				2776EA4F2CE31D4F00011DEA /* AuthenticationService.swift */,
+				2776EA6A2CE8029400011DEA /* GameController.swift */,
 			);
-			path = Authentication;
+			path = Models;
 			sourceTree = "<group>";
 		};
 		2776EA5D2CE4650000011DEA /* SettingsView */ = {
@@ -194,17 +192,19 @@
 			isa = PBXGroup;
 			children = (
 				2776EA692CE7F40C00011DEA /* Views */,
-				2776EA622CE5455200011DEA /* ElementStyle */,
+				2776EA622CE5455200011DEA /* StyleAssets */,
 			);
 			path = UserInterface;
 			sourceTree = "<group>";
 		};
-		2776EA622CE5455200011DEA /* ElementStyle */ = {
+		2776EA622CE5455200011DEA /* StyleAssets */ = {
 			isa = PBXGroup;
 			children = (
+				2776EA242CE31AAB00011DEA /* Assets.xcassets */,
+				2776EA4A2CE31C8400011DEA /* MurcielagoPalette.xcassets */,
 				2776EA632CE5459200011DEA /* MurcielagoButtonStyle.swift */,
 			);
-			path = ElementStyle;
+			path = StyleAssets;
 			sourceTree = "<group>";
 		};
 		2776EA692CE7F40C00011DEA /* Views */ = {
@@ -350,10 +350,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				2776EA572CE45F5B00011DEA /* MainView.swift in Sources */,
+				2776EA6B2CE8029400011DEA /* GameController.swift in Sources */,
 				2776EA502CE31D4F00011DEA /* SignInView.swift in Sources */,
 				2776EA5C2CE464D200011DEA /* SettingsView.swift in Sources */,
 				2776EA602CE4678C00011DEA /* GameView.swift in Sources */,
-				2776EA232CE31AA600011DEA /* ContentView.swift in Sources */,
 				2776EA212CE31AA600011DEA /* MurcielagoApp.swift in Sources */,
 				2776EA542CE31EF700011DEA /* SignInError.swift in Sources */,
 				2776EA642CE5459200011DEA /* MurcielagoButtonStyle.swift in Sources */,

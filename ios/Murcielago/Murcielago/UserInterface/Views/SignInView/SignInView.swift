@@ -72,6 +72,10 @@ struct SignInView: View {
     private var signInButton: some View {
         Button(
             action: {
+                guard !usernameInput.isEmpty, !passwordInput.isEmpty else {
+                    model.displayErrorMessage(type: .noCredentials)
+                    return
+                }
                 model.authenticate(
                     username: usernameInput,
                     password: passwordInput

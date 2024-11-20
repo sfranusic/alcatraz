@@ -9,4 +9,5 @@ import Foundation
 
 enum SignInError: String, Error {
     case invalidCredentials = "Invalid credentials"
+    case noCredentials = "Enter username and password"
 }

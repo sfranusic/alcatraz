@@ -21,7 +21,7 @@ class MainViewModel: ObservableObject {
             async let result = authenticator.signIn(username: username, password: password)
 
             if await result == false {
-                await displayErrorMessage()
+                await displayErrorMessage(type: .invalidCredentials)
             }
             await updateAuthentication()
             serviceActivity = false
@@ -29,8 +29,8 @@ class MainViewModel: ObservableObject {
     }
 
     @MainActor
-    private func displayErrorMessage() {
-        errorMessage = SignInError.invalidCredentials.rawValue
+    public func displayErrorMessage(type: SignInError) {
+        errorMessage = type.rawValue
         DispatchQueue.main.asyncAfter(deadline: .now() + 2.5) { [weak self] in
             guard let self else {
                 assertionFailure("Failed to clear error message.")

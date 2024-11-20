@@ -23,7 +23,7 @@ class MainViewModel: ObservableObject {
             if await result == false {
                 await displayErrorMessage(type: .invalidCredentials)
             }
-            await updateAuthentication()
+            updateAuthentication()
             serviceActivity = false
         }
     }
@@ -46,7 +46,6 @@ class MainViewModel: ObservableObject {
 
     }
 
-    @MainActor
     func updateAuthentication() {
         Task { @MainActor in
             unauthenticated = await !authenticator.connectionEstablished

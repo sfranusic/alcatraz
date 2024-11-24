@@ -10,19 +10,27 @@ import SwiftUI
 @main
 struct MurcielagoApp: App {
     @StateObject private var mainModel = MainViewModel()
-    @State var showSignIn = true
+    @State private var showSignIn = true
 
     var body: some Scene {
         WindowGroup {
-            MainView()
-                .fullScreenCover(isPresented: $showSignIn) {
+            ZStack {
+                if showSignIn {
                     SignInView()
                         .environmentObject(mainModel)
+                        .transition(.move(edge: .bottom))
+                } else {
+                    MainView()
                 }
-                .onReceive(mainModel.$unauthenticated) { _ in
-                    showSignIn = mainModel.unauthenticated
-                }
-                .preferredColorScheme(.dark)
+            }
+            .animation(.easeInOut(duration: 0.5), value: showSignIn)
+            .onAppear {
+                showSignIn = mainModel.unauthenticated
+            }
+            .onChange(of: mainModel.unauthenticated) { _, newValue in
+                showSignIn = newValue
+            }
+            .preferredColorScheme(.dark)
         }
     }
 }

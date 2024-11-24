@@ -14,16 +14,17 @@ class MainViewModel: ObservableObject {
     @Published var errorMessage: String = ""
     @Published var serviceActivity = false
 
+    @MainActor
     func authenticate(username: String, password: String) {
         Task {
             serviceActivity = true
-            await clearErrorMessage()
+            clearErrorMessage()
             async let result = authenticator.signIn(username: username, password: password)
 
             if await result == false {
-                await displayErrorMessage(type: .invalidCredentials)
+                displayErrorMessage(type: .invalidCredentials)
             }
-            updateAuthentication()
+            await updateAuthentication()
             serviceActivity = false
         }
     }
@@ -46,10 +47,9 @@ class MainViewModel: ObservableObject {
 
     }
 
-    func updateAuthentication() {
-        Task { @MainActor in
-            unauthenticated = await !authenticator.connectionEstablished
-        }
+    @MainActor
+    func updateAuthentication() async {
+        unauthenticated = await !authenticator.connectionEstablished
     }
 
 }

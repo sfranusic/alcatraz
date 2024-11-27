@@ -18,9 +18,10 @@ struct MurcielagoApp: App {
                 if showSignIn {
                     SignInView()
                         .environmentObject(mainModel)
-                        .transition(.move(edge: .bottom))
+                        .transition(.move(edge: .leading))
                 } else {
                     MainView()
+                        .environmentObject(mainModel)
                 }
             }
             .animation(.easeInOut(duration: 0.5), value: showSignIn)

@@ -8,11 +8,23 @@
 import SwiftUI
 
 struct SettingsView: View {
+    @EnvironmentObject var mainModel: MainViewModel
     @State var settingOne: Bool = false
 
     var body: some View {
-        List {
-            Toggle("Setting One", isOn: $settingOne)
+        VStack {
+            List {
+                Toggle("Setting One", isOn: $settingOne)
+            }
+            Button(
+                action: {
+                    mainModel.signOut()
+                },
+                label: {
+                    Text("Sign Out")
+                        .padding()
+                }
+            )
         }
         .tint(.murcielagoPrimary)
     }
@@ -20,4 +32,6 @@ struct SettingsView: View {
 
 #Preview {
     SettingsView()
+        .preferredColorScheme(.dark)
+        .environmentObject(MainViewModel())
 }

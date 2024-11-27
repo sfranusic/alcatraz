@@ -29,6 +29,18 @@ class MainViewModel: ObservableObject {
         }
     }
 
+    func signOut() {
+        Task {
+            async let result = authenticator.signOut()
+
+            if await result == false {
+                assertionFailure("Sign out failed")
+            }
+
+            await updateAuthentication()
+        }
+    }
+
     @MainActor
     public func displayErrorMessage(type: SignInError) {
         errorMessage = type.rawValue

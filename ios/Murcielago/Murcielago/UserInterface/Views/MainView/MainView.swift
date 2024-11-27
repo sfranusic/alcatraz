@@ -13,7 +13,6 @@ struct MainView: View {
         UITabBar.appearance().backgroundColor = UIColor(named: "TabBar")
     }
 
-    let viewModel = MainViewModel()
     var body: some View {
         TabView {
             GameView()

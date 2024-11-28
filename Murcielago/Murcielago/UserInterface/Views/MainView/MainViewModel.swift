@@ -16,6 +16,7 @@ class MainViewModel: ObservableObject {
 
     @MainActor
     func authenticate(username: String, password: String) {
+        let authenticator = self.authenticator
         Task {
             serviceActivity = true
             clearErrorMessage()
@@ -29,6 +30,7 @@ class MainViewModel: ObservableObject {
         }
     }
 
+    @MainActor
     func signOut() {
         Task {
             async let result = authenticator.signOut()

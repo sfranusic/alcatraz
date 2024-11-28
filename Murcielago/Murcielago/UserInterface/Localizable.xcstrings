@@ -2,9 +2,16 @@
   "sourceLanguage" : "en",
   "strings" : {
     "Controller needs to be connected" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Controller needs to be connected"
+          }
+        }
+      }
     },
-    "password" : {
+    "Password" : {
       "extractionState" : "manual",
       "localizations" : {
         "en" : {
@@ -28,15 +35,26 @@
       }
     },
     "Play" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Play"
+          }
+        }
+      }
     },
     "Setting One" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : " Setting One"
+          }
+        }
+      }
     },
-    "Sign Out" : {
-
-    },
-    "sign_in_button" : {
+    "Sign In" : {
       "extractionState" : "manual",
       "localizations" : {
         "en" : {
@@ -59,7 +77,29 @@
         }
       }
     },
-    "username" : {
+    "Sign Out" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : " Sign Out"
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cerrar sesión"
+          }
+        },
+        "es-US" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Salir"
+          }
+        }
+      }
+    },
+    "Username" : {
       "extractionState" : "manual",
       "localizations" : {
         "en" : {

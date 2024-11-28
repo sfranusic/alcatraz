@@ -24,6 +24,7 @@
 		2776EA642CE5459200011DEA /* MurcielagoButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2776EA632CE5459200011DEA /* MurcielagoButtonStyle.swift */; };
 		2776EA6B2CE8029400011DEA /* GameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2776EA6A2CE8029400011DEA /* GameController.swift */; };
 		27A726FD2CF8297100E4AE9B /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 27A726FC2CF8297100E4AE9B /* Localizable.xcstrings */; };
+		27A726FF2CF838CF00E4AE9B /* LocalizedSignInError.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 27A726FE2CF838CF00E4AE9B /* LocalizedSignInError.xcstrings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,7 @@
 		2776EA632CE5459200011DEA /* MurcielagoButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MurcielagoButtonStyle.swift; sourceTree = "<group>"; };
 		2776EA6A2CE8029400011DEA /* GameController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameController.swift; sourceTree = "<group>"; };
 		27A726FC2CF8297100E4AE9B /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		27A726FE2CF838CF00E4AE9B /* LocalizedSignInError.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = LocalizedSignInError.xcstrings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +154,7 @@
 			children = (
 				2776EA4D2CE31D4F00011DEA /* SignInView.swift */,
 				2776EA532CE31EF700011DEA /* SignInError.swift */,
+				27A726FE2CF838CF00E4AE9B /* LocalizedSignInError.xcstrings */,
 			);
 			path = SignInView;
 			sourceTree = "<group>";
@@ -329,6 +332,7 @@
 			files = (
 				2776EA282CE31AAB00011DEA /* Preview Assets.xcassets in Resources */,
 				2776EA252CE31AAB00011DEA /* Assets.xcassets in Resources */,
+				27A726FF2CF838CF00E4AE9B /* LocalizedSignInError.xcstrings in Resources */,
 				27A726FD2CF8297100E4AE9B /* Localizable.xcstrings in Resources */,
 				2776EA4B2CE31C8400011DEA /* MurcielagoPalette.xcassets in Resources */,
 			);

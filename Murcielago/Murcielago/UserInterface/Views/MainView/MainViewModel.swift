@@ -43,7 +43,7 @@ class MainViewModel: ObservableObject {
 
     @MainActor
     public func displayErrorMessage(type: SignInError) {
-        errorMessage = type.rawValue
+        errorMessage = type.localizedDescription
         DispatchQueue.main.asyncAfter(deadline: .now() + 2.5) { [weak self] in
             guard let self else {
                 assertionFailure("Failed to clear error message.")

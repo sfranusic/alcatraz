@@ -52,10 +52,10 @@ struct SignInView: View {
         VStack {
             Group {
                 TextField(text: $usernameInput) {
-                    Text("Username")
+                    Text("username")
                 }
                 SecureField(text: $passwordInput) {
-                    Text("Password")
+                    Text("password")
                 }
             }
             .padding([.horizontal], 15)
@@ -83,7 +83,7 @@ struct SignInView: View {
                 )
             },
             label: {
-                Text("Sign In")
+                Text("sign_in_button")
             }
         )
         .opacity(mainModel.serviceActivity ? 0.75 : 1.0)

@@ -24,22 +24,18 @@
         }
       }
     },
-    "Play" : {
+    "Settings" : {
       "localizations" : {
-        "en" : {
+        "es-419" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Play"
+            "value" : "Configuración"
           }
-        }
-      }
-    },
-    "Setting One" : {
-      "localizations" : {
-        "en" : {
+        },
+        "es-US" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : " Setting One"
+            "value" : "Ajustes"
           }
         }
       }
@@ -85,6 +81,22 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Salir"
+          }
+        }
+      }
+    },
+    "Start Game" : {
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Iniciar juego"
+          }
+        },
+        "es-US" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Comenzar juego"
           }
         }
       }

@@ -9,13 +9,13 @@ import SwiftUI
 
 struct SettingsView: View {
     @EnvironmentObject var mainModel: MainViewModel
-    @State var settingOne: Bool = false
 
     var body: some View {
         VStack {
-            versionLabel
-            List {
-                Toggle("Setting One", isOn: $settingOne)
+            Section(header: Text("Settings")) {
+                List {
+
+                }
             }
             Button(
                 action: {
@@ -23,9 +23,18 @@ struct SettingsView: View {
                 },
                 label: {
                     Text("Sign Out")
-                        .padding()
+                        .frame(height: 50)
+                        .frame(maxWidth: .infinity)
+                        .overlay {
+                            RoundedRectangle(cornerRadius: 8)
+                                .stroke(lineWidth: 2.0)
+                                .padding([.horizontal], 25)
+                        }
+
+
                 }
             )
+            versionLabel
         }
         .tint(.murcielagoPrimary)
     }

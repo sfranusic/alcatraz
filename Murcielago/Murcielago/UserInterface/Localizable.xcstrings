@@ -1,16 +1,6 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
-    "Controller needs to be connected" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Controller needs to be connected"
-          }
-        }
-      }
-    },
     "Password" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -118,6 +108,22 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Usuario"
+          }
+        }
+      }
+    },
+    "Version" : {
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Versión"
+          }
+        },
+        "es-US" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Versión"
           }
         }
       }

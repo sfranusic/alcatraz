@@ -13,6 +13,7 @@ struct SettingsView: View {
 
     var body: some View {
         VStack {
+            versionLabel
             List {
                 Toggle("Setting One", isOn: $settingOne)
             }
@@ -27,6 +28,20 @@ struct SettingsView: View {
             )
         }
         .tint(.murcielagoPrimary)
+    }
+
+    private var bundleShortVersion: String {
+        Bundle
+            .main
+            .infoDictionary?["CFBundleShortVersionString"]
+        as? String ?? "x"
+    }
+
+    private var versionLabel: some View {
+        HStack {
+            Text("Version")
+            Text(bundleShortVersion)
+        }
     }
 }
 

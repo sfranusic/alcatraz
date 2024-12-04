@@ -40,7 +40,6 @@ struct SignInView: View {
             statusView
             textFieldsView
             signInButton
-
         }
         .opacity(showLoginUserInterface ? 1.0 : 0.0)
         .animation(

@@ -8,7 +8,7 @@
 import GameController
 import SwiftUI
 
-class ControllerModel: ObservableObject {
+class GameControllerModel: ObservableObject {
     @Published var connectedToController: Bool = false
     @Published var circleButtonPressed: Bool = false
     @Published var exButtonPressed: Bool = false
@@ -32,6 +32,10 @@ class ControllerModel: ObservableObject {
             object: nil
         )
 
+        establishConnection()
+    }
+
+    func establishConnection() {
         GCController.startWirelessControllerDiscovery(completionHandler: nil)
     }
 
@@ -72,7 +76,8 @@ class ControllerModel: ObservableObject {
             self?.rightPosition = CGPoint(x: CGFloat(xValue), y: CGFloat(yValue))
         }
 
-        gamepad.leftShoulder.valueChangedHandler = { [weak self] (_, value, _) in
+        gamepad.leftTrigger.valueChangedHandler = { [weak self] (_, value, _) in
+            print("left trigger \(value)")
             self?.leftTrigger = CGFloat(value)
         }
 

@@ -5,9 +5,8 @@
 //  Created by Sam Franusic on 11/29/24.
 //
 
-import SwiftUI
-
 import GameController
+import SwiftUI
 
 class ControllerModel: ObservableObject {
     @Published var connectedToController: Bool = false
@@ -76,5 +75,10 @@ class ControllerModel: ObservableObject {
         gamepad.leftShoulder.valueChangedHandler = { [weak self] (_, value, _) in
             self?.leftTrigger = CGFloat(value)
         }
+
+    }
+
+    deinit {
+        NotificationCenter.default.removeObserver(self)
     }
 }

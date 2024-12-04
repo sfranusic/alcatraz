@@ -8,17 +8,21 @@
 import SwiftUI
 
 struct ControllerSettingsView: View {
-    @StateObject var controller = ControllerModel()
+    @StateObject var model = ControllerModel()
     var body: some View {
         VStack {
             VStack {
-                Text("\(controller.circleButtonPressed)")
+                Text("\(model.connectedToController)")
                 Text("Left Trigger")
-                PercentageBarView(value: controller.leftTrigger)
+                PercentageBarView(value: model.leftTrigger)
+                Text(model.circleButtonPressed ? "O" : "-")
             }
 
         }
         .padding([.horizontal])
+        .onReceive(model.$leftTrigger) { value in
+            print("Left Trigger: \(value)")
+        }
     }
 }
 

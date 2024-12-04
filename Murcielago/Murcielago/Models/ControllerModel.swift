@@ -1,9 +1,11 @@
 //
-//  GameController.swift
+//  ControllerModel.swift
 //  Murcielago
 //
-//  Created by Sam Franusic on 11/15/24.
+//  Created by Sam Franusic on 11/29/24.
 //
+
+import SwiftUI
 
 import GameController
 
@@ -11,10 +13,9 @@ class ControllerModel: ObservableObject {
     @Published var connectedToController: Bool = false
     @Published var circleButtonPressed: Bool = false
     @Published var exButtonPressed: Bool = false
-    @Published var leftThumbstickX: Float = 0.0
-    @Published var leftThumbstickY: Float = 0.0
-    @Published var rightThumbstickX: Float = 0.0
-    @Published var rightThumbstickY: Float = 0.0
+    @Published var rightPosition: CGPoint = .zero
+    @Published var leftPosition: CGPoint = .zero
+    @Published var leftTrigger: CGFloat = 0.0
 
     var controller: GCController?
 
@@ -52,7 +53,7 @@ class ControllerModel: ObservableObject {
 
     private func setupController(controller: GCController) {
         guard let gamepad = controller.extendedGamepad else {
-            print("Extended gamepad not found")
+            print("Controller not found")
             return
         }
 
@@ -65,13 +66,15 @@ class ControllerModel: ObservableObject {
         }
 
         gamepad.leftThumbstick.valueChangedHandler = { [weak self] (_, xValue, yValue) in
-            self?.leftThumbstickX = xValue
-            self?.leftThumbstickY = yValue
+            self?.leftPosition = CGPoint(x: CGFloat(xValue), y: CGFloat(yValue))
         }
 
         gamepad.rightThumbstick.valueChangedHandler = { [weak self] (dpad, xValue, yValue) in
-            self?.rightThumbstickX = xValue
-            self?.rightThumbstickY = yValue
+            self?.rightPosition = CGPoint(x: CGFloat(xValue), y: CGFloat(yValue))
+        }
+
+        gamepad.leftShoulder.valueChangedHandler = { [weak self] (_, value, _) in
+            self?.leftTrigger = CGFloat(value)
         }
     }
 }

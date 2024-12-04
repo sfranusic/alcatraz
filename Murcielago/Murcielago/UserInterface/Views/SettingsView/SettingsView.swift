@@ -13,28 +13,30 @@ struct SettingsView: View {
     var body: some View {
         VStack {
             Section(header: Text("Settings")) {
-                List {
+                NavigationStack {
+                    List {
+                        NavigationLink("Controller Settings", destination: ControllerSettingsView())
+                    }
+                    Button(
+                        action: {
+                            mainModel.signOut()
+                        },
+                        label: {
+                            Text("Sign Out")
+                                .frame(height: 50)
+                                .frame(maxWidth: .infinity)
+                                .overlay {
+                                    RoundedRectangle(cornerRadius: 8)
+                                        .stroke(lineWidth: 2.0)
+                                        .padding([.horizontal], 25)
+                                }
 
+
+                        }
+                    )
+                    versionLabel
                 }
             }
-            Button(
-                action: {
-                    mainModel.signOut()
-                },
-                label: {
-                    Text("Sign Out")
-                        .frame(height: 50)
-                        .frame(maxWidth: .infinity)
-                        .overlay {
-                            RoundedRectangle(cornerRadius: 8)
-                                .stroke(lineWidth: 2.0)
-                                .padding([.horizontal], 25)
-                        }
-
-
-                }
-            )
-            versionLabel
         }
         .tint(.murcielagoPrimary)
     }

@@ -1,8 +1,21 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
-    "-" : {
-
+    "Connection Status:" : {
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Estado de conexión"
+          }
+        },
+        "es-US" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Estado de conexión"
+          }
+        }
+      }
     },
     "Controller Settings" : {
       "localizations" : {
@@ -36,9 +49,6 @@
         }
       }
     },
-    "O" : {
-
-    },
     "Password" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -58,6 +68,22 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Clave"
+          }
+        }
+      }
+    },
+    "Right Trigger" : {
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gatillo derecho"
+          }
+        },
+        "es-US" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gatillo derecho"
           }
         }
       }

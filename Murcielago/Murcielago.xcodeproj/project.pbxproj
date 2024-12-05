@@ -28,6 +28,9 @@
 		27A727102CFECE8200E4AE9B /* GameControllerSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A7270F2CFECE8200E4AE9B /* GameControllerSettingsView.swift */; };
 		27A727132CFECFE100E4AE9B /* GameControllerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A727122CFECFE100E4AE9B /* GameControllerModel.swift */; };
 		27A727152D0020BA00E4AE9B /* BatteryIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A727142D0020BA00E4AE9B /* BatteryIndicatorView.swift */; };
+		27A7271C2D016F6300E4AE9B /* SlideGalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A7271B2D016F6300E4AE9B /* SlideGalleryView.swift */; };
+		27A7271D2D016F6300E4AE9B /* GridPatternView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A727192D016F6300E4AE9B /* GridPatternView.swift */; };
+		27A7271E2D016F6300E4AE9B /* SpiralPatternView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A7271A2D016F6300E4AE9B /* SpiralPatternView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +75,9 @@
 		27A7270F2CFECE8200E4AE9B /* GameControllerSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameControllerSettingsView.swift; sourceTree = "<group>"; };
 		27A727122CFECFE100E4AE9B /* GameControllerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameControllerModel.swift; sourceTree = "<group>"; };
 		27A727142D0020BA00E4AE9B /* BatteryIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryIndicatorView.swift; sourceTree = "<group>"; };
+		27A727192D016F6300E4AE9B /* GridPatternView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridPatternView.swift; sourceTree = "<group>"; };
+		27A7271A2D016F6300E4AE9B /* SpiralPatternView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpiralPatternView.swift; sourceTree = "<group>"; };
+		27A7271B2D016F6300E4AE9B /* SlideGalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideGalleryView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -225,12 +231,23 @@
 		2776EA692CE7F40C00011DEA /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				27A727182D016F1E00E4AE9B /* PatternViews */,
 				2776EA5E2CE4676400011DEA /* GameView */,
 				2776EA552CE45EA700011DEA /* MainView */,
 				2776EA5D2CE4650000011DEA /* SettingsView */,
 				2776EA4C2CE31CE500011DEA /* SignInView */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		27A727182D016F1E00E4AE9B /* PatternViews */ = {
+			isa = PBXGroup;
+			children = (
+				27A727192D016F6300E4AE9B /* GridPatternView.swift */,
+				27A7271A2D016F6300E4AE9B /* SpiralPatternView.swift */,
+				27A7271B2D016F6300E4AE9B /* SlideGalleryView.swift */,
+			);
+			path = PatternViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -371,6 +388,9 @@
 				2776EA572CE45F5B00011DEA /* MainView.swift in Sources */,
 				2776EA502CE31D4F00011DEA /* SignInView.swift in Sources */,
 				27A727102CFECE8200E4AE9B /* GameControllerSettingsView.swift in Sources */,
+				27A7271C2D016F6300E4AE9B /* SlideGalleryView.swift in Sources */,
+				27A7271D2D016F6300E4AE9B /* GridPatternView.swift in Sources */,
+				27A7271E2D016F6300E4AE9B /* SpiralPatternView.swift in Sources */,
 				2776EA5C2CE464D200011DEA /* SettingsView.swift in Sources */,
 				27A7270E2CFECE4300E4AE9B /* PercentageBarView.swift in Sources */,
 				27A727132CFECFE100E4AE9B /* GameControllerModel.swift in Sources */,

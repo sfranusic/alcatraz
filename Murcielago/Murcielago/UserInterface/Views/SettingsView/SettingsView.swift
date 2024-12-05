@@ -15,7 +15,7 @@ struct SettingsView: View {
             Section(header: Text("Settings")) {
                 NavigationStack {
                     List {
-                        NavigationLink("Controller Settings", destination: ControllerSettingsView())
+                        NavigationLink("Game Controller Settings", destination: GameControllerSettingsView())
                     }
                     Button(
                         action: {

@@ -25,7 +25,7 @@
 		27A726FD2CF8297100E4AE9B /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 27A726FC2CF8297100E4AE9B /* Localizable.xcstrings */; };
 		27A726FF2CF838CF00E4AE9B /* LocalizedSignInError.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 27A726FE2CF838CF00E4AE9B /* LocalizedSignInError.xcstrings */; };
 		27A7270E2CFECE4300E4AE9B /* PercentageBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A7270D2CFECE4300E4AE9B /* PercentageBarView.swift */; };
-		27A727102CFECE8200E4AE9B /* ControllerSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A7270F2CFECE8200E4AE9B /* ControllerSettingsView.swift */; };
+		27A727102CFECE8200E4AE9B /* GameControllerSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A7270F2CFECE8200E4AE9B /* GameControllerSettingsView.swift */; };
 		27A727132CFECFE100E4AE9B /* GameControllerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A727122CFECFE100E4AE9B /* GameControllerModel.swift */; };
 		27A727152D0020BA00E4AE9B /* BatteryIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A727142D0020BA00E4AE9B /* BatteryIndicatorView.swift */; };
 /* End PBXBuildFile section */
@@ -69,7 +69,7 @@
 		27A726FC2CF8297100E4AE9B /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		27A726FE2CF838CF00E4AE9B /* LocalizedSignInError.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = LocalizedSignInError.xcstrings; sourceTree = "<group>"; };
 		27A7270D2CFECE4300E4AE9B /* PercentageBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PercentageBarView.swift; sourceTree = "<group>"; };
-		27A7270F2CFECE8200E4AE9B /* ControllerSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerSettingsView.swift; sourceTree = "<group>"; };
+		27A7270F2CFECE8200E4AE9B /* GameControllerSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameControllerSettingsView.swift; sourceTree = "<group>"; };
 		27A727122CFECFE100E4AE9B /* GameControllerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameControllerModel.swift; sourceTree = "<group>"; };
 		27A727142D0020BA00E4AE9B /* BatteryIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryIndicatorView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -188,7 +188,7 @@
 			children = (
 				2776EA5B2CE464D200011DEA /* SettingsView.swift */,
 				27A7270D2CFECE4300E4AE9B /* PercentageBarView.swift */,
-				27A7270F2CFECE8200E4AE9B /* ControllerSettingsView.swift */,
+				27A7270F2CFECE8200E4AE9B /* GameControllerSettingsView.swift */,
 				27A727142D0020BA00E4AE9B /* BatteryIndicatorView.swift */,
 			);
 			path = SettingsView;
@@ -370,7 +370,7 @@
 			files = (
 				2776EA572CE45F5B00011DEA /* MainView.swift in Sources */,
 				2776EA502CE31D4F00011DEA /* SignInView.swift in Sources */,
-				27A727102CFECE8200E4AE9B /* ControllerSettingsView.swift in Sources */,
+				27A727102CFECE8200E4AE9B /* GameControllerSettingsView.swift in Sources */,
 				2776EA5C2CE464D200011DEA /* SettingsView.swift in Sources */,
 				27A7270E2CFECE4300E4AE9B /* PercentageBarView.swift in Sources */,
 				27A727132CFECFE100E4AE9B /* GameControllerModel.swift in Sources */,

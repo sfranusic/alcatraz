@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct BatteryIndicatorView: View {
-    let value: CGFloat
-    var batteryHeight: CGFloat = 40.0
+    let value: Float
+    var batteryHeight: CGFloat = 20.0
     var batteryWidth: CGFloat {
         (batteryHeight * 2) - 10
     }
@@ -18,8 +18,8 @@ struct BatteryIndicatorView: View {
         ZStack {
             HStack {
                 RoundedRectangle(cornerRadius: 5.0)
-                    .foregroundStyle(Color.green)
-                    .frame(width: batteryWidth * value)
+//                    .foregroundStyle(Color.green)
+                    .frame(width: batteryWidth * CGFloat(value))
                 Spacer(minLength: 10)
             }
             .frame(width: batteryHeight * 2)
@@ -34,7 +34,8 @@ struct BatteryIndicatorView: View {
 #Preview {
     VStack {
         ForEach(0...10, id: \.self) { value in
-            BatteryIndicatorView(value: CGFloat(value) * 0.1)
+            BatteryIndicatorView(value: Float(value) * 0.1)
         }
     }
+    .preferredColorScheme(.dark)
 }

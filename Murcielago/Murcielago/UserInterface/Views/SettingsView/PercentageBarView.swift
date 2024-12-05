@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct PercentageBarView: View {
-    @State var value: CGFloat
+    let value: CGFloat
 
     var body: some View {
         GeometryReader { reader in

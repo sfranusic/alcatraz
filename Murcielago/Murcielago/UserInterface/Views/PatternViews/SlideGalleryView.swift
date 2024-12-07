@@ -20,6 +20,14 @@ private enum SegmentIndicatorSize {
 struct SlideGalleryView: View {
     @StateObject var model = SlideGalleryViewModel()
 
+    var body: some View {
+        VStack {
+            galleryView
+            controlView
+            segmentIndicator
+        }
+    }
+
     @ViewBuilder private var selectedView: some View {
         switch model.selectedTag {
         case .spiral:
@@ -31,11 +39,20 @@ struct SlideGalleryView: View {
         }
     }
 
-    private var segmentIndicator: some View {
-        HStack(spacing: SegmentIndicatorSize.spacing) {
-            ForEach(0..<model.items.count, id: \.self) { index in
-                Image(systemName: model.selected == index ? "circle.fill" : "circle")
+    private var galleryView: some View {
+        VStack {
+            Text("\(model.selectedTag.rawValue)")
+                .font(.largeTitle)
+            ZStack {
+                Color.clear
+                selectedView
             }
+            .aspectRatio(1, contentMode: .fit)
+            .overlay {
+                RoundedRectangle(cornerRadius: 8.0)
+                    .stroke(lineWidth: /*@START_MENU_TOKEN@*/1.0/*@END_MENU_TOKEN@*/)
+            }
+            .padding()
         }
     }
 
@@ -61,32 +78,13 @@ struct SlideGalleryView: View {
         .frame(height: ArrowButtonSize.height)
     }
 
-    var body: some View {
-        VStack {
-            Spacer()
-            Text("\(model.selectedTag.rawValue)")
-                .font(.largeTitle)
-            ZStack {
-                Color.clear
-                selectedView
+    private var segmentIndicator: some View {
+        HStack(spacing: SegmentIndicatorSize.spacing) {
+            ForEach(0..<model.items.count, id: \.self) { index in
+                Image(systemName: model.selected == index ? "circle.fill" : "circle")
             }
-            .aspectRatio(1, contentMode: .fit)
-            .overlay {
-                RoundedRectangle(cornerRadius: 8.0)
-                    .stroke(lineWidth: /*@START_MENU_TOKEN@*/1.0/*@END_MENU_TOKEN@*/)
-            }
-            .padding()
-            controlView
-                .frame(height: ArrowButtonSize.height)
-            Spacer(minLength: ArrowButtonSize.spacing)
-
-            segmentIndicator
-                .frame(height: SegmentIndicatorSize.height)
         }
-        .background {
-            Color.surface
-                .ignoresSafeArea()
-        }
+        .padding([.vertical], SegmentIndicatorSize.spacing)
     }
 }
 

@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct SignInView: View {
-    @EnvironmentObject var model: MainViewModel
+    @EnvironmentObject var mainModel: MainViewModel
     @State var usernameInput: String = ""
     @State var passwordInput: String = ""
     @State var showLoginUserInterface = false
@@ -16,6 +16,7 @@ struct SignInView: View {
     var body: some View {
         VStack {
             logoView
+                .foregroundStyle(.surface)
             loginUserInterface
                 .tint(.murcielagoPrimary)
         }
@@ -25,7 +26,7 @@ struct SignInView: View {
     }
 
     private var logoView: some View {
-        Image(systemName: "globe")
+        Image(systemName: "waveform")
             .resizable()
             .scaledToFit()
             .frame(width: 100)
@@ -73,10 +74,10 @@ struct SignInView: View {
         Button(
             action: {
                 guard !usernameInput.isEmpty, !passwordInput.isEmpty else {
-                    model.displayErrorMessage(type: .noCredentials)
+                    mainModel.displayErrorMessage(type: .noCredentials)
                     return
                 }
-                model.authenticate(
+                mainModel.authenticate(
                     username: usernameInput,
                     password: passwordInput
                 )
@@ -85,17 +86,17 @@ struct SignInView: View {
                 Text("Sign In")
             }
         )
-        .opacity(model.serviceActivity ? 0.75 : 1.0)
+        .opacity(mainModel.serviceActivity ? 0.75 : 1.0)
         .buttonStyle(.murcielago)
-        .disabled(model.serviceActivity)
+        .disabled(mainModel.serviceActivity)
     }
 
     private var statusView: some View {
         ZStack {
-            if model.serviceActivity {
+            if mainModel.serviceActivity {
                 ProgressView()
             }
-            Text(model.errorMessage)
+            Text(mainModel.errorMessage)
                 .animation(.easeIn(duration: 0.5))
         }
         .frame(height: 50)

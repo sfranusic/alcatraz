@@ -8,14 +8,15 @@
 import SwiftUI
 
 class MainViewModel: ObservableObject {
-    let authenticator = AuthenticationService()
+    private let authenticator = AuthenticationService()
 
-    @Published var unauthenticated: Bool = true
-    @Published var errorMessage: String = ""
-    @Published var serviceActivity = false
+    @Published private(set) var unauthenticated: Bool = true
+    @Published private(set) var errorMessage: String = ""
+    @Published private(set) var serviceActivity = false
 
     @MainActor
-    func authenticate(username: String, password: String) {
+    public func authenticate(username: String, password: String) {
+        let authenticator = self.authenticator
         Task {
             serviceActivity = true
             clearErrorMessage()
@@ -30,8 +31,21 @@ class MainViewModel: ObservableObject {
     }
 
     @MainActor
+    public func signOut() {
+        Task {
+            async let result = authenticator.signOut()
+
+            if await result == false {
+                assertionFailure("Sign out failed")
+            }
+
+            await updateAuthentication()
+        }
+    }
+
+    @MainActor
     public func displayErrorMessage(type: SignInError) {
-        errorMessage = type.rawValue
+        errorMessage = type.localizedDescription
         DispatchQueue.main.asyncAfter(deadline: .now() + 2.5) { [weak self] in
             guard let self else {
                 assertionFailure("Failed to clear error message.")
@@ -48,7 +62,7 @@ class MainViewModel: ObservableObject {
     }
 
     @MainActor
-    func updateAuthentication() async {
+    private func updateAuthentication() async {
         unauthenticated = await !authenticator.connectionEstablished
     }
 

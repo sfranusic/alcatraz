@@ -18,7 +18,16 @@ struct GameView: View {
                 controllerView
                 startGameView
             } else {
-                Text("Controller needs to be connected")
+                VStack(spacing: 25) {
+                    HStack {
+                        Image(systemName: "gamecontroller")
+                        Image(systemName: "exclamationmark.circle")
+                    }
+                    HStack {
+                        Image(systemName: "airpodsmax")
+                        Image(systemName: "checkmark.circle")
+                    }
+                }
             }
         }
     }
@@ -45,7 +54,7 @@ struct GameView: View {
             width = .infinity
             showButton = false
         } label: {
-            Text("Play")
+            Text("Start Game")
         }
         .buttonStyle(.murcielago)
         .opacity(showButton ? 1.0 : 0.0)

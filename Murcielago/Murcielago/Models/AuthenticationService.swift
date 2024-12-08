@@ -24,6 +24,11 @@ actor AuthenticationService {
         connectionEstablished = password == "password124"
         return connectionEstablished
     }
+
+    func signOut() async -> Bool {
+        connectionEstablished = false
+        return unauthenticated
+    }
 }
 
 

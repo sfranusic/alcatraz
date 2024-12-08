@@ -23,6 +23,8 @@
 		2776EA602CE4678C00011DEA /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2776EA5F2CE4678C00011DEA /* GameView.swift */; };
 		2776EA642CE5459200011DEA /* MurcielagoButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2776EA632CE5459200011DEA /* MurcielagoButtonStyle.swift */; };
 		2776EA6B2CE8029400011DEA /* GameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2776EA6A2CE8029400011DEA /* GameController.swift */; };
+		27A726FD2CF8297100E4AE9B /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 27A726FC2CF8297100E4AE9B /* Localizable.xcstrings */; };
+		27A726FF2CF838CF00E4AE9B /* LocalizedSignInError.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 27A726FE2CF838CF00E4AE9B /* LocalizedSignInError.xcstrings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +64,8 @@
 		2776EA5F2CE4678C00011DEA /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 		2776EA632CE5459200011DEA /* MurcielagoButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MurcielagoButtonStyle.swift; sourceTree = "<group>"; };
 		2776EA6A2CE8029400011DEA /* GameController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameController.swift; sourceTree = "<group>"; };
+		27A726FC2CF8297100E4AE9B /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		27A726FE2CF838CF00E4AE9B /* LocalizedSignInError.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = LocalizedSignInError.xcstrings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +154,7 @@
 			children = (
 				2776EA4D2CE31D4F00011DEA /* SignInView.swift */,
 				2776EA532CE31EF700011DEA /* SignInError.swift */,
+				27A726FE2CF838CF00E4AE9B /* LocalizedSignInError.xcstrings */,
 			);
 			path = SignInView;
 			sourceTree = "<group>";
@@ -193,6 +198,7 @@
 			children = (
 				2776EA692CE7F40C00011DEA /* Views */,
 				2776EA622CE5455200011DEA /* StyleAssets */,
+				27A726FC2CF8297100E4AE9B /* Localizable.xcstrings */,
 			);
 			path = UserInterface;
 			sourceTree = "<group>";
@@ -282,7 +288,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1520;
-				LastUpgradeCheck = 1520;
+				LastUpgradeCheck = 1610;
 				TargetAttributes = {
 					2776EA1C2CE31AA500011DEA = {
 						CreatedOnToolsVersion = 15.2;
@@ -304,6 +310,8 @@
 			knownRegions = (
 				en,
 				Base,
+				"es-US",
+				"es-419",
 			);
 			mainGroup = 2776EA142CE31AA500011DEA;
 			productRefGroup = 2776EA1E2CE31AA500011DEA /* Products */;
@@ -324,6 +332,8 @@
 			files = (
 				2776EA282CE31AAB00011DEA /* Preview Assets.xcassets in Resources */,
 				2776EA252CE31AAB00011DEA /* Assets.xcassets in Resources */,
+				27A726FF2CF838CF00E4AE9B /* LocalizedSignInError.xcstrings in Resources */,
+				27A726FD2CF8297100E4AE9B /* Localizable.xcstrings in Resources */,
 				2776EA4B2CE31C8400011DEA /* MurcielagoPalette.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -400,6 +410,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -454,7 +465,9 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_STRICT_CONCURRENCY = complete;
 			};
 			name = Debug;
 		};
@@ -463,6 +476,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -510,6 +524,8 @@
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_STRICT_CONCURRENCY = complete;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -534,7 +550,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.01;
 				PRODUCT_BUNDLE_IDENTIFIER = SF.Murcielago;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -563,7 +579,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.01;
 				PRODUCT_BUNDLE_IDENTIFIER = SF.Murcielago;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -575,7 +591,6 @@
 		2776EA452CE31AAC00011DEA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -595,7 +610,6 @@
 		2776EA462CE31AAC00011DEA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -615,7 +629,6 @@
 		2776EA482CE31AAC00011DEA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 94L3XLA8X2;
@@ -633,7 +646,6 @@
 		2776EA492CE31AAC00011DEA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 94L3XLA8X2;

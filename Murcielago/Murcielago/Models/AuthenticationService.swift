@@ -1,6 +1,6 @@
 //
 //  AuthenticationService.swift
-//  EchoDemo
+//  Murcielago
 //
 //  Created by Sam Franusic on 11/11/24.
 //

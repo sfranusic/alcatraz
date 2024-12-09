@@ -1,20 +1,23 @@
 //
-//  GameController.swift
+//  GameControllerModel.swift
 //  Murcielago
 //
-//  Created by Sam Franusic on 11/15/24.
+//  Created by Sam Franusic on 11/29/24.
 //
 
 import GameController
+import SwiftUI
 
-class ControllerModel: ObservableObject {
-    @Published var connectedToController: Bool = false
-    @Published var circleButtonPressed: Bool = false
-    @Published var exButtonPressed: Bool = false
-    @Published var leftThumbstickX: Float = 0.0
-    @Published var leftThumbstickY: Float = 0.0
-    @Published var rightThumbstickX: Float = 0.0
-    @Published var rightThumbstickY: Float = 0.0
+class GameControllerModel: ObservableObject {
+    @Published private(set) var connectedToController: Bool = false
+    @Published private(set) var circleButtonPressed: Bool = false
+    @Published private(set) var exButtonPressed: Bool = false
+    @Published private(set) var leftShoulderPressed: Bool = false
+    @Published private(set) var rightShoulderPressed: Bool = false
+    @Published private(set) var leftThumbstickPosition: CGPoint = .zero
+    @Published private(set) var rightThumbstickPosition: CGPoint = .zero
+    @Published private(set) var leftTrigger: CGFloat = 0.0
+    @Published private(set) var rightTrigger: CGFloat = 0.0
 
     var controller: GCController?
 
@@ -52,7 +55,7 @@ class ControllerModel: ObservableObject {
 
     private func setupController(controller: GCController) {
         guard let gamepad = controller.extendedGamepad else {
-            print("Extended gamepad not found")
+            print("Controller not found")
             return
         }
 
@@ -65,13 +68,32 @@ class ControllerModel: ObservableObject {
         }
 
         gamepad.leftThumbstick.valueChangedHandler = { [weak self] (_, xValue, yValue) in
-            self?.leftThumbstickX = xValue
-            self?.leftThumbstickY = yValue
+            self?.leftThumbstickPosition = CGPoint(x: CGFloat(xValue), y: CGFloat(yValue))
         }
 
         gamepad.rightThumbstick.valueChangedHandler = { [weak self] (dpad, xValue, yValue) in
-            self?.rightThumbstickX = xValue
-            self?.rightThumbstickY = yValue
+            self?.rightThumbstickPosition = CGPoint(x: CGFloat(xValue), y: CGFloat(yValue))
         }
+
+        gamepad.leftShoulder.valueChangedHandler = { [weak self] (_, _, pressed) in
+            self?.leftShoulderPressed = pressed
+        }
+
+        gamepad.rightShoulder.valueChangedHandler = { [weak self] (_, _, pressed) in
+            self?.rightShoulderPressed = pressed
+        }
+
+        gamepad.leftTrigger.valueChangedHandler = { [weak self] (_, value, _) in
+            self?.leftTrigger = CGFloat(value)
+        }
+
+        gamepad.rightTrigger.valueChangedHandler = { [weak self] (_, value, _) in
+            self?.rightTrigger = CGFloat(value)
+        }
+
+    }
+
+    deinit {
+        NotificationCenter.default.removeObserver(self)
     }
 }

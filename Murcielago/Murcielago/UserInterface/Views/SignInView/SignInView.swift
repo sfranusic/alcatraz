@@ -12,6 +12,7 @@ struct SignInView: View {
     @State var usernameInput: String = ""
     @State var passwordInput: String = ""
     @State var showLoginUserInterface = false
+    @FocusState private var isFocused: Bool
 
     var body: some View {
         VStack {
@@ -23,6 +24,7 @@ struct SignInView: View {
         .onAppear {
             showLoginUserInterface = true
         }
+        .gesture(swipeDown)
     }
 
     private var logoView: some View {
@@ -38,7 +40,6 @@ struct SignInView: View {
             statusView
             textFieldsView
             signInButton
-
         }
         .opacity(showLoginUserInterface ? 1.0 : 0.0)
         .animation(
@@ -58,6 +59,7 @@ struct SignInView: View {
                     Text("Password")
                 }
             }
+            .focused($isFocused)
             .padding([.horizontal], 15)
             .frame(height: 50)
             .background {
@@ -100,6 +102,15 @@ struct SignInView: View {
                 .animation(.easeIn(duration: 0.5))
         }
         .frame(height: 50)
+    }
+
+    private var swipeDown: some Gesture {
+        DragGesture()
+            .onEnded { value in
+                if value.translation.height > 25 {
+                    isFocused = false
+                }
+            }
     }
 }
 

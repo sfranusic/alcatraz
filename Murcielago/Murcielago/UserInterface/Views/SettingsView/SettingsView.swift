@@ -12,29 +12,37 @@ struct SettingsView: View {
 
     var body: some View {
         VStack {
-            Section(header: Text("Settings")) {
+            NavigationStack {
                 List {
-
+                    NavigationLink(
+                        "Game Controller Settings",
+                        destination: GameControllerSettingsView()
+                    )
+                    NavigationLink(
+                        "Emitter Settings",
+                        destination: SlideGalleryView()
+                    )
                 }
+                Button(
+                    action: {
+                        mainModel.signOut()
+                    },
+                    label: {
+                        Text("Sign Out")
+                            .frame(height: 50)
+                            .frame(maxWidth: .infinity)
+                            .overlay {
+                                RoundedRectangle(cornerRadius: 8)
+                                    .stroke(lineWidth: 2.0)
+                                    .padding([.horizontal], 25)
+                            }
+
+
+                    }
+                )
+                versionLabel
             }
-            Button(
-                action: {
-                    mainModel.signOut()
-                },
-                label: {
-                    Text("Sign Out")
-                        .frame(height: 50)
-                        .frame(maxWidth: .infinity)
-                        .overlay {
-                            RoundedRectangle(cornerRadius: 8)
-                                .stroke(lineWidth: 2.0)
-                                .padding([.horizontal], 25)
-                        }
-
-
-                }
-            )
-            versionLabel
+            .navigationTitle("Settings")
         }
         .tint(.murcielagoPrimary)
     }

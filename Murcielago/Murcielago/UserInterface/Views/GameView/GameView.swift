@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct GameView: View {
-    @StateObject var controllerModel = ControllerModel()
+    @StateObject var controllerModel = GameControllerModel()
     @State var rotation: CGFloat = 0.0
     @State var width: CGFloat = 0.0
     @State var showButton = true

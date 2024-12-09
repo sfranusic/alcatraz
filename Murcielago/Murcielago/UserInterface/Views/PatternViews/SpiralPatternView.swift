@@ -25,7 +25,6 @@ struct SpiralPatternView: View {
                                 outerModel.getAngleForNode(index)
                             )
                         )
-                        .opacity(outerModel.nodes[index] == true ? 1 : 0)
                         .foregroundColor(
                             outerModel.nodes[index] 
                             ? .murcielagoPrimary

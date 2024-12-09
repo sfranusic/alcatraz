@@ -41,7 +41,7 @@ struct SlideGalleryView: View {
 
     private var galleryView: some View {
         VStack {
-            Text("\(model.selectedTag.rawValue)")
+            Text(model.selectedTag.localizedTitle)
                 .font(.largeTitle)
             ZStack {
                 Color.clear
@@ -122,6 +122,14 @@ class SlideGalleryViewModel: ObservableObject {
 
 enum SchemeTag: String, CaseIterable {
     case spiral, corners, empty
+
+    var localizedTitle: LocalizedStringKey {
+        switch self {
+        case .spiral: return "Spiral"
+        case .corners: return "Corners"
+        case .empty: return "Empty"
+        }
+    }
 }
 
 #Preview {

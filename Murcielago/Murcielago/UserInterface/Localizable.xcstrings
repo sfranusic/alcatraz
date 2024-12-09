@@ -17,18 +17,66 @@
         }
       }
     },
-    "Controller Settings" : {
+    "Corners" : {
       "localizations" : {
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Configuración del control"
+            "value" : "Esquinas"
           }
         },
         "es-US" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Ajustes del control"
+            "value" : "Esquinas"
+          }
+        }
+      }
+    },
+    "Emitter Settings" : {
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Configuración del emisor"
+          }
+        },
+        "es-US" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ajustes del emisor"
+          }
+        }
+      }
+    },
+    "Empty" : {
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vacío"
+          }
+        },
+        "es-US" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vacío"
+          }
+        }
+      }
+    },
+    "Game Controller Settings" : {
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Configuración del control de juego"
+          }
+        },
+        "es-US" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ajustes del control de juego"
           }
         }
       }

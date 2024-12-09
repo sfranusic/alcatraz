@@ -41,7 +41,7 @@ struct SlideGalleryView: View {
 
     private var galleryView: some View {
         VStack {
-            Text("\(model.selectedTag.rawValue)")
+            Text(model.selectedTag.localizedTitle)
                 .font(.largeTitle)
             ZStack {
                 Color.clear

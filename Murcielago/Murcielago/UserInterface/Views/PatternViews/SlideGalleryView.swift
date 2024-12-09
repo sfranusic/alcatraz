@@ -122,6 +122,14 @@ class SlideGalleryViewModel: ObservableObject {
 
 enum SchemeTag: String, CaseIterable {
     case spiral, corners, empty
+
+    var localizedTitle: LocalizedStringKey {
+        switch self {
+        case .spiral: return "Spiral"
+        case .corners: return "Corners"
+        case .empty: return "Empty"
+        }
+    }
 }
 
 #Preview {

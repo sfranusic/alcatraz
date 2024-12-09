@@ -149,6 +149,22 @@
         }
       }
     },
+    "Spiral" : {
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Espirales"
+          }
+        },
+        "es-US" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Espirales"
+          }
+        }
+      }
+    },
     "Start Game" : {
       "localizations" : {
         "es-419" : {

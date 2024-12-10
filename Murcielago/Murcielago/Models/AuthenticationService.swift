@@ -30,5 +30,3 @@ actor AuthenticationService {
         return unauthenticated
     }
 }
-
-

@@ -42,8 +42,7 @@ struct SignInView: View {
             signInButton
         }
         .opacity(showLoginUserInterface ? 1.0 : 0.0)
-        .animation(
-            /*@START_MENU_TOKEN@*/.easeIn/*@END_MENU_TOKEN@*/(duration: 1.0),
+        .animation(.easeIn(duration: 1.0),
             value: showLoginUserInterface
         )
         .padding()
@@ -117,5 +116,5 @@ struct SignInView: View {
 #Preview {
     SignInView()
         .environmentObject(MainViewModel())
-        .preferredColorScheme(/*@START_MENU_TOKEN@*/.dark/*@END_MENU_TOKEN@*/)
+        .preferredColorScheme(.dark)
 }

@@ -14,6 +14,7 @@ enum SignInError: LocalizedError {
         switch self {
         case .invalidCredentials:
             return String(localized: "Invalid credentials", table: "LocalizedSignInError")
+
         case .noCredentials:
             return String(localized: "Enter username and password", table: "LocalizedSignInError")
         }

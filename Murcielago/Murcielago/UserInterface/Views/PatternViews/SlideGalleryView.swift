@@ -32,8 +32,10 @@ struct SlideGalleryView: View {
         switch model.selectedTag {
         case .spiral:
             SpiralPatternView()
+
         case .corners:
             GridPatternView()
+
         case .empty:
             EmptyView()
         }
@@ -50,7 +52,7 @@ struct SlideGalleryView: View {
             .aspectRatio(1, contentMode: .fit)
             .overlay {
                 RoundedRectangle(cornerRadius: 8.0)
-                    .stroke(lineWidth: /*@START_MENU_TOKEN@*/1.0/*@END_MENU_TOKEN@*/)
+                    .stroke(lineWidth: 1.0)
             }
             .padding()
         }

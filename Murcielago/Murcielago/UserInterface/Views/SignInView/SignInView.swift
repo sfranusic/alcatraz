@@ -49,22 +49,21 @@ struct SignInView: View {
     private var textFieldsView: some View {
         VStack {
             Group {
-                TextField(text: $usernameInput) {
-                    Text("Username")
-                }
-                SecureField(text: $passwordInput) {
-                    Text("Password")
-                }
+                TextField("Username", text: $usernameInput)
+                    .focused($focusState, equals: .username)
+
+                SecureField("Password", text: $passwordInput)
+                    .focused($focusState, equals: .password)
             }
-            .focused($isFocused)
             .padding([.horizontal], 15)
             .frame(height: 50)
             .background {
-                Color.surface
-            }
-            .overlay {
                 RoundedRectangle(cornerRadius: 8.0)
-                    .stroke(lineWidth: 1.0)
+                    .foregroundStyle(Color.surface)
+                    .overlay {
+                        RoundedRectangle(cornerRadius: 8.0)
+                            .stroke(lineWidth: 1.0)
+                    }
             }
         }
     }

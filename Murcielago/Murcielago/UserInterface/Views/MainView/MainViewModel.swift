@@ -18,8 +18,12 @@ class MainViewModel: ObservableObject {
     public func authenticate(username: String, password: String) {
         let authenticator = self.authenticator
         Task {
-            serviceActivity = true
+            guard !username.isEmpty, !password.isEmpty else {
+                displayErrorMessage(type: .noCredentials)
+                return
+            }
             clearErrorMessage()
+            serviceActivity = true
             async let result = authenticator.signIn(username: username, password: password)
 
             if await result == false {

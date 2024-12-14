@@ -15,7 +15,7 @@ struct SignInView: View {
 
     var body: some View {
         VStack {
-            logoView
+            murcielagoLogo
             loginUserInterface
         }
         .onAppear {
@@ -23,7 +23,7 @@ struct SignInView: View {
         }
     }
 
-    private var logoView: some View {
+    private var murcielagoLogo: some View {
         Image(systemName: "waveform")
             .resizable()
             .scaledToFit()

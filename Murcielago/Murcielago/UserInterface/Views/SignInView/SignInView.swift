@@ -16,9 +16,7 @@ struct SignInView: View {
     var body: some View {
         VStack {
             logoView
-                .foregroundStyle(.surface)
             loginUserInterface
-                .tint(.murcielagoPrimary)
         }
         .onAppear {
             showLoginUserInterface = true
@@ -31,6 +29,7 @@ struct SignInView: View {
             .scaledToFit()
             .frame(width: 100)
             .aspectRatio(1, contentMode: .fit)
+            .foregroundStyle(.surface)
     }
 
     private var loginUserInterface: some View {
@@ -40,10 +39,12 @@ struct SignInView: View {
             signInButton
         }
         .opacity(showLoginUserInterface ? 1.0 : 0.0)
-        .animation(.easeIn(duration: 1.0),
+        .animation(
+            .easeIn(duration: 1.0),
             value: showLoginUserInterface
         )
         .padding()
+        .tint(.murcielagoPrimary)
     }
 
     private var textFieldsView: some View {

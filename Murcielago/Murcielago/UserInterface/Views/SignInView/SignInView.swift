@@ -50,21 +50,9 @@ struct SignInView: View {
         VStack {
             Group {
                 TextField("Username", text: $usernameInput)
-                    .focused($focusState, equals: .username)
-
                 SecureField("Password", text: $passwordInput)
-                    .focused($focusState, equals: .password)
             }
-            .padding([.horizontal], 15)
-            .frame(height: 50)
-            .background {
-                RoundedRectangle(cornerRadius: 8.0)
-                    .foregroundStyle(Color.surface)
-                    .overlay {
-                        RoundedRectangle(cornerRadius: 8.0)
-                            .stroke(lineWidth: 1.0)
-                    }
-            }
+            .textFieldStyle(.murcielago)
         }
     }
 

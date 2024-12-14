@@ -25,6 +25,7 @@ struct MurcielagoTextFieldStyle: TextFieldStyle {
             .onTapGesture {
                 textFieldFocused = true
             }
+            .accessibilityElement(children: .combine)
     }
 }
 

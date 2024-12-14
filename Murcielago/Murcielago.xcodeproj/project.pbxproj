@@ -31,6 +31,7 @@
 		27A7271C2D016F6300E4AE9B /* SlideGalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A7271B2D016F6300E4AE9B /* SlideGalleryView.swift */; };
 		27A7271D2D016F6300E4AE9B /* GridPatternView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A727192D016F6300E4AE9B /* GridPatternView.swift */; };
 		27A7271E2D016F6300E4AE9B /* SpiralPatternView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A7271A2D016F6300E4AE9B /* SpiralPatternView.swift */; };
+		27D656012D0D5C0200DB3936 /* MurcielagoTextFieldStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D656002D0D5C0200DB3936 /* MurcielagoTextFieldStyle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +79,7 @@
 		27A727192D016F6300E4AE9B /* GridPatternView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridPatternView.swift; sourceTree = "<group>"; };
 		27A7271A2D016F6300E4AE9B /* SpiralPatternView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpiralPatternView.swift; sourceTree = "<group>"; };
 		27A7271B2D016F6300E4AE9B /* SlideGalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideGalleryView.swift; sourceTree = "<group>"; };
+		27D656002D0D5C0200DB3936 /* MurcielagoTextFieldStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MurcielagoTextFieldStyle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -224,6 +226,7 @@
 				2776EA242CE31AAB00011DEA /* Assets.xcassets */,
 				2776EA4A2CE31C8400011DEA /* MurcielagoPalette.xcassets */,
 				2776EA632CE5459200011DEA /* MurcielagoButtonStyle.swift */,
+				27D656002D0D5C0200DB3936 /* MurcielagoTextFieldStyle.swift */,
 			);
 			path = StyleAssets;
 			sourceTree = "<group>";
@@ -399,6 +402,7 @@
 				2776EA542CE31EF700011DEA /* SignInError.swift in Sources */,
 				2776EA642CE5459200011DEA /* MurcielagoButtonStyle.swift in Sources */,
 				2776EA522CE31D4F00011DEA /* AuthenticationService.swift in Sources */,
+				27D656012D0D5C0200DB3936 /* MurcielagoTextFieldStyle.swift in Sources */,
 				27A727152D0020BA00E4AE9B /* BatteryIndicatorView.swift in Sources */,
 				2776EA5A2CE460BD00011DEA /* MainViewModel.swift in Sources */,
 			);

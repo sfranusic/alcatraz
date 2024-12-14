@@ -19,7 +19,7 @@ class MainViewModel: ObservableObject {
         let authenticator = self.authenticator
         Task {
             guard !username.isEmpty, !password.isEmpty else {
-                displayErrorMessage(type: .noCredentials)
+                triggerErrorMessage(type: .noCredentials)
                 return
             }
             clearErrorMessage()
@@ -27,7 +27,7 @@ class MainViewModel: ObservableObject {
             async let result = authenticator.signIn(username: username, password: password)
 
             if await result == false {
-                displayErrorMessage(type: .invalidCredentials)
+                triggerErrorMessage(type: .invalidCredentials)
             }
             await updateAuthentication()
             serviceActivity = false
@@ -48,7 +48,7 @@ class MainViewModel: ObservableObject {
     }
 
     @MainActor
-    public func displayErrorMessage(type: SignInError) {
+    private func triggerErrorMessage(type: SignInError) {
         errorMessage = type.localizedDescription
         announceErrorMessage()
         Task {

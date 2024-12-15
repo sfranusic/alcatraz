@@ -80,7 +80,7 @@ struct SignInView: View {
                 ProgressView()
             }
             Text(mainModel.errorMessage)
-                .animation(.easeIn(duration: 0.5))
+                .animation(.easeInOut(duration: 0.5))
         }
         .frame(height: 50)
     }

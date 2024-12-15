@@ -9,9 +9,9 @@ import Foundation
 import SwiftUI
 
 actor AuthenticationService {
-    private(set) var connectionEstablished: Bool = false
+    private(set) var authenticated: Bool = false
     var unauthenticated: Bool {
-        connectionEstablished == false
+        authenticated == false
     }
 
     func signIn(username: String, password: String) async -> Bool {
@@ -21,12 +21,12 @@ actor AuthenticationService {
             assertionFailure("Service failed due to timeout")
             return false
         }
-        connectionEstablished = password == "password124"
-        return connectionEstablished
+        authenticated = password == "password124"
+        return authenticated
     }
 
     func signOut() async -> Bool {
-        connectionEstablished = false
+        authenticated = false
         return unauthenticated
     }
 }

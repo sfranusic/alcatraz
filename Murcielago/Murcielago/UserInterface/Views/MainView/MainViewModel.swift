@@ -8,7 +8,7 @@
 import SwiftUI
 
 class MainViewModel: ObservableObject {
-    private let authenticator = AuthenticationService()
+    private let authenticationService = AuthenticationService()
 
     @Published private(set) var unauthenticated: Bool = true
     @Published private(set) var errorMessage: String = ""
@@ -16,7 +16,7 @@ class MainViewModel: ObservableObject {
 
     @MainActor
     public func authenticate(username: String, password: String) {
-        let authenticator = self.authenticator
+        let authenticator = self.authenticationService
         Task {
             guard !username.isEmpty, !password.isEmpty else {
                 triggerErrorMessage(type: .noCredentials)
@@ -37,7 +37,7 @@ class MainViewModel: ObservableObject {
     @MainActor
     public func signOut() {
         Task {
-            async let result = authenticator.signOut()
+            async let result = authenticationService.signOut()
 
             if await result == false {
                 assertionFailure("Sign out failed")
@@ -74,7 +74,7 @@ class MainViewModel: ObservableObject {
 
     @MainActor
     private func updateAuthentication() async {
-        unauthenticated = await !authenticator.connectionEstablished
+        unauthenticated = await !authenticationService.authenticated
     }
 
 }

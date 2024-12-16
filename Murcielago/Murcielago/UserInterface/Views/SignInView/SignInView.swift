@@ -1,6 +1,6 @@
 //
 //  SignInView.swift
-//  EchoDemo
+//  Murcielago
 //
 //  Created by Sam Franusic on 11/11/24.
 //
@@ -30,6 +30,7 @@ struct SignInView: View {
             .frame(width: 100)
             .aspectRatio(1, contentMode: .fit)
             .foregroundStyle(.surface)
+            .accessibilityLabel("Murcielago")
     }
 
     private var loginUserInterface: some View {

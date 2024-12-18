@@ -82,6 +82,7 @@ struct SignInView: View {
             }
             Text(mainModel.errorMessage)
                 .animation(.easeInOut(duration: 0.5))
+                .accessibilityHidden(true)
         }
         .frame(height: 50)
     }

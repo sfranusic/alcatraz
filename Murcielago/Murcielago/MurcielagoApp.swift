@@ -17,13 +17,12 @@ struct MurcielagoApp: App {
             ZStack {
                 if showSignIn {
                     SignInView()
-                        .environmentObject(mainModel)
                         .transition(.move(edge: .leading))
                 } else {
                     MainView()
-                        .environmentObject(mainModel)
                 }
             }
+            .environmentObject(mainModel)
             .animation(.easeInOut(duration: 0.5), value: showSignIn)
             .onAppear {
                 showSignIn = mainModel.unauthenticated

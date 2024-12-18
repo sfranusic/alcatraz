@@ -28,7 +28,7 @@ struct SignInView: View {
             .resizable()
             .scaledToFit()
             .frame(width: 100)
-            .aspectRatio(1, contentMode: .fit)
+            .aspectRatio(contentMode: .fit)
             .foregroundStyle(.surface)
             .accessibilityLabel("Murcielago")
     }

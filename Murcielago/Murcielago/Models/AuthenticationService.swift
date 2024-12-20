@@ -16,9 +16,8 @@ actor AuthenticationService {
 
     func signIn(username: String, password: String) async -> Bool {
         do {
-            try await Task.sleep(nanoseconds: UInt64.random(in: 0...3) * 1_000_000_000)
+            try await Task.sleep(for: .seconds(Int.random(in: 0...3)))
         } catch {
-            assertionFailure("Service failed due to timeout")
             return false
         }
         authenticated = password == "password124"

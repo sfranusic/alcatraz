@@ -14,23 +14,52 @@ class MainViewModel: ObservableObject {
     @Published private(set) var errorMessage: String = ""
     @Published private(set) var serviceActivity = false
 
-    @MainActor
-    public func authenticate(username: String, password: String) {
-        let authenticator = self.authenticationService
-        Task {
-            guard !username.isEmpty, !password.isEmpty else {
-                triggerErrorMessage(type: .noCredentials)
-                return
-            }
-            clearErrorMessage()
-            serviceActivity = true
-            async let result = authenticator.signIn(username: username, password: password)
+    @MainActor func authenticateWithTimeout(
+        username: String,
+        password: String,
+        seconds: TimeInterval
+    ) async -> Bool {
 
-            if await result == false {
-                triggerErrorMessage(type: .invalidCredentials)
+        guard !username.isEmpty, !password.isEmpty else {
+            triggerErrorMessage(type: .noCredentials)
+            return false
+        }
+
+        let authenticator = authenticationService
+
+        do {
+            return try await withThrowingTaskGroup(of: Bool.self) { group in
+
+                serviceActivity = true
+
+                group.addTask {
+                    return await authenticator.signIn(username: username, password: password)
+                }
+
+                group.addTask {
+                    try await Task.sleep(for: .seconds(seconds))
+                    throw CancellationError()
+                }
+
+                let result = try await group.next()
+
+                // Cancel group and any remaining tasks.
+                group.cancelAll()
+                serviceActivity = false
+
+                guard let result, result == true else {
+                    triggerErrorMessage(type: .invalidCredentials)
+                    return false
+                }
+
+                await updateAuthentication()
+
+                return result
             }
-            await updateAuthentication()
+        } catch {
             serviceActivity = false
+            triggerErrorMessage(type: .serviceTimeout)
+            return false
         }
     }
 

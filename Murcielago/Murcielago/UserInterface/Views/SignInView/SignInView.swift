@@ -59,10 +59,9 @@ struct SignInView: View {
     private var signInButton: some View {
         Button(
             action: {
-                mainModel.authenticate(
-                    username: usernameInput,
-                    password: passwordInput
-                )
+                Task {
+                    await mainModel.authenticateWithTimeout()
+                }
             },
             label: {
                 Text("Sign In")

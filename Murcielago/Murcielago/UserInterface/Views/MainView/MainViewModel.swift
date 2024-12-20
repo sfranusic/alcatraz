@@ -17,7 +17,7 @@ class MainViewModel: ObservableObject {
     @Published var passwordInput: String = ""
 
     @MainActor func authenticateWithTimeout(
-        seconds: TimeInterval = 2.0
+        timeout: TimeInterval = 2.0
     ) async -> Bool {
         let username = usernameInput.trimmingCharacters(in: .whitespaces)
         let password = passwordInput.trimmingCharacters(in: .whitespaces)
@@ -39,7 +39,7 @@ class MainViewModel: ObservableObject {
                 }
 
                 group.addTask {
-                    try await Task.sleep(for: .seconds(seconds))
+                    try await Task.sleep(for: .seconds(timeout))
                     throw CancellationError()
                 }
 

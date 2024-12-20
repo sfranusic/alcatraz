@@ -7,8 +7,8 @@
 
 import Foundation
 
-enum SignInError: LocalizedError {
-    case invalidCredentials, noCredentials
+enum SignInError: LocalizedError, Sendable {
+    case invalidCredentials, noCredentials, serviceTimeout
 
     var localizedDescription: String {
         switch self {
@@ -17,6 +17,9 @@ enum SignInError: LocalizedError {
 
         case .noCredentials:
             return String(localized: "Enter username and password", table: "LocalizedSignInError")
+
+        case .serviceTimeout:
+            return String(localized: "Service timeout", table: "LocalizedSignInError")
         }
 
     }

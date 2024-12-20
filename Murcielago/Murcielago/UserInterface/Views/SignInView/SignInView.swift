@@ -9,8 +9,6 @@ import SwiftUI
 
 struct SignInView: View {
     @EnvironmentObject var mainModel: MainViewModel
-    @State var usernameInput: String = ""
-    @State var passwordInput: String = ""
     @State var showLoginUserInterface = false
 
     var body: some View {
@@ -51,8 +49,8 @@ struct SignInView: View {
     private var textFieldsView: some View {
         VStack {
             Group {
-                TextField("Username", text: $usernameInput)
-                SecureField("Password", text: $passwordInput)
+                TextField("Username", text: $mainModel.usernameInput)
+                SecureField("Password", text: $mainModel.passwordInput)
             }
             .textFieldStyle(.murcielago)
         }

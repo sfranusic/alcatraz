@@ -13,12 +13,14 @@ class MainViewModel: ObservableObject {
     @Published private(set) var unauthenticated: Bool = true
     @Published private(set) var errorMessage: String = ""
     @Published private(set) var serviceActivity = false
+    @Published var usernameInput: String = ""
+    @Published var passwordInput: String = ""
 
     @MainActor func authenticateWithTimeout(
-        username: String,
-        password: String,
-        seconds: TimeInterval
+        seconds: TimeInterval = 2.0
     ) async -> Bool {
+        let username = usernameInput.trimmingCharacters(in: .whitespaces)
+        let password = passwordInput.trimmingCharacters(in: .whitespaces)
 
         guard !username.isEmpty, !password.isEmpty else {
             triggerErrorMessage(type: .noCredentials)

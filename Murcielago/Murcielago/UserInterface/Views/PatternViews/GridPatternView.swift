@@ -28,10 +28,14 @@ struct GridPatternView: View {
         }
         .padding()
         .onAppear {
-            model.turnOn()
+            Task {
+                await model.animateAppearance()
+            }
         }
         .onTapGesture {
-            model.turnOn()
+            Task {
+                await model.animateAppearance()
+            }
         }
     }
 }
@@ -46,26 +50,28 @@ class GridModel: ObservableObject {
         state = Array(repeating: Array(repeating: false, count: columns), count: rows)
     }
 
-    func turnOn() {
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-            withAnimation(.linear(duration: 2)) {
-                self.turnOnCorners()
-            }
-        }
-        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-            withAnimation(.linear(duration: 2)) {
-                self.turnOnCenter()
-            }
-        }
-        DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
-            withAnimation(.linear(duration: 2)) {
-                self.turnOnAll()
-            }
-        }
-        DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
-            self.turnAllOff()
+    func animateAppearance() async {
+        // Corner animation
+        try? await Task.sleep(for: .seconds(1))
+        withAnimation(.linear(duration: 2)) {
+            turnOnCorners()
         }
 
+        // Center animation
+        try? await Task.sleep(for: .seconds(1))
+        withAnimation(.linear(duration: 2)) {
+            turnOnCenter()
+        }
+
+        // All cells animation
+        try? await Task.sleep(for: .seconds(1))
+        withAnimation(.linear(duration: 2)) {
+            turnOnAll()
+        }
+
+        // Reset
+        try? await Task.sleep(for: .seconds(2))
+        turnAllOff()
     }
 
     func turnOnCorners() {

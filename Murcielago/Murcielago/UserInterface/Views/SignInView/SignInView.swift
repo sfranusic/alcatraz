@@ -60,7 +60,7 @@ struct SignInView: View {
         Button(
             action: {
                 Task {
-                    await mainModel.authenticateWithTimeout()
+                    await mainModel.signIn()
                 }
             },
             label: {

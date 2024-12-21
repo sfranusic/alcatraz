@@ -16,9 +16,7 @@ class MainViewModel: ObservableObject {
     @Published var usernameInput: String = ""
     @Published var passwordInput: String = ""
 
-    @MainActor func authenticateWithTimeout(
-        timeout: TimeInterval = 2.0
-    ) async -> Bool {
+    @MainActor func signIn(timeout: TimeInterval = 2.0) async -> Bool {
         let username = usernameInput.trimmingCharacters(in: .whitespaces)
         let password = passwordInput.trimmingCharacters(in: .whitespaces)
 

@@ -37,7 +37,6 @@ struct SettingsView: View {
                                     .padding([.horizontal], 25)
                             }
 
-
                     }
                 )
                 versionLabel

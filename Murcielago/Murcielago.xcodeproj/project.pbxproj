@@ -80,6 +80,7 @@
 		27A7271A2D016F6300E4AE9B /* SpiralPatternView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpiralPatternView.swift; sourceTree = "<group>"; };
 		27A7271B2D016F6300E4AE9B /* SlideGalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideGalleryView.swift; sourceTree = "<group>"; };
 		27D656002D0D5C0200DB3936 /* MurcielagoTextFieldStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MurcielagoTextFieldStyle.swift; sourceTree = "<group>"; };
+		27D656022D132E8A00DB3936 /* Murcielago.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = Murcielago.xctestplan; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +150,7 @@
 		2776EA302CE31AAC00011DEA /* MurcielagoTests */ = {
 			isa = PBXGroup;
 			children = (
+				27D656022D132E8A00DB3936 /* Murcielago.xctestplan */,
 				2776EA312CE31AAC00011DEA /* MurcielagoTests.swift */,
 			);
 			path = MurcielagoTests;

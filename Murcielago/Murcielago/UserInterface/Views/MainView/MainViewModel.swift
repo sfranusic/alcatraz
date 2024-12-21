@@ -60,6 +60,15 @@ class MainViewModel: ObservableObject {
         }
     }
 
+    /// This method uses `UIAccessibility` to announce the error message.
+    private func announceErrorMessage() {
+        let message = errorMessage
+        Task.detached {
+            try? await Task.sleep(for: .seconds(0.1))
+            await UIAccessibility.post(notification: .announcement, argument: message)
+        }
+    }
+
     @MainActor
     private func clearErrorMessage() {
         errorMessage = ""

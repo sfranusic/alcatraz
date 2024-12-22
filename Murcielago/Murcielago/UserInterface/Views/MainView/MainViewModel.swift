@@ -7,8 +7,8 @@
 
 import SwiftUI
 
-class MainViewModel: ObservableObject {
-    private let authenticationService = AuthenticationService()
+final class MainViewModel: ObservableObject {
+    private let authenticationService: AuthenticationService = MockAuthenticationService()
 
     @Published private(set) var unauthenticated: Bool = true
     @Published private(set) var errorMessage: String = ""
@@ -87,11 +87,12 @@ class MainViewModel: ObservableObject {
     }
 
     /// This method uses `UIAccessibility` to announce the error message.
+    @MainActor
     private func announceErrorMessage() {
         let message = errorMessage
         Task {
             try? await Task.sleep(for: .seconds(0.1))
-            await UIAccessibility.post(notification: .announcement, argument: message)
+            UIAccessibility.post(notification: .announcement, argument: message)
         }
     }
 
@@ -103,7 +104,7 @@ class MainViewModel: ObservableObject {
 
     @MainActor
     private func updateAuthentication() async {
-        unauthenticated = await !authenticationService.authenticated
+        unauthenticated = await authenticationService.unauthenticated
     }
 
 }

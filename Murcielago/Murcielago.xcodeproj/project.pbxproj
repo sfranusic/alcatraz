@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2747A4D22D1691E4002CFCD6 /* Murcielago.xctestplan in Resources */ = {isa = PBXBuildFile; fileRef = 2747A4D12D1691E4002CFCD6 /* Murcielago.xctestplan */; };
+		2747A4D32D1691E4002CFCD6 /* Murcielago.xctestplan in Resources */ = {isa = PBXBuildFile; fileRef = 2747A4D12D1691E4002CFCD6 /* Murcielago.xctestplan */; };
+		2747A4D42D1691E4002CFCD6 /* Murcielago.xctestplan in Resources */ = {isa = PBXBuildFile; fileRef = 2747A4D12D1691E4002CFCD6 /* Murcielago.xctestplan */; };
 		2776EA212CE31AA600011DEA /* MurcielagoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2776EA202CE31AA600011DEA /* MurcielagoApp.swift */; };
 		2776EA252CE31AAB00011DEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2776EA242CE31AAB00011DEA /* Assets.xcassets */; };
 		2776EA282CE31AAB00011DEA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2776EA272CE31AAB00011DEA /* Preview Assets.xcassets */; };
@@ -52,6 +55,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2747A4D12D1691E4002CFCD6 /* Murcielago.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = Murcielago.xctestplan; sourceTree = "<group>"; };
 		2776EA1D2CE31AA500011DEA /* Murcielago.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Murcielago.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2776EA202CE31AA600011DEA /* MurcielagoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MurcielagoApp.swift; sourceTree = "<group>"; };
 		2776EA242CE31AAB00011DEA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -111,6 +115,7 @@
 		2776EA142CE31AA500011DEA = {
 			isa = PBXGroup;
 			children = (
+				2747A4D12D1691E4002CFCD6 /* Murcielago.xctestplan */,
 				2776EA1F2CE31AA500011DEA /* Murcielago */,
 				2776EA302CE31AAC00011DEA /* MurcielagoTests */,
 				2776EA3A2CE31AAC00011DEA /* MurcielagoUITests */,
@@ -364,6 +369,7 @@
 				2776EA282CE31AAB00011DEA /* Preview Assets.xcassets in Resources */,
 				2776EA252CE31AAB00011DEA /* Assets.xcassets in Resources */,
 				27A726FF2CF838CF00E4AE9B /* LocalizedSignInError.xcstrings in Resources */,
+				2747A4D22D1691E4002CFCD6 /* Murcielago.xctestplan in Resources */,
 				27A726FD2CF8297100E4AE9B /* Localizable.xcstrings in Resources */,
 				2776EA4B2CE31C8400011DEA /* MurcielagoPalette.xcassets in Resources */,
 			);
@@ -373,6 +379,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2747A4D32D1691E4002CFCD6 /* Murcielago.xctestplan in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -380,6 +387,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2747A4D42D1691E4002CFCD6 /* Murcielago.xctestplan in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

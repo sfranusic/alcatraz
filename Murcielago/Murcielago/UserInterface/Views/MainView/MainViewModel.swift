@@ -53,6 +53,7 @@ final class MainViewModel: ObservableObject {
                 }
 
                 await updateAuthentication()
+                clearTextFields()
 
                 return result
             }
@@ -100,6 +101,12 @@ final class MainViewModel: ObservableObject {
     private func clearErrorMessage() {
         errorMessage = ""
 
+    }
+
+    @MainActor
+    private func clearTextFields() {
+        usernameInput = ""
+        passwordInput = ""
     }
 
     @MainActor

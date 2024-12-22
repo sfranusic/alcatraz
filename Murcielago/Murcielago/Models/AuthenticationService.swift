@@ -8,7 +8,14 @@
 import Foundation
 import SwiftUI
 
-actor AuthenticationService {
+protocol AuthenticationService: Sendable {
+    func signIn(username: String, password: String) async -> Bool
+    func signOut() async -> Bool
+    var unauthenticated: Bool { get async }
+    var authenticated: Bool { get async }
+}
+
+actor MockAuthenticationService: AuthenticationService, Sendable {
     private(set) var authenticated: Bool = false
     var unauthenticated: Bool {
         authenticated == false

@@ -8,13 +8,17 @@
 import SwiftUI
 
 final class MainViewModel: ObservableObject {
-    private let authenticationService: AuthenticationService = MockAuthenticationService()
+    private let authenticationService: AuthenticationService
 
     @Published private(set) var unauthenticated: Bool = true
     @Published private(set) var errorMessage: String = ""
     @Published private(set) var serviceActivity = false
     @Published var usernameInput: String = ""
     @Published var passwordInput: String = ""
+
+    init(authenticationService: AuthenticationService) {
+        self.authenticationService = authenticationService
+    }
 
     @MainActor func signIn(timeout: TimeInterval = 2.0) async -> Bool {
         let username = usernameInput.trimmingCharacters(in: .whitespaces)

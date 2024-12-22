@@ -9,7 +9,7 @@ import SwiftUI
 
 @main
 struct MurcielagoApp: App {
-    @StateObject private var mainModel = MainViewModel()
+    @StateObject private var mainModel = MainViewModel(authenticationService: .mock)
     @State private var showSignIn = true
 
     var body: some Scene {

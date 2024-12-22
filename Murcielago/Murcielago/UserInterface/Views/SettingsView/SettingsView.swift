@@ -64,5 +64,5 @@ struct SettingsView: View {
 #Preview {
     SettingsView()
         .preferredColorScheme(.dark)
-        .environmentObject(MainViewModel())
+        .environmentObject(MainViewModel(authenticationService: .mock))
 }

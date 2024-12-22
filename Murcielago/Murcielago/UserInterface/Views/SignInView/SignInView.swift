@@ -87,6 +87,6 @@ struct SignInView: View {
 
 #Preview {
     SignInView()
-        .environmentObject(MainViewModel())
+        .environmentObject(MainViewModel(authenticationService: .mock))
         .preferredColorScheme(.dark)
 }

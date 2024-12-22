@@ -10,6 +10,11 @@
 		2747A4D22D1691E4002CFCD6 /* Murcielago.xctestplan in Resources */ = {isa = PBXBuildFile; fileRef = 2747A4D12D1691E4002CFCD6 /* Murcielago.xctestplan */; };
 		2747A4D32D1691E4002CFCD6 /* Murcielago.xctestplan in Resources */ = {isa = PBXBuildFile; fileRef = 2747A4D12D1691E4002CFCD6 /* Murcielago.xctestplan */; };
 		2747A4D42D1691E4002CFCD6 /* Murcielago.xctestplan in Resources */ = {isa = PBXBuildFile; fileRef = 2747A4D12D1691E4002CFCD6 /* Murcielago.xctestplan */; };
+		277510132D17F72E00C2833E /* MainViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277510122D17F72E00C2833E /* MainViewModelTests.swift */; };
+		277510142D17F87700C2833E /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2776EA592CE460BD00011DEA /* MainViewModel.swift */; };
+		277510152D17F88A00C2833E /* AuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2776EA4F2CE31D4F00011DEA /* AuthenticationService.swift */; };
+		277510162D17F96600C2833E /* SignInError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2776EA532CE31EF700011DEA /* SignInError.swift */; };
+		277510182D17FDD700C2833E /* AuthenticationServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277510172D17FDD700C2833E /* AuthenticationServiceTests.swift */; };
 		2776EA212CE31AA600011DEA /* MurcielagoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2776EA202CE31AA600011DEA /* MurcielagoApp.swift */; };
 		2776EA252CE31AAB00011DEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2776EA242CE31AAB00011DEA /* Assets.xcassets */; };
 		2776EA282CE31AAB00011DEA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2776EA272CE31AAB00011DEA /* Preview Assets.xcassets */; };
@@ -56,6 +61,8 @@
 
 /* Begin PBXFileReference section */
 		2747A4D12D1691E4002CFCD6 /* Murcielago.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = Murcielago.xctestplan; sourceTree = "<group>"; };
+		277510122D17F72E00C2833E /* MainViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModelTests.swift; sourceTree = "<group>"; };
+		277510172D17FDD700C2833E /* AuthenticationServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationServiceTests.swift; sourceTree = "<group>"; };
 		2776EA1D2CE31AA500011DEA /* Murcielago.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Murcielago.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2776EA202CE31AA600011DEA /* MurcielagoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MurcielagoApp.swift; sourceTree = "<group>"; };
 		2776EA242CE31AAB00011DEA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -115,10 +122,10 @@
 		2776EA142CE31AA500011DEA = {
 			isa = PBXGroup;
 			children = (
-				2747A4D12D1691E4002CFCD6 /* Murcielago.xctestplan */,
 				2776EA1F2CE31AA500011DEA /* Murcielago */,
 				2776EA302CE31AAC00011DEA /* MurcielagoTests */,
 				2776EA3A2CE31AAC00011DEA /* MurcielagoUITests */,
+				2747A4D12D1691E4002CFCD6 /* Murcielago.xctestplan */,
 				2776EA1E2CE31AA500011DEA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -157,6 +164,8 @@
 			children = (
 				27D656022D132E8A00DB3936 /* Murcielago.xctestplan */,
 				2776EA312CE31AAC00011DEA /* MurcielagoTests.swift */,
+				277510122D17F72E00C2833E /* MainViewModelTests.swift */,
+				277510172D17FDD700C2833E /* AuthenticationServiceTests.swift */,
 			);
 			path = MurcielagoTests;
 			sourceTree = "<group>";
@@ -422,7 +431,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				277510182D17FDD700C2833E /* AuthenticationServiceTests.swift in Sources */,
 				2776EA322CE31AAC00011DEA /* MurcielagoTests.swift in Sources */,
+				277510132D17F72E00C2833E /* MainViewModelTests.swift in Sources */,
+				277510162D17F96600C2833E /* SignInError.swift in Sources */,
+				277510142D17F87700C2833E /* MainViewModel.swift in Sources */,
+				277510152D17F88A00C2833E /* AuthenticationService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

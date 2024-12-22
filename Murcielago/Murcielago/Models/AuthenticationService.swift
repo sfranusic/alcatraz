@@ -38,7 +38,8 @@ actor MockAuthenticationService: AuthenticationService, Sendable {
     }
 
     func signOut() async -> Bool {
+        let initial = authenticated
         authenticated = false
-        return unauthenticated
+        return authenticated != initial
     }
 }

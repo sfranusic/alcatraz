@@ -15,6 +15,12 @@ protocol AuthenticationService: Sendable {
     var authenticated: Bool { get async }
 }
 
+extension AuthenticationService where Self == MockAuthenticationService {
+    static var mock: Self {
+        .init()
+    }
+}
+
 actor MockAuthenticationService: AuthenticationService, Sendable {
     private(set) var authenticated: Bool = false
     var unauthenticated: Bool {

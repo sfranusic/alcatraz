@@ -28,6 +28,17 @@ final class AuthenticationServiceTests: XCTestCase {
         XCTAssertFalse(isAuthenticated, "Service should not be authenticated initially.")
     }
 
+    func testInitialAuthentication() async {
+        let isUnauthenticated = await authService.unauthenticated
+        let isAuthenticated = await authService.authenticated
+
+        XCTAssertNotEqual(
+            isAuthenticated,
+            isUnauthenticated,
+            "Authenticated and unauthenticated status should never be the same."
+        )
+    }
+
     func testSignInSuccess() async {
         let result = await authService.signIn(username: "testuser", password: "password124")
 

@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+@MainActor
 final class MainViewModel: ObservableObject {
     private let authenticationService: AuthenticationService
 
@@ -20,7 +21,7 @@ final class MainViewModel: ObservableObject {
         self.authenticationService = authenticationService
     }
 
-    @MainActor func signIn(timeout: TimeInterval = 2.0) async -> Bool {
+    func signIn(timeout: TimeInterval = 2.0) async -> Bool {
         let username = usernameInput.trimmingCharacters(in: .whitespaces)
         let password = passwordInput.trimmingCharacters(in: .whitespaces)
 
@@ -68,7 +69,6 @@ final class MainViewModel: ObservableObject {
         }
     }
 
-    @MainActor
     public func signOut() {
         Task {
             async let result = authenticationService.signOut()
@@ -81,7 +81,6 @@ final class MainViewModel: ObservableObject {
         }
     }
 
-    @MainActor
     private func triggerErrorMessage(type: SignInError) {
         errorMessage = type.localizedDescription
         announceErrorMessage()
@@ -92,7 +91,6 @@ final class MainViewModel: ObservableObject {
     }
 
     /// This method uses `UIAccessibility` to announce the error message.
-    @MainActor
     private func announceErrorMessage() {
         let message = errorMessage
         Task {
@@ -101,19 +99,16 @@ final class MainViewModel: ObservableObject {
         }
     }
 
-    @MainActor
     private func clearErrorMessage() {
         errorMessage = ""
 
     }
 
-    @MainActor
     private func clearTextFields() {
         usernameInput = ""
         passwordInput = ""
     }
 
-    @MainActor
     private func updateAuthentication() async {
         unauthenticated = await authenticationService.unauthenticated
     }

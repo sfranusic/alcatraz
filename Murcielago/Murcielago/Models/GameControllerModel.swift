@@ -59,11 +59,11 @@ class GameControllerModel: ObservableObject {
             return
         }
 
-        gamepad.buttonA.pressedChangedHandler = { [weak self] (button, value, pressed) in
+        gamepad.buttonA.pressedChangedHandler = { [weak self] (_, _, pressed) in
             self?.exButtonPressed = pressed
         }
 
-        gamepad.buttonB.pressedChangedHandler = { [weak self] (button, value, pressed) in
+        gamepad.buttonB.pressedChangedHandler = { [weak self] (_, _, pressed) in
             self?.circleButtonPressed = pressed
         }
 
@@ -71,7 +71,7 @@ class GameControllerModel: ObservableObject {
             self?.leftThumbstickPosition = CGPoint(x: CGFloat(xValue), y: CGFloat(yValue))
         }
 
-        gamepad.rightThumbstick.valueChangedHandler = { [weak self] (dpad, xValue, yValue) in
+        gamepad.rightThumbstick.valueChangedHandler = { [weak self] (_, xValue, yValue) in
             self?.rightThumbstickPosition = CGPoint(x: CGFloat(xValue), y: CGFloat(yValue))
         }
 

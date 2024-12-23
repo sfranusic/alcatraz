@@ -9,7 +9,7 @@ import SwiftUI
 
 @main
 struct MurcielagoApp: App {
-    @StateObject private var mainModel = MainViewModel()
+    @StateObject private var mainModel = MainViewModel(authenticationService: .mock)
     @State private var showSignIn = true
 
     var body: some Scene {
@@ -17,13 +17,12 @@ struct MurcielagoApp: App {
             ZStack {
                 if showSignIn {
                     SignInView()
-                        .environmentObject(mainModel)
                         .transition(.move(edge: .leading))
                 } else {
                     MainView()
-                        .environmentObject(mainModel)
                 }
             }
+            .environmentObject(mainModel)
             .animation(.easeInOut(duration: 0.5), value: showSignIn)
             .onAppear {
                 showSignIn = mainModel.unauthenticated

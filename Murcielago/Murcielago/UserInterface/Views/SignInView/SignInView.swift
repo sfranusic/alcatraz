@@ -1,6 +1,6 @@
 //
 //  SignInView.swift
-//  EchoDemo
+//  Murcielago
 //
 //  Created by Sam Franusic on 11/11/24.
 //
@@ -9,30 +9,26 @@ import SwiftUI
 
 struct SignInView: View {
     @EnvironmentObject var mainModel: MainViewModel
-    @State var usernameInput: String = ""
-    @State var passwordInput: String = ""
     @State var showLoginUserInterface = false
-    @FocusState private var isFocused: Bool
 
     var body: some View {
         VStack {
-            logoView
-                .foregroundStyle(.surface)
+            murcielagoLogo
             loginUserInterface
-                .tint(.murcielagoPrimary)
         }
         .onAppear {
             showLoginUserInterface = true
         }
-        .gesture(swipeDown)
     }
 
-    private var logoView: some View {
+    private var murcielagoLogo: some View {
         Image(systemName: "waveform")
             .resizable()
             .scaledToFit()
             .frame(width: 100)
-            .aspectRatio(1, contentMode: .fit)
+            .aspectRatio(contentMode: .fit)
+            .foregroundStyle(.surface)
+            .accessibilityLabel("Murcielago")
     }
 
     private var loginUserInterface: some View {
@@ -43,46 +39,29 @@ struct SignInView: View {
         }
         .opacity(showLoginUserInterface ? 1.0 : 0.0)
         .animation(
-            /*@START_MENU_TOKEN@*/.easeIn/*@END_MENU_TOKEN@*/(duration: 1.0),
+            .easeIn(duration: 1.0),
             value: showLoginUserInterface
         )
         .padding()
+        .tint(.murcielagoPrimary)
     }
 
     private var textFieldsView: some View {
         VStack {
             Group {
-                TextField(text: $usernameInput) {
-                    Text("Username")
-                }
-                SecureField(text: $passwordInput) {
-                    Text("Password")
-                }
+                TextField("Username", text: $mainModel.usernameInput)
+                SecureField("Password", text: $mainModel.passwordInput)
             }
-            .focused($isFocused)
-            .padding([.horizontal], 15)
-            .frame(height: 50)
-            .background {
-                Color.surface
-            }
-            .overlay {
-                RoundedRectangle(cornerRadius: 8.0)
-                    .stroke(lineWidth: 1.0)
-            }
+            .textFieldStyle(.murcielago)
         }
     }
 
     private var signInButton: some View {
         Button(
             action: {
-                guard !usernameInput.isEmpty, !passwordInput.isEmpty else {
-                    mainModel.displayErrorMessage(type: .noCredentials)
-                    return
+                Task {
+                    await mainModel.signIn()
                 }
-                mainModel.authenticate(
-                    username: usernameInput,
-                    password: passwordInput
-                )
             },
             label: {
                 Text("Sign In")
@@ -99,23 +78,15 @@ struct SignInView: View {
                 ProgressView()
             }
             Text(mainModel.errorMessage)
-                .animation(.easeIn(duration: 0.5))
+                .animation(.easeInOut(duration: 0.5))
+                .accessibilityHidden(true)
         }
         .frame(height: 50)
-    }
-
-    private var swipeDown: some Gesture {
-        DragGesture()
-            .onEnded { value in
-                if value.translation.height > 25 {
-                    isFocused = false
-                }
-            }
     }
 }
 
 #Preview {
     SignInView()
-        .environmentObject(MainViewModel())
-        .preferredColorScheme(/*@START_MENU_TOKEN@*/.dark/*@END_MENU_TOKEN@*/)
+        .environmentObject(MainViewModel(authenticationService: .mock))
+        .preferredColorScheme(.dark)
 }

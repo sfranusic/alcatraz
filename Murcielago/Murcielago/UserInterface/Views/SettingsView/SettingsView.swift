@@ -37,7 +37,6 @@ struct SettingsView: View {
                                     .padding([.horizontal], 25)
                             }
 
-
                     }
                 )
                 versionLabel
@@ -65,5 +64,5 @@ struct SettingsView: View {
 #Preview {
     SettingsView()
         .preferredColorScheme(.dark)
-        .environmentObject(MainViewModel())
+        .environmentObject(MainViewModel(authenticationService: .mock))
 }

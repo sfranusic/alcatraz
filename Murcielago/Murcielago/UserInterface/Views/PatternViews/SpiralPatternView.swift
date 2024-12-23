@@ -26,7 +26,7 @@ struct SpiralPatternView: View {
                             )
                         )
                         .foregroundColor(
-                            outerModel.nodes[index] 
+                            outerModel.nodes[index]
                             ? .murcielagoPrimary
                             : .clear
                         )
@@ -62,8 +62,8 @@ class SpiralViewModel: ObservableObject {
     }
 
     func animateOn() {
-        for (index, _) in nodes.enumerated() {
-            let animationTime: Double = 2.0/Double(nodes.count)
+        for index in nodes.indices {
+            let animationTime: Double = 2.0 / Double(nodes.count)
             let delay = Double(index) * animationTime
             DispatchQueue.main.asyncAfter(deadline: .now() + delay) {
                 self.setNode(index, state: true)
@@ -73,8 +73,6 @@ class SpiralViewModel: ObservableObject {
             }
         }
     }
-
-
 
     func setNode(_ node: Int, state: Bool) {
         guard node >= 0, node < nodes.count else {
@@ -87,7 +85,7 @@ class SpiralViewModel: ObservableObject {
     }
 
     func getAngleForNode(_ nodeIndex: Int) -> Double {
-        360.0/Double(nodes.count) * Double(nodeIndex)
+        360.0 / Double(nodes.count) * Double(nodeIndex)
     }
 
 }

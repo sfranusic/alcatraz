@@ -32,8 +32,21 @@ struct MainViewModelTests {
             testViewModel.usernameInput = "badUsername"
             testViewModel.passwordInput = "badPassword"
         }
-        await _ = testViewModel.signIn()
+        let result = await testViewModel.signIn()
+        #expect(result == false)
+        #expect(await testViewModel.unauthenticated)
         #expect(await testViewModel.errorMessage == SignInError.invalidCredentials.localizedDescription)
+    }
+
+    @Test func testSignInErrorWithTimeout() async throws {
+        let testViewModel = await MainViewModel(authenticationService: .mock)
+        await MainActor.run {
+            testViewModel.usernameInput = "badUsername"
+            testViewModel.passwordInput = "badPassword"
+        }
+        await _ = testViewModel.signIn(timeout: 0.01)
+
+        #expect(await testViewModel.errorMessage == SignInError.serviceTimeout.localizedDescription)
     }
 
     @Test func testSignInSuccess() async throws {
@@ -43,8 +56,22 @@ struct MainViewModelTests {
             testViewModel.passwordInput = "password124"
         }
         let result = await testViewModel.signIn()
+        let unauthenticated = await testViewModel.unauthenticated
         #expect(result)
-        #expect(await testViewModel.unauthenticated == false)
+        #expect(unauthenticated == false)
+    }
+
+    @Test func testSignOutSuccess() async throws {
+        let testViewModel = await MainViewModel(authenticationService: .mock)
+        await MainActor.run {
+            testViewModel.usernameInput = "username"
+            testViewModel.passwordInput = "password124"
+        }
+        let signIn = await testViewModel.signIn()
+        #expect(signIn)
+        await testViewModel.signOut()
+        let unauthenticated = await testViewModel.unauthenticated
+        #expect(unauthenticated)
     }
 
 }

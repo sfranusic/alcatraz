@@ -69,16 +69,9 @@ final class MainViewModel: ObservableObject {
         }
     }
 
-    public func signOut() {
-        Task {
-            async let result = authenticationService.signOut()
-
-            if await result == false {
-                assertionFailure("Sign out failed")
-            }
-
-            await updateAuthentication()
-        }
+    public func signOut() async {
+        _ = await authenticationService.signOut()
+        await updateAuthentication()
     }
 
     private func triggerErrorMessage(type: SignInError) {

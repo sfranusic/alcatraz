@@ -25,7 +25,9 @@ struct SettingsView: View {
                 }
                 Button(
                     action: {
-                        mainModel.signOut()
+                        Task {
+                            await mainModel.signOut()
+                        }
                     },
                     label: {
                         Text("Sign Out")

@@ -12,6 +12,7 @@ struct MainViewModelTests {
     @Test func testInitialState() async throws {
         let testViewModel = await MainViewModel(authenticationService: .mock)
         #expect(await testViewModel.errorMessage == "")
+        #expect(await testViewModel.unauthenticated)
     }
 
     @Test func testInitialTextFieldStates() async throws {

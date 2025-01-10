@@ -25,7 +25,9 @@ struct SettingsView: View {
                 }
                 Button(
                     action: {
-                        mainModel.signOut()
+                        Task {
+                            await mainModel.signOut()
+                        }
                     },
                     label: {
                         Text("Sign Out")
@@ -36,7 +38,6 @@ struct SettingsView: View {
                                     .stroke(lineWidth: 2.0)
                                     .padding([.horizontal], 25)
                             }
-
 
                     }
                 )
@@ -65,5 +66,5 @@ struct SettingsView: View {
 #Preview {
     SettingsView()
         .preferredColorScheme(.dark)
-        .environmentObject(MainViewModel())
+        .environmentObject(MainViewModel(authenticationService: .mock))
 }

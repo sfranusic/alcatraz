@@ -1,0 +1,37 @@
+{
+  "configurations" : [
+    {
+      "id" : "B89ACF85-B3DC-47F7-8029-BF7ED813365A",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:Murcielago.xcodeproj",
+      "identifier" : "2776EA1C2CE31AA500011DEA",
+      "name" : "Murcielago"
+    }
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:Murcielago.xcodeproj",
+        "identifier" : "2776EA2C2CE31AAB00011DEA",
+        "name" : "MurcielagoTests"
+      }
+    },
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:Murcielago.xcodeproj",
+        "identifier" : "2776EA362CE31AAC00011DEA",
+        "name" : "MurcielagoUITests"
+      }
+    }
+  ],
+  "version" : 1
+}

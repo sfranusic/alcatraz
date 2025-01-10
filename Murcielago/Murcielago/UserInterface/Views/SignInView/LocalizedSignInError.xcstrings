@@ -46,6 +46,22 @@
           }
         }
       }
+    },
+    "Service timeout" : {
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "El servicio agotó el tiempo de espera"
+          }
+        },
+        "es-US" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "El servicio expiró por tiempo"
+          }
+        }
+      }
     }
   },
   "version" : "1.0"

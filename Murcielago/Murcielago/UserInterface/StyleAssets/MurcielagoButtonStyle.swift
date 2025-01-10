@@ -8,25 +8,26 @@
 import SwiftUI
 
 struct MurcielagoButtonStyle: ButtonStyle {
-    private enum Size {
+    private enum Constants {
+        static let buttonOpacity: CGFloat = 1.0
+        static let buttonOpacityPressed: CGFloat = 0.5
+        static let cornerRadius: CGFloat = 8.0
         static let height: CGFloat = 50.0
         static let horizontalPadding: CGFloat = 50.0
-        static let cornerRadius: CGFloat = 8.0
     }
 
     func makeBody(configuration: Configuration) -> some View {
         configuration.label
-            .frame(height: Size.height)
-            .padding([.horizontal], Size.horizontalPadding)
+            .frame(height: Constants.height)
+            .padding([.horizontal], Constants.horizontalPadding)
             .background(.murcielagoPrimary)
-            .cornerRadius(Size.cornerRadius)
+            .cornerRadius(Constants.cornerRadius)
             .foregroundColor(.surface)
             .opacity(
                 configuration.isPressed
-                ? 0.5
-                : 1.0
+                ? Constants.buttonOpacityPressed
+                : Constants.buttonOpacity
             )
-
     }
 }
 

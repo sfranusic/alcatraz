@@ -8,27 +8,38 @@
 import Foundation
 import SwiftUI
 
-actor AuthenticationService {
-    private(set) var connectionEstablished: Bool = false
+protocol AuthenticationService: Sendable {
+    func signIn(username: String, password: String) async -> Bool
+    func signOut() async -> Bool
+    var unauthenticated: Bool { get async }
+    var authenticated: Bool { get async }
+}
+
+extension AuthenticationService where Self == MockAuthenticationService {
+    static var mock: Self {
+        .init()
+    }
+}
+
+actor MockAuthenticationService: AuthenticationService, Sendable {
+    private(set) var authenticated: Bool = false
     var unauthenticated: Bool {
-        connectionEstablished == false
+        authenticated == false
     }
 
     func signIn(username: String, password: String) async -> Bool {
         do {
-            try await Task.sleep(nanoseconds: UInt64.random(in: 0...3) * 1_000_000_000)
+            try await Task.sleep(for: .seconds(Int.random(in: 0...3)))
         } catch {
-            assertionFailure("Service failed due to timeout")
             return false
         }
-        connectionEstablished = password == "password124"
-        return connectionEstablished
+        authenticated = password == "password124"
+        return authenticated
     }
 
     func signOut() async -> Bool {
-        connectionEstablished = false
-        return unauthenticated
+        let initial = authenticated
+        authenticated = false
+        return authenticated != initial
     }
 }
-
-

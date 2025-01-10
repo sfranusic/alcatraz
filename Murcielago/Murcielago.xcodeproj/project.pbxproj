@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		273D32742D1B7B2A00899E68 /* ViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273D32732D1B7B2A00899E68 /* ViewTests.swift */; };
+		273D32752D1B7B6700899E68 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2776EA4D2CE31D4F00011DEA /* SignInView.swift */; };
+		273D32772D1B7D0000899E68 /* MurcielagoPalette.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2776EA4A2CE31C8400011DEA /* MurcielagoPalette.xcassets */; };
+		273D32782D1B7D1800899E68 /* MurcielagoTextFieldStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D656002D0D5C0200DB3936 /* MurcielagoTextFieldStyle.swift */; };
+		273D32792D1B7D2200899E68 /* MurcielagoButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2776EA632CE5459200011DEA /* MurcielagoButtonStyle.swift */; };
 		2747A4D22D1691E4002CFCD6 /* Murcielago.xctestplan in Resources */ = {isa = PBXBuildFile; fileRef = 2747A4D12D1691E4002CFCD6 /* Murcielago.xctestplan */; };
 		2747A4D32D1691E4002CFCD6 /* Murcielago.xctestplan in Resources */ = {isa = PBXBuildFile; fileRef = 2747A4D12D1691E4002CFCD6 /* Murcielago.xctestplan */; };
 		2747A4D42D1691E4002CFCD6 /* Murcielago.xctestplan in Resources */ = {isa = PBXBuildFile; fileRef = 2747A4D12D1691E4002CFCD6 /* Murcielago.xctestplan */; };
@@ -60,6 +65,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		273D32732D1B7B2A00899E68 /* ViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewTests.swift; sourceTree = "<group>"; };
 		2747A4D12D1691E4002CFCD6 /* Murcielago.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = Murcielago.xctestplan; sourceTree = "<group>"; };
 		277510122D17F72E00C2833E /* MainViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModelTests.swift; sourceTree = "<group>"; };
 		277510172D17FDD700C2833E /* AuthenticationServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationServiceTests.swift; sourceTree = "<group>"; };
@@ -166,6 +172,7 @@
 				2776EA312CE31AAC00011DEA /* MurcielagoTests.swift */,
 				277510122D17F72E00C2833E /* MainViewModelTests.swift */,
 				277510172D17FDD700C2833E /* AuthenticationServiceTests.swift */,
+				273D32732D1B7B2A00899E68 /* ViewTests.swift */,
 			);
 			path = MurcielagoTests;
 			sourceTree = "<group>";
@@ -389,6 +396,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2747A4D32D1691E4002CFCD6 /* Murcielago.xctestplan in Resources */,
+				273D32772D1B7D0000899E68 /* MurcielagoPalette.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,6 +445,10 @@
 				277510162D17F96600C2833E /* SignInError.swift in Sources */,
 				277510142D17F87700C2833E /* MainViewModel.swift in Sources */,
 				277510152D17F88A00C2833E /* AuthenticationService.swift in Sources */,
+				273D32782D1B7D1800899E68 /* MurcielagoTextFieldStyle.swift in Sources */,
+				273D32792D1B7D2200899E68 /* MurcielagoButtonStyle.swift in Sources */,
+				273D32752D1B7B6700899E68 /* SignInView.swift in Sources */,
+				273D32742D1B7B2A00899E68 /* ViewTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

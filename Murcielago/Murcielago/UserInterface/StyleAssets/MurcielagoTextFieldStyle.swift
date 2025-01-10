@@ -8,18 +8,26 @@
 import SwiftUI
 
 struct MurcielagoTextFieldStyle: TextFieldStyle {
+    private enum Constants {
+        static let cornerRadius: CGFloat = 8.0
+        static let height: CGFloat = 50
+        static let overlayWidth: CGFloat = 1.0
+        static let labelPadding: CGFloat = 15
+    }
+
     @FocusState private var textFieldFocused: Bool
+
     func _body(configuration: TextField<Self._Label>) -> some View {
         configuration
-            .padding(.leading, 15)
-            .frame(height: 50)
+            .padding(.leading, Constants.labelPadding)
+            .frame(height: Constants.height)
             .background {
-                RoundedRectangle(cornerRadius: 8.0)
+                RoundedRectangle(cornerRadius: Constants.cornerRadius)
                     .fill(Color.surface)
             }
             .overlay {
-                RoundedRectangle(cornerRadius: 8.0)
-                    .stroke(lineWidth: 1.0)
+                RoundedRectangle(cornerRadius: Constants.cornerRadius)
+                    .stroke(lineWidth: Constants.overlayWidth)
             }
             .focused($textFieldFocused)
             .onTapGesture {

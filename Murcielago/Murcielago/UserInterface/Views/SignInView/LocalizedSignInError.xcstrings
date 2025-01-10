@@ -52,7 +52,7 @@
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "El servicio se agotó el tiempo"
+            "value" : "El servicio agotó el tiempo de espera"
           }
         },
         "es-US" : {

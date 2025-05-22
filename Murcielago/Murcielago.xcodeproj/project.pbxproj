@@ -18,6 +18,7 @@
 		2752CADC2DD7EA9A00C5B793 /* ARContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2752CADB2DD7EA9A00C5B793 /* ARContainerView.swift */; };
 		2752CADE2DD7EE7D00C5B793 /* EchoMeshView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2752CADD2DD7EE7D00C5B793 /* EchoMeshView.swift */; };
 		2752CAE22DDE76F500C5B793 /* EchoMeshViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2752CAE12DDE76F500C5B793 /* EchoMeshViewModel.swift */; };
+		2752CAEA2DDF9EC500C5B793 /* echo-chime.wav in Resources */ = {isa = PBXBuildFile; fileRef = 2752CAE82DDF9EC500C5B793 /* echo-chime.wav */; };
 		277510132D17F72E00C2833E /* MainViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277510122D17F72E00C2833E /* MainViewModelTests.swift */; };
 		277510142D17F87700C2833E /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2776EA592CE460BD00011DEA /* MainViewModel.swift */; };
 		277510152D17F88A00C2833E /* AuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2776EA4F2CE31D4F00011DEA /* AuthenticationService.swift */; };
@@ -74,6 +75,7 @@
 		2752CADD2DD7EE7D00C5B793 /* EchoMeshView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EchoMeshView.swift; sourceTree = "<group>"; };
 		2752CADF2DD7F10500C5B793 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		2752CAE12DDE76F500C5B793 /* EchoMeshViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EchoMeshViewModel.swift; sourceTree = "<group>"; };
+		2752CAE82DDF9EC500C5B793 /* echo-chime.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "echo-chime.wav"; sourceTree = "<group>"; };
 		277510122D17F72E00C2833E /* MainViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModelTests.swift; sourceTree = "<group>"; };
 		277510172D17FDD700C2833E /* AuthenticationServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationServiceTests.swift; sourceTree = "<group>"; };
 		2776EA1D2CE31AA500011DEA /* Murcielago.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Murcielago.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -142,11 +144,12 @@
 			path = ARView;
 			sourceTree = "<group>";
 		};
-		2752CAE62DDE7FB200C5B793 /* New Group 3 */ = {
+		2752CAE92DDF9EC500C5B793 /* AudioResources */ = {
 			isa = PBXGroup;
 			children = (
+				2752CAE82DDF9EC500C5B793 /* echo-chime.wav */,
 			);
-			path = "New Group 3";
+			path = AudioResources;
 			sourceTree = "<group>";
 		};
 		2776EA142CE31AA500011DEA = {
@@ -173,7 +176,7 @@
 		2776EA1F2CE31AA500011DEA /* Murcielago */ = {
 			isa = PBXGroup;
 			children = (
-				2752CAE62DDE7FB200C5B793 /* New Group 3 */,
+				2752CAE92DDF9EC500C5B793 /* AudioResources */,
 				2752CADF2DD7F10500C5B793 /* Info.plist */,
 				2776EA202CE31AA600011DEA /* MurcielagoApp.swift */,
 				2776EA582CE45F7500011DEA /* Models */,
@@ -415,6 +418,7 @@
 				2747A4D22D1691E4002CFCD6 /* Murcielago.xctestplan in Resources */,
 				27A726FD2CF8297100E4AE9B /* Localizable.xcstrings in Resources */,
 				2776EA4B2CE31C8400011DEA /* MurcielagoPalette.xcassets in Resources */,
+				2752CAEA2DDF9EC500C5B793 /* echo-chime.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

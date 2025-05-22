@@ -15,25 +15,54 @@ struct EchoMeshViewModel {
     private let columns: Int = 4
     private let spacing: Float = 0.4
     private let distance: Float = -1.0
+    private var audio: AudioFileResource?
+    private var activeAudioController: AudioPlaybackController?
     private(set) var entities: [[ModelEntity]] = []
 
     @MainActor
-    private var audioSource: AudioFileResource? {
-        try? AudioFileResource.load(
-                named: "click.wav",
-                in: nil,
-                inputMode: .spatial,
-                loadingStrategy: .preload
-        )
+    init() {
+        setUpAudio()
+        setUpEntities()
+    }
+
+    @MainActor @discardableResult
+    mutating func playSound(row: Int, column: Int) -> Bool {
+        guard row >= 0, row < rows, column >= 0, column < columns else {
+            return false
+        }
+
+        if let active = activeAudioController {
+            active.stop()
+        }
+
+        guard let audio else {
+            return false
+        }
+
+        let entity = entities[row][column]
+        activeAudioController = entity.playAudio(audio)
+        return activeAudioController?.isPlaying ?? false
     }
 
     @MainActor
-    func generateEntities() {
-        guard let audioSource else {
+    mutating private func setUpAudio() {
+        guard
+            let audioSource = try? AudioFileResource.load(
+                named: "echo-chime.wav",
+                in: nil,
+                inputMode: .spatial,
+                loadingStrategy: .preload
+            )
+        else {
             assertionFailure("Audio loading failed")
             return
         }
-        
+
+        audio = audioSource
+    }
+
+    @MainActor
+    mutating private func setUpEntities() {
         for row in 0..<rows {
             for column in 0..<columns {
 
@@ -42,7 +71,7 @@ struct EchoMeshViewModel {
                     materials: [SimpleMaterial(color: .blue, isMetallic: true)]
                 )
 
-
+                entities[row][column] = box
             }
         }
     }

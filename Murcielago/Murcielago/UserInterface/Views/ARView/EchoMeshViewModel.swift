@@ -29,6 +29,11 @@ struct EchoMeshViewModel {
 
     @MainActor
     func generateEntities() {
+        guard let audioSource else {
+            assertionFailure("Audio loading failed")
+            return
+        }
+        
         for row in 0..<rows {
             for column in 0..<columns {
 

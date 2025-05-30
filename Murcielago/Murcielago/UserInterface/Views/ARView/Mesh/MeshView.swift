@@ -9,11 +9,11 @@ import SwiftUI
 
 struct MeshView: View {
     @State var isControllerPresented: Bool = false
-    let model: MeshModel = MeshModel()
+    let model = MeshModel()
 
     var body: some View {
         ZStack {
-            Color.black
+            MeshARView(model: model)
                 .edgesIgnoringSafeArea(.all)
             VStack {
                 Spacer()
@@ -23,10 +23,9 @@ struct MeshView: View {
                     Image(systemName: "speaker")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
-                        .frame(width: 44, height: 44)
+                        .frame(width: 40, height: 40)
                 }
                 .opacity(isControllerPresented ? 0 : 1)
-
             }
         }
         .sheet(
@@ -39,18 +38,44 @@ struct MeshView: View {
 
     var buttonController: some View {
         VStack {
+            Spacer()
             ForEach(0..<model.rows, id: \.self) { row in
                 HStack {
                     ForEach(0..<model.columns, id: \.self) { column in
-                        Button("\(row+1)-\(column+1)") {
-                            print("\(row)\(column)")
-                        }
+                        Button(
+                            action: {
+                                print("\(row)\(column)")
+                                model.audioControl.playAudio(for: "\(row)\(column)")
+                            },
+                            label: {
+                                Text("\(row+1)-\(column+1)")
+                                    .frame(
+                                        minWidth: 45,
+                                        idealWidth: 60,
+                                        maxWidth: .infinity,
+                                        minHeight: 45,
+                                        idealHeight: 60,
+                                        maxHeight: .infinity,
+                                        alignment: .center
+                                    )
+                            }
+                        )
                         .foregroundStyle(.white)
-                        .frame(width: 75, height: 75)
                         .background(Color.blue)
                     }
                 }
             }
+            Spacer(minLength: 20)
+            Button {
+                isControllerPresented = false
+            } label: {
+                Image(systemName: "chevron.down")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(minWidth: 20, maxWidth: .infinity)
+                    .frame(height: 20)
+            }
+
         }
         .presentationDetents([.medium])
         .presentationBackground(Color.clear.opacity(0.25))

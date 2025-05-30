@@ -1,5 +1,5 @@
 //
-//  MeshViewModel.swift
+//  MeshAudioModel.swift
 //  Murcielago
 //
 //  Created by Sam Franusic on 5/27/25.
@@ -11,34 +11,48 @@ import RealityKit
 import SwiftUI
 
 @MainActor
-struct MeshAudioModel {
+class MeshAudioModel {
     private(set) var audioControllers: [String: AudioPlaybackController] = [:]
+    let audioFileName = "echo-chime.wav"
 
-    mutating func addAudioController(for model: EmitterEntity) {
-        guard let audioResource = model.audioResource else {
-            assertionFailure("Attempting to add an audio controller for an emitter without an audio resource.")
-            return
+    var audioResource: AudioResource {
+        guard
+            let resource = try? AudioFileResource.load(
+                named: audioFileName,
+                in: nil,
+                inputMode: .spatial,
+                loadingStrategy: .preload
+            )
+        else {
+            fatalError("Audio loading failed")
         }
-
-        audioControllers[model.id] = model.entity.prepareAudio(audioResource)
+        return resource
     }
 
-    mutating func playAudio(for model: EmitterEntity) {
-        guard let audioResource = model.audioResource else {
-            assertionFailure("Attempting to play audio for an emitter without an audio resource.")
+    func addAudioController(for model: MeshEmitterEntity) {
+        audioControllers[model.id] = model.entity.prepareAudio(model.audioResource)
+    }
+
+    /// Attempts to play an existing controller in the model.
+    func playAudio(for id: String) {
+        guard let controller = audioControllers[id] else {
+            assertionFailure("Attempting to play audio for an emitter that does not exist.")
             return
         }
+        controller.play()
+    }
 
-        let controller = model.entity.playAudio(audioResource)
+    func playAudio(for model: MeshEmitterEntity) {
+        let controller = model.entity.playAudio(model.audioResource)
         audioControllers[model.id] = controller
     }
 
-    mutating func stopAudio(for model: EmitterEntity) {
+    func stopAudio(for model: MeshEmitterEntity) {
         audioControllers[model.id]?.stop()
         audioControllers[model.id] = nil
     }
 
-    mutating func stopAllAudio() {
+    func stopAllAudio() {
         for controller in audioControllers.values {
             controller.stop()
         }
@@ -46,12 +60,12 @@ struct MeshAudioModel {
     }
 }
 
-struct EmitterEntity: Identifiable {
+struct MeshEmitterEntity: Identifiable {
     let row: Int
     let column: Int
     var id: String {
         "\(row)\(column)"
     }
     let entity: ModelEntity
-    var audioResource: AudioFileResource?
+    let audioResource: AudioResource
 }

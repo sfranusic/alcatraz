@@ -20,10 +20,10 @@ struct MeshView: View {
                 Button {
                     isControllerPresented.toggle()
                 } label: {
-                    Image(systemName: "speaker")
+                    Image(systemName: "chevron.up")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
-                        .frame(width: 40, height: 40)
+                        .frame(height: 20)
                 }
                 .opacity(isControllerPresented ? 0 : 1)
             }
@@ -44,11 +44,10 @@ struct MeshView: View {
                     ForEach(0..<model.columns, id: \.self) { column in
                         Button(
                             action: {
-                                print("\(row)\(column)")
                                 model.audioControl.playAudio(for: "\(row)\(column)")
                             },
                             label: {
-                                Text("\(row+1)-\(column+1)")
+                                Image(systemName: "speaker")
                                     .frame(
                                         minWidth: 45,
                                         idealWidth: 60,
@@ -58,10 +57,13 @@ struct MeshView: View {
                                         maxHeight: .infinity,
                                         alignment: .center
                                     )
+                                    .overlay {
+                                        RoundedRectangle(cornerRadius: 9.0)
+                                            .stroke(lineWidth: 2)
+                                    }
+
                             }
                         )
-                        .foregroundStyle(.white)
-                        .background(Color.blue)
                     }
                 }
             }
@@ -84,4 +86,6 @@ struct MeshView: View {
 
 #Preview {
     MeshView()
+        .preferredColorScheme(.dark)
+        .tint(.murcielagoPrimary)
 }

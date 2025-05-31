@@ -32,16 +32,17 @@ struct MeshARView: UIViewRepresentable {
         let spacing: Float = 0.5
         let distance: Float = -1.0
         let audioResource = model.audioControl.audioResource
-        let entity = ModelEntity(
-            mesh: .generateBox(size: 0.05),
-            materials: [SimpleMaterial(color: .blue, isMetallic: true)]
-        )
 
         for row in 0..<model.rows {
             for column in 0..<model.columns {
                 let y = Float(row) * spacing - Float(model.rows - 1) * spacing / 2
                 let x = Float(column) * spacing - Float(model.columns - 1) * spacing / 2
                 let anchor = AnchorEntity(world: [x, y, distance])
+
+                let entity = ModelEntity(
+                    mesh: .generateBox(size: 0.05),
+                    materials: [SimpleMaterial(color: .blue, isMetallic: true)]
+                )
 
                 let emitter = MeshEmitterEntity(
                     row: row,
